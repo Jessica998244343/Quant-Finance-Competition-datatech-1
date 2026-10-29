@@ -1,0 +1,363 @@
+{
+  "rank_stability": {
+    "DEV19": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.42746482425438026,
+        "mean_abs_rank_change": 70.27491800315437,
+        "mean_top10_overlap": 0.3427297668038409,
+        "mean_top20_overlap": 0.44175020885547206,
+        "n_days": 243
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.4201274782165144,
+        "mean_abs_rank_change": 69.55730232966516,
+        "mean_top10_overlap": 0.34488536155202826,
+        "mean_top20_overlap": 0.43746583537031886,
+        "n_days": 243
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.4329029387815454,
+        "mean_abs_rank_change": 69.79429843892571,
+        "mean_top10_overlap": 0.3369488536155203,
+        "mean_top20_overlap": 0.4432614457955589,
+        "n_days": 243
+      }
+    },
+    "DEV20": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.37932599291275604,
+        "mean_abs_rank_change": 73.40569570093555,
+        "mean_top10_overlap": 0.3437721369539551,
+        "mean_top20_overlap": 0.4348605595506421,
+        "n_days": 242
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.36164646527704924,
+        "mean_abs_rank_change": 74.06915087255456,
+        "mean_top10_overlap": 0.36038851720669896,
+        "mean_top20_overlap": 0.4355868305248471,
+        "n_days": 242
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.37966046724722496,
+        "mean_abs_rank_change": 73.4388059393948,
+        "mean_top10_overlap": 0.3431708863527045,
+        "mean_top20_overlap": 0.433185306429108,
+        "n_days": 242
+      }
+    },
+    "CONF21": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.405224313726661,
+        "mean_abs_rank_change": 71.23934383332596,
+        "mean_top10_overlap": 0.36253552844461934,
+        "mean_top20_overlap": 0.44817110498928686,
+        "n_days": 242
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.3834995436696784,
+        "mean_abs_rank_change": 72.75407724547371,
+        "mean_top10_overlap": 0.35229787047968864,
+        "mean_top20_overlap": 0.43559701700197573,
+        "n_days": 242
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.4064413602935806,
+        "mean_abs_rank_change": 71.20873439364476,
+        "mean_top10_overlap": 0.3609952337225064,
+        "mean_top20_overlap": 0.4488938976542282,
+        "n_days": 242
+      }
+    }
+  },
+  "cost_breakdown": {
+    "REF-v1 legacy (2019-2020)": {
+      "label": "REF-v1",
+      "n_trades": 53281,
+      "commission_total": 279455.3325298105,
+      "commission_is_minimum_share": 0.7907509243445131,
+      "stamp_tax_total": 282147.10458477464,
+      "other_cost_total": 11294.426246123772,
+      "total_cost": 572896.8633607089,
+      "small_trade_value_lt_10k_share": 0.4014939659540925,
+      "median_trade_value": 13166.074294452932,
+      "turnover_sum": 448.6921197339876,
+      "turnover_mean_per_day": 0.9213390548952518,
+      "cost_over_initial_capital": 0.5728968633607089,
+      "cost_pct_of_nav_mean": 0.0009360180257241593,
+      "rejected_orders": 467,
+      "rejection_reasons": {
+        "INSUFFICIENT_CASH": 293,
+        "SUSPENDED": 124,
+        "LIMIT_DOWN": 40,
+        "LIMIT_UP": 10
+      }
+    },
+    "REF-v1 real input (2019-2020)": {
+      "label": "real-input",
+      "n_trades": 53146,
+      "commission_total": 279151.84891057725,
+      "commission_is_minimum_share": 0.7841041658826629,
+      "stamp_tax_total": 283098.0713057969,
+      "other_cost_total": 11332.451204803452,
+      "total_cost": 573582.3714211776,
+      "small_trade_value_lt_10k_share": 0.40172355398336657,
+      "median_trade_value": 13243.421401235897,
+      "turnover_sum": 447.89346697797293,
+      "turnover_mean_per_day": 0.9196991108377268,
+      "cost_over_initial_capital": 0.5735823714211776,
+      "cost_pct_of_nav_mean": 0.0009323492946191948,
+      "rejected_orders": 469,
+      "rejection_reasons": {
+        "INSUFFICIENT_CASH": 295,
+        "SUSPENDED": 125,
+        "LIMIT_DOWN": 39,
+        "LIMIT_UP": 10
+      }
+    },
+    "pure P5 (2019-2020)": {
+      "label": "P5",
+      "n_trades": 53218,
+      "commission_total": 279707.9918854402,
+      "commission_is_minimum_share": 0.7821413807358413,
+      "stamp_tax_total": 284619.95127421466,
+      "other_cost_total": 11393.283626432863,
+      "total_cost": 575721.2267860877,
+      "small_trade_value_lt_10k_share": 0.3986433161712203,
+      "median_trade_value": 13234.395318607396,
+      "turnover_sum": 449.76493234866643,
+      "turnover_mean_per_day": 0.9235419555414095,
+      "cost_over_initial_capital": 0.5757212267860877,
+      "cost_pct_of_nav_mean": 0.0009347915998340878,
+      "rejected_orders": 492,
+      "rejection_reasons": {
+        "INSUFFICIENT_CASH": 313,
+        "SUSPENDED": 132,
+        "LIMIT_DOWN": 42,
+        "LIMIT_UP": 5
+      }
+    }
+  },
+  "optimizer_use": {
+    "REF-v1 legacy (2019-2020)": {
+      "label": "REF-v1",
+      "active_share_mean": 1.1585548550757456,
+      "active_weight_max": 0.010000000000000106,
+      "share_active_at_limit": 0.2015897836851707,
+      "target_weight_max": 0.0886353266550143,
+      "n_rows": 145806
+    },
+    "pure P5 (2019-2020)": {
+      "label": "P5",
+      "active_share_mean": 1.1606690428416444,
+      "active_weight_max": 0.010000000000000106,
+      "share_active_at_limit": 0.2026788837298621,
+      "target_weight_max": 0.0886353266550143,
+      "n_rows": 145807
+    },
+    "B0 (2019-2020)": {
+      "label": "B0",
+      "active_share_mean": 1.1455855644326254,
+      "active_weight_max": 0.010000000000000106,
+      "share_active_at_limit": 0.20269667853150355,
+      "target_weight_max": 0.08911123001289,
+      "n_rows": 145809
+    }
+  },
+  "head_tail": {
+    "REF-v1 legacy (2019-2020)": {
+      "label": "REF-v1",
+      "buckets": [
+        {
+          "bucket": 0,
+          "mean_future_return": 0.0004551574319209936,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.0020210990382393728,
+          "n": 29160,
+          "active_weight": -0.0020210990382393728,
+          "mean_active_contribution": -1.055548615645981e-06
+        },
+        {
+          "bucket": 1,
+          "mean_future_return": 0.0006475717501198135,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.0022783974082039734,
+          "n": 29061,
+          "active_weight": -0.0022783974082039734,
+          "mean_active_contribution": -8.383088749903354e-07
+        },
+        {
+          "bucket": 2,
+          "mean_future_return": 0.0010509635672411365,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.0022024106651469767,
+          "n": 28976,
+          "active_weight": -0.0022024106651469767,
+          "mean_active_contribution": -2.4491412093780785e-06
+        },
+        {
+          "bucket": 3,
+          "mean_future_return": 0.001443319549638562,
+          "mean_target_weight": 0.001074811471204063,
+          "mean_benchmark_weight": 0.0033172823479437697,
+          "n": 29061,
+          "active_weight": -0.0022424708767397068,
+          "mean_active_contribution": -2.005034979126096e-06
+        },
+        {
+          "bucket": 4,
+          "mean_future_return": 0.002344081283070067,
+          "mean_target_weight": 0.01557762162800406,
+          "mean_benchmark_weight": 0.00683947492239995,
+          "n": 29157,
+          "active_weight": 0.00873814670560411,
+          "mean_active_contribution": 2.147769810556999e-05
+        }
+      ],
+      "top_minus_bottom_future_return": 0.0018889238511490733
+    },
+    "pure P5 (2019-2020)": {
+      "label": "P5",
+      "buckets": [
+        {
+          "bucket": 0,
+          "mean_future_return": 0.00045271947927675286,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.002022803487478275,
+          "n": 29160,
+          "active_weight": -0.002022803487478275,
+          "mean_active_contribution": -9.997039605262884e-07
+        },
+        {
+          "bucket": 1,
+          "mean_future_return": 0.0006266126130011673,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.0022882777445992404,
+          "n": 29061,
+          "active_weight": -0.0022882777445992404,
+          "mean_active_contribution": -7.939817098474443e-07
+        },
+        {
+          "bucket": 2,
+          "mean_future_return": 0.0010740893678825123,
+          "mean_target_weight": 0.0,
+          "mean_benchmark_weight": 0.0021987062436648816,
+          "n": 28976,
+          "active_weight": -0.0021987062436648816,
+          "mean_active_contribution": -2.480355345439777e-06
+        },
+        {
+          "bucket": 3,
+          "mean_future_return": 0.0014051710643620654,
+          "mean_target_weight": 0.0010957503489308,
+          "mean_benchmark_weight": 0.0033258509216349754,
+          "n": 29061,
+          "active_weight": -0.0022301005727041754,
+          "mean_active_contribution": -1.4810880078989026e-06
+        },
+        {
+          "bucket": 4,
+          "mean_future_return": 0.0023824502549857915,
+          "mean_target_weight": 0.015556845758353269,
+          "mean_benchmark_weight": 0.006823063556382727,
+          "n": 29157,
+          "active_weight": 0.008733782201970542,
+          "mean_active_contribution": 2.1544231373630256e-05
+        }
+      ],
+      "top_minus_bottom_future_return": 0.0019297307757090386
+    }
+  },
+  "gross_vs_net": {
+    "REF-v1": {
+      "label": "REF-v1",
+      "n_days": 487,
+      "net_cagr": 0.2079411828457176,
+      "gross_cagr": 0.7183027357760621,
+      "cagr_gap": 0.5103615529303445,
+      "cost_sum": 572896.8633607089,
+      "cost_sum_over_mean_nav": 0.4552593707257858,
+      "mean_daily_cost_bp": 9.360180257241593,
+      "note": "CAGR gap mixes cash/execution path effects with explicit fees; it is not a static fee attribution"
+    },
+    "B0": {
+      "label": "B0",
+      "n_days": 487,
+      "net_cagr": 0.10941306044220189,
+      "gross_cagr": 0.5165688755923277,
+      "cagr_gap": 0.4071558151501258,
+      "cost_sum": 485884.12958985276,
+      "cost_sum_over_mean_nav": 0.41460820033611473,
+      "mean_daily_cost_bp": 8.52294767152568,
+      "note": "CAGR gap mixes cash/execution path effects with explicit fees; it is not a static fee attribution"
+    }
+  },
+  "ir_decomposition": {
+    "REF-v1": {
+      "label": "REF-v1",
+      "main_cost": {
+        "ann_excess": -0.12037401953587401,
+        "tracking_error": 0.03466386411761801,
+        "ir": -3.4726082218483416,
+        "downside_te": 0.01990513415452198,
+        "mean_daily_active_bp": -3.747200239426834,
+        "quarterly_active_sum_min": -0.04845770919454423,
+        "quarterly_active_sum_max": 0.010527511203679833,
+        "quarters_negative": 6,
+        "quarters_total": 8
+      },
+      "zero_cost": {
+        "ann_excess": 0.38998753339447045,
+        "tracking_error": 0.034476829098963956,
+        "ir": 11.311583564574091,
+        "downside_te": 0.017109605691076175,
+        "mean_daily_active_bp": 10.262258042505,
+        "quarterly_active_sum_min": 0.03803305203376651,
+        "quarterly_active_sum_max": 0.09384442358304304,
+        "quarters_negative": 0,
+        "quarters_total": 8
+      }
+    },
+    "B0": {
+      "label": "B0",
+      "main_cost": {
+        "ann_excess": -0.21890214193938973,
+        "tracking_error": 0.034648623034365465,
+        "ir": -6.31777319757488,
+        "downside_te": 0.02189245629667362,
+        "mean_daily_active_bp": -7.115947096687925,
+        "quarterly_active_sum_min": -0.07112580627275805,
+        "quarterly_active_sum_max": -0.002951617891993499,
+        "quarters_negative": 8,
+        "quarters_total": 8
+      },
+      "zero_cost": {
+        "ann_excess": 0.18825367321073605,
+        "tracking_error": 0.03436153842955103,
+        "ir": 5.478615970489765,
+        "downside_te": 0.019439015641207286,
+        "mean_daily_active_bp": 5.306374219455531,
+        "quarterly_active_sum_min": -0.0002853123876198898,
+        "quarterly_active_sum_max": 0.07135860050748022,
+        "quarters_negative": 1,
+        "quarters_total": 8
+      }
+    },
+    "REF-v1 2021": {
+      "label": "REF-v1-2021",
+      "main_cost": {
+        "ann_excess": -0.1480472775516144,
+        "tracking_error": 0.04358259232093437,
+        "ir": -3.396936016596279,
+        "downside_te": 0.030361138837899797,
+        "mean_daily_active_bp": -6.642116986174768,
+        "quarterly_active_sum_min": -0.0668349389401271,
+        "quarterly_active_sum_max": -0.008069629586960371,
+        "quarters_negative": 4,
+        "quarters_total": 4
+      },
+      "zero_cost": null,
+      "note": "no zero-cost replay was run for 2021"
+    }
+  }
+}

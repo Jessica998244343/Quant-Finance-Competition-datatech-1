@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    20261005,
+    20261017,
+    20261029
+  ],
+  "windows": {
+    "DEV19": {
+      "tabm_base_seedmean": 0.0769838486007304,
+      "tabm_d02_seedmean": 0.0781289140231583,
+      "delta_tabm_family": 0.0011450654224278989,
+      "frozen_anchor": 0.08257657505483292,
+      "d02_anchor": 0.08319234113313657,
+      "delta_anchor": 0.0006157660783036589
+    },
+    "DEV20": {
+      "tabm_base_seedmean": 0.08636456139952192,
+      "tabm_d02_seedmean": 0.08476865731923995,
+      "delta_tabm_family": -0.0015959040802819707,
+      "frozen_anchor": 0.08673170482062849,
+      "d02_anchor": 0.08612048467175733,
+      "delta_anchor": -0.000611220148871161
+    }
+  },
+  "dev_merged_delta_tabm_family": -0.00022260519186059866,
+  "dev_merged_delta_anchor": 3.532704169200498e-06,
+  "both_years_nonneg_family": false,
+  "decision": "keep the frozen anchor"
+}

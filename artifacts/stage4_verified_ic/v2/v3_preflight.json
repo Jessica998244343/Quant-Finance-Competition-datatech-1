@@ -1,0 +1,144 @@
+{
+  "interpreter": {
+    "python": "3.11.17",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "executable": "/home/jessica998244343/DATA/Quant-Finance3/.venv_v1train/bin/python"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "torch": "2.14.1+cpu",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "torch_threads": 2
+  },
+  "confirmation_atoms": {
+    "c1": [
+      20261005,
+      20261017,
+      20261029
+    ],
+    "tabm": [
+      20261005,
+      20261017,
+      20261029
+    ],
+    "tcn": [
+      20261005,
+      20261017,
+      20261029
+    ],
+    "l5": [
+      20261005,
+      20261017,
+      20261029
+    ]
+  },
+  "cutoffs": {
+    "deploy": 20211231,
+    "deploy_max_outer_label_end": 20211231,
+    "tcn": 20211231,
+    "l5": 20211231,
+    "all_le_20211231": true
+  },
+  "equivalence": {
+    "DEV19": {
+      "20190617": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      },
+      "20190102": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      }
+    },
+    "DEV20": {
+      "20200615": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      },
+      "20200102": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      }
+    },
+    "CONF21": {
+      "20210615": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      },
+      "20210104": {
+        "passed": true,
+        "problems": [],
+        "max_abs_diff": 0.0,
+        "rank_ok": true,
+        "rows": 300
+      }
+    }
+  },
+  "negative_cases": {
+    "nan_atom": {
+      "passed": false,
+      "problems": [
+        "atom c1_20261005 invalid (len/finiteness)",
+        "daily ranks differ from the reference"
+      ],
+      "max_abs_diff": 0.0,
+      "rank_ok": false,
+      "rows": 300
+    },
+    "missing_stock": {
+      "passed": false,
+      "problems": [
+        "pool mismatch (1 missing, 0 extra)"
+      ],
+      "max_abs_diff": 0.0,
+      "rank_ok": true,
+      "rows": 299
+    },
+    "tampered_reference": {
+      "passed": false,
+      "problems": [
+        "raw tolerance exceeded (max 5.000e-02 > atol 1e-05)",
+        "daily ranks differ from the reference"
+      ],
+      "max_abs_diff": 0.05,
+      "rank_ok": false,
+      "rows": 300
+    }
+  },
+  "confirmation_manifest": {
+    "path": "artifacts/stage4_verified_ic/v2/v3_confirmation_manifest.json",
+    "exists": true,
+    "sha256": "8eb3245610f6b83c26db26829635db07d34d1d179447197c19383ee0748789e7",
+    "manifest_hash": "211c953c025ef57bd41a2ac1abfa7707b0042bdc28a60e94a4c4bde3817acdc9",
+    "freeze_verified": true,
+    "freeze_problems": []
+  },
+  "checks": {
+    "environment_importable": true,
+    "confirmation_models_loaded": true,
+    "cutoff_le_20211231": true,
+    "no_2022_metrics_in_artifacts": true,
+    "loader_equivalence_ok": true,
+    "negative_cases_rejected": true,
+    "confirmation_manifest_present": true,
+    "confirmation_manifest_self_consistent": true
+  },
+  "passed": true
+}

@@ -1,0 +1,172 @@
+{
+  "ref_corrected_cat0": {
+    "experiment_id": "B1_ref_corrected_cat0",
+    "source": "ref_corrected",
+    "cat_weight": 0.0,
+    "per_window": {
+      "DEV19": {
+        "mean_rankic": 0.0760838717560142,
+        "rankic_std": 0.1386899157756237,
+        "rankic_ir": 0.5485897898957899,
+        "positive_ratio": 0.7131147540983607,
+        "n_days": 244,
+        "n_pairs": 72961
+      },
+      "DEV20": {
+        "mean_rankic": 0.07340558866340828,
+        "rankic_std": 0.133385560980006,
+        "rankic_ir": 0.5503263481000878,
+        "positive_ratio": 0.7325102880658436,
+        "n_days": 243,
+        "n_pairs": 72754
+      },
+      "CONF21": {
+        "mean_rankic": 0.05933740159310065,
+        "rankic_std": 0.13769386073775253,
+        "rankic_ir": 0.43093716215941413,
+        "positive_ratio": 0.6707818930041153,
+        "n_days": 243,
+        "n_pairs": 72802
+      }
+    },
+    "dev_mean_rankic": 0.07474747998701371,
+    "dev_rankic_ir": 0.5498741828654089,
+    "dev_n_days": 487
+  },
+  "ref_corrected_cat0.125": {
+    "experiment_id": "B1_ref_corrected_cat0.125",
+    "source": "ref_corrected",
+    "cat_weight": 0.125,
+    "per_window": {
+      "DEV19": {
+        "mean_rankic": 0.07734143522052772,
+        "rankic_std": 0.1411616255695214,
+        "rankic_ir": 0.5478927782851116,
+        "positive_ratio": 0.7131147540983607,
+        "n_days": 244,
+        "n_pairs": 72961
+      },
+      "DEV20": {
+        "mean_rankic": 0.07424601710201334,
+        "rankic_std": 0.1350295974025581,
+        "rankic_ir": 0.5498499479389455,
+        "positive_ratio": 0.7366255144032922,
+        "n_days": 243,
+        "n_pairs": 72754
+      },
+      "CONF21": {
+        "mean_rankic": 0.05991396009282269,
+        "rankic_std": 0.13885364391091162,
+        "rankic_ir": 0.4314900092306071,
+        "positive_ratio": 0.6748971193415638,
+        "n_days": 243,
+        "n_pairs": 72802
+      }
+    },
+    "dev_mean_rankic": 0.07579690420862013,
+    "dev_rankic_ir": 0.5492430911078452,
+    "dev_n_days": 487
+  },
+  "ref_corrected_cat0.25": {
+    "experiment_id": "B1_ref_corrected_cat0.25",
+    "source": "ref_corrected",
+    "cat_weight": 0.25,
+    "per_window": {
+      "DEV19": {
+        "mean_rankic": 0.07846986882798117,
+        "rankic_std": 0.14362204082525046,
+        "rankic_ir": 0.5463636944378055,
+        "positive_ratio": 0.7131147540983607,
+        "n_days": 244,
+        "n_pairs": 72961
+      },
+      "DEV20": {
+        "mean_rankic": 0.07489104306724538,
+        "rankic_std": 0.13653388728033675,
+        "rankic_ir": 0.5485161563845036,
+        "positive_ratio": 0.7366255144032922,
+        "n_days": 243,
+        "n_pairs": 72754
+      },
+      "CONF21": {
+        "mean_rankic": 0.060303140932681965,
+        "rankic_std": 0.1399356224335287,
+        "rankic_ir": 0.430934881940635,
+        "positive_ratio": 0.6790123456790124,
+        "n_days": 243,
+        "n_pairs": 72802
+      }
+    },
+    "dev_mean_rankic": 0.07668413030671054,
+    "dev_rankic_ir": 0.5477542950235207,
+    "dev_n_days": 487
+  },
+  "ref_corrected_cat0.5": {
+    "experiment_id": "B1_ref_corrected_cat0.5",
+    "source": "ref_corrected",
+    "cat_weight": 0.5,
+    "per_window": {
+      "DEV19": {
+        "mean_rankic": 0.0795418846007382,
+        "rankic_std": 0.14712463567528122,
+        "rankic_ir": 0.5406428653886022,
+        "positive_ratio": 0.6967213114754098,
+        "n_days": 244,
+        "n_pairs": 72961
+      },
+      "DEV20": {
+        "mean_rankic": 0.07498448535365021,
+        "rankic_std": 0.13908319182908588,
+        "rankic_ir": 0.5391340561539301,
+        "positive_ratio": 0.7283950617283951,
+        "n_days": 243,
+        "n_pairs": 72754
+      },
+      "CONF21": {
+        "mean_rankic": 0.061007147998725655,
+        "rankic_std": 0.14140278609366086,
+        "rankic_ir": 0.43144233352174827,
+        "positive_ratio": 0.6666666666666666,
+        "n_days": 243,
+        "n_pairs": 72802
+      }
+    },
+    "dev_mean_rankic": 0.07726786403186266,
+    "dev_rankic_ir": 0.5401855256606957,
+    "dev_n_days": 487
+  },
+  "ref_corrected_cat1": {
+    "experiment_id": "B1_ref_corrected_cat1",
+    "source": "ref_corrected",
+    "cat_weight": 1.0,
+    "per_window": {
+      "DEV19": {
+        "mean_rankic": 0.07698944296042207,
+        "rankic_std": 0.14812918751654944,
+        "rankic_ir": 0.5197452591969464,
+        "positive_ratio": 0.6844262295081968,
+        "n_days": 244,
+        "n_pairs": 72961
+      },
+      "DEV20": {
+        "mean_rankic": 0.07116704344971334,
+        "rankic_std": 0.1395569179291243,
+        "rankic_ir": 0.5099499509286698,
+        "positive_ratio": 0.7160493827160493,
+        "n_days": 243,
+        "n_pairs": 72754
+      },
+      "CONF21": {
+        "mean_rankic": 0.060871083514823746,
+        "rankic_std": 0.14213724634817446,
+        "rankic_ir": 0.428255683001738,
+        "positive_ratio": 0.6707818930041153,
+        "n_days": 243,
+        "n_pairs": 72802
+      }
+    },
+    "dev_mean_rankic": 0.07408422102797398,
+    "dev_rankic_ir": 0.5151996013782328,
+    "dev_n_days": 487
+  }
+}

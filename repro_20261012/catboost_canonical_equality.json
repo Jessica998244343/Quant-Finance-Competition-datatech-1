@@ -1,0 +1,17 @@
+{
+  "catboost_c1_seed20261005.cbm": {
+    "full_model_json_equal_excluding_guid_and_finish_time": true,
+    "reference_canonical_sha256": "d41b5bf195b8cafe8048b7999e3d5f6a05519022b4d72323a2af9353133dc13b",
+    "repro_canonical_sha256": "d41b5bf195b8cafe8048b7999e3d5f6a05519022b4d72323a2af9353133dc13b"
+  },
+  "catboost_c1_seed20261017.cbm": {
+    "full_model_json_equal_excluding_guid_and_finish_time": true,
+    "reference_canonical_sha256": "752b105e6d7cfdbcacd47c275a31caf62f8ecc86a8f82b187907a0305496a068",
+    "repro_canonical_sha256": "752b105e6d7cfdbcacd47c275a31caf62f8ecc86a8f82b187907a0305496a068"
+  },
+  "catboost_c1_seed20261029.cbm": {
+    "full_model_json_equal_excluding_guid_and_finish_time": true,
+    "reference_canonical_sha256": "f8a1019013e0ce0def6c49338bb437755d38c222654e3c14fd19fcd169e966e7",
+    "repro_canonical_sha256": "f8a1019013e0ce0def6c49338bb437755d38c222654e3c14fd19fcd169e966e7"
+  }
+}

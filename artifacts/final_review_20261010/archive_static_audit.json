@@ -1,0 +1,347 @@
+{
+  "package": "releases/stage4_verified_ic/V3_full_pkg.zip",
+  "sha256": "8cb919e477504fa53813ed7218fda122107c4b86de4ae9beb29509958ae66153",
+  "bytes": 12389102,
+  "extract": "/tmp/qf3_final_review_20261010_g9ls62jk",
+  "members": {
+    "submission/LICENSE.tabm": {
+      "sha256": "24330ebf083bc17c1db833b0109ef6ffc9019449330e9e4ec9797c061185c7a6",
+      "bytes": 11340,
+      "build_equal": true
+    },
+    "submission/TABM_SOURCE.md": {
+      "sha256": "f61cce20cd05b4656016f968a18f5b896dc50a91c86e174b7a93e74ca2b011e5",
+      "bytes": 402,
+      "build_equal": true
+    },
+    "submission/__init__.py": {
+      "sha256": "282b3f57996fdf4a9230eff1d688ff5aa2b51ccf4417cc142a1c6b99005953a9",
+      "bytes": 37,
+      "build_equal": true
+    },
+    "submission/alpha_constants.py": {
+      "sha256": "3b679023cf4f422febd4bd9974113318ace57b10c332b3a24bc7430eabd7c302",
+      "bytes": 3958,
+      "build_equal": true
+    },
+    "submission/alpha_cv.py": {
+      "sha256": "c1f7f72c71d73525084a2cd72bf18930fa075111ac77fbc4f2be5f2a16c67d09",
+      "bytes": 3177,
+      "build_equal": true
+    },
+    "submission/alpha_dataio.py": {
+      "sha256": "03ac961f1cdc7762f36b2ceac2a18888fe25116cc8500922a8fd30fe81800418",
+      "bytes": 1546,
+      "build_equal": true
+    },
+    "submission/alpha_features.py": {
+      "sha256": "bddab8402383e5950ab7f752e426489284b1e60bb457ee67b1b4a1c447b69893",
+      "bytes": 14049,
+      "build_equal": true
+    },
+    "submission/alpha_labels.py": {
+      "sha256": "159db06ef0580e7305c3d25cf9ed42c3637339e018cd7646358a7762b25f7ba6",
+      "bytes": 2824,
+      "build_equal": true
+    },
+    "submission/alpha_models.py": {
+      "sha256": "7317e090214889460e4e3f51880de59e93d6228e06491cd98caf7f80d871560d",
+      "bytes": 3990,
+      "build_equal": true
+    },
+    "submission/alpha_panel.py": {
+      "sha256": "38ada466cdd09644000c37686ee4d267f0e728836d26a6bff46b916aa02919ba",
+      "bytes": 4129,
+      "build_equal": true
+    },
+    "submission/alpha_tabm_static.py": {
+      "sha256": "dfa3e0e2ac6d8fd56bbb777d2bc7964dc048d9387bce2c1ab70f74646c465213",
+      "bytes": 3571,
+      "build_equal": true
+    },
+    "submission/alpha_tabminput.py": {
+      "sha256": "5ab391e30fe3c815a46415168a73407084e90d5a02e4bbcec9f23572157904c0",
+      "bytes": 1246,
+      "build_equal": true
+    },
+    "submission/alpha_tcn_seq.py": {
+      "sha256": "5b68b6e39da054d050c3fc2e58d99b90d276fc0f88243ab054bdf8c1f5b4e0f6",
+      "bytes": 3423,
+      "build_equal": true
+    },
+    "submission/alpha_tcn_static.py": {
+      "sha256": "50f86e568ec2ccc166d4284452693e3952c4cb80146d70105791ee94fe2a2ebe",
+      "bytes": 3248,
+      "build_equal": true
+    },
+    "submission/alpha_tcn_train.py": {
+      "sha256": "703e3404c120f7dd5a7b8f9395cc92a61efe4431cd3b4c9129c6566f0852a8c5",
+      "bytes": 10545,
+      "build_equal": true
+    },
+    "submission/alpha_train_model.py": {
+      "sha256": "f84fa389351ae75f4987976ed7c876078e446a73ea3498ef7b8d4d46c4ecb148",
+      "bytes": 4628,
+      "build_equal": true
+    },
+    "submission/alpha_train_tabm.py": {
+      "sha256": "5a3a244143f5dbb295085354c65532e2c0e450ffed748b766392e831fd5c5293",
+      "bytes": 5895,
+      "build_equal": true
+    },
+    "submission/inference.py": {
+      "sha256": "be1f96f565f1b89d1330582ca534355a1dfa8d4627b71a4219c62915d721e9d4",
+      "bytes": 1385,
+      "build_equal": true
+    },
+    "submission/model/catboost_c1_seed20261005.cbm": {
+      "sha256": "dd64a6b8f2c55849ed4bb91a3cb13c97e47b920cfc1a4835800e1dd2364c6b12",
+      "bytes": 2959576,
+      "build_equal": true
+    },
+    "submission/model/catboost_c1_seed20261017.cbm": {
+      "sha256": "c22d9f430b8d0a6708346276480b152c209e56a967096394cec83b3ce9416e7a",
+      "bytes": 5272520,
+      "build_equal": true
+    },
+    "submission/model/catboost_c1_seed20261029.cbm": {
+      "sha256": "644b3850c4a2eec44d10900b036e2ab5465cae5ce2b9eafaff9c999f81bfca93",
+      "bytes": 7898880,
+      "build_equal": true
+    },
+    "submission/model/meta.json": {
+      "sha256": "961a218104e406e3ef7756036bd285e9e601e7f6d9dd913c61d03be264a15b91",
+      "bytes": 5533,
+      "build_equal": true
+    },
+    "submission/model/tabm_design.json": {
+      "sha256": "19a001d88fa83c957e54a242748f4df09369331ba8f5a10f7f67b7102640457e",
+      "bytes": 5937,
+      "build_equal": true
+    },
+    "submission/model/tabm_seed20261005.npz": {
+      "sha256": "d6c30309b4634a8b0c5bbbd21a7c6702c9160a84eb4fb66ea3da0ab129bfef09",
+      "bytes": 169468,
+      "build_equal": true
+    },
+    "submission/model/tabm_seed20261017.npz": {
+      "sha256": "d80445d389b8490f2d6b45eeea390aa763b365255f59ccbd541c5a779dd2887b",
+      "bytes": 169468,
+      "build_equal": true
+    },
+    "submission/model/tabm_seed20261029.npz": {
+      "sha256": "094c147cbb7b2f327881f6ccc176426a93a3b9cf1527aaa2df471458791b770d",
+      "bytes": 169468,
+      "build_equal": true
+    },
+    "submission/model/tcn_channel_stats.json": {
+      "sha256": "a4cdac3d3f5edb55defa5da3e4f24403754397bc660053186aa82f9ff91f6141",
+      "bytes": 347,
+      "build_equal": true
+    },
+    "submission/model/tcn_design.json": {
+      "sha256": "19a001d88fa83c957e54a242748f4df09369331ba8f5a10f7f67b7102640457e",
+      "bytes": 5937,
+      "build_equal": true
+    },
+    "submission/model/tcn_seed20261005.npz": {
+      "sha256": "de8ce00cd0fc305508e530fcdec3ac283451a6b591fd21fd88f9e515c80289ff",
+      "bytes": 89838,
+      "build_equal": true
+    },
+    "submission/model/tcn_seed20261017.npz": {
+      "sha256": "ef08ca2684873779d49aa4704c3b4e6a24139843b8362f6bede67973e5de06bf",
+      "bytes": 89838,
+      "build_equal": true
+    },
+    "submission/model/tcn_seed20261029.npz": {
+      "sha256": "3a9d2d1b3bde92d2c00f77bf08cbe2e19b6316e5468f7fb95e67678fb4eaa6f6",
+      "bytes": 89838,
+      "build_equal": true
+    },
+    "submission/requirements.txt": {
+      "sha256": "e0cbd90c4b910bfec9c0dd3e8d21fb704fdefa718617a8067fe596b63a996042",
+      "bytes": 60,
+      "build_equal": true
+    },
+    "submission/train.py": {
+      "sha256": "dee1116d03c7f1105c499b48931329d909405baeb5feab8e4c71e9b0946910ef",
+      "bytes": 10441,
+      "build_equal": true
+    },
+    "submission/train_requirements.txt": {
+      "sha256": "6665b1366562b140dbdf38b324481a8fc39d0f693fe8563f29385fd042d18697",
+      "bytes": 125,
+      "build_equal": true
+    }
+  },
+  "custom_calls_flagged": [],
+  "imports": {
+    "submission/__init__.py": [],
+    "submission/alpha_constants.py": [
+      "from __future__ import annotations"
+    ],
+    "submission/alpha_cv.py": [
+      "from __future__ import annotations",
+      "import numpy as np",
+      "import pandas as pd",
+      "from .alpha_constants import EARLY_STOP_DAYS, OUTER_WINDOWS",
+      "from alpha_constants import EARLY_STOP_DAYS, OUTER_WINDOWS"
+    ],
+    "submission/alpha_dataio.py": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd",
+      "from .alpha_constants import BARRA_TABLE, FACTOR_TABLE, MARKET_TABLE",
+      "from alpha_constants import BARRA_TABLE, FACTOR_TABLE, MARKET_TABLE"
+    ],
+    "submission/alpha_features.py": [
+      "from __future__ import annotations",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd",
+      "from .alpha_constants import BARRA_FEATURE_NAMES, BARRA_STYLE_COLUMNS, F0_FACTOR_COLUMNS, FEATURE_COLUMNS, STATUS_COLUMNS",
+      "from alpha_constants import BARRA_FEATURE_NAMES, BARRA_STYLE_COLUMNS, F0_FACTOR_COLUMNS, FEATURE_COLUMNS, STATUS_COLUMNS"
+    ],
+    "submission/alpha_labels.py": [
+      "from __future__ import annotations",
+      "import numpy as np",
+      "import pandas as pd",
+      "from .alpha_constants import MARKET_TABLE",
+      "from alpha_constants import MARKET_TABLE"
+    ],
+    "submission/alpha_models.py": [
+      "import json",
+      "import re",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd",
+      "from . import alpha_tabminput, alpha_tabm_static, alpha_tcn_seq, alpha_tcn_static",
+      "from catboost import CatBoostRegressor"
+    ],
+    "submission/alpha_panel.py": [
+      "from __future__ import annotations",
+      "import numpy as np",
+      "import pandas as pd",
+      "from . import alpha_dataio as dataio, alpha_features as featurelib",
+      "from . import alpha_labels as labels_mod",
+      "from .alpha_constants import BARRA_TABLE, FACTOR_TABLE, FEATURE_COLUMNS, MARKET_TABLE",
+      "import alpha_dataio as dataio",
+      "import alpha_features as featurelib",
+      "import alpha_labels as labels_mod",
+      "from alpha_constants import BARRA_TABLE, FACTOR_TABLE, FEATURE_COLUMNS, MARKET_TABLE"
+    ],
+    "submission/alpha_tabm_static.py": [
+      "import numpy as np"
+    ],
+    "submission/alpha_tabminput.py": [
+      "import numpy as np",
+      "import pandas as pd",
+      "from .alpha_constants import F0_COLUMNS, G1_COLUMNS",
+      "from alpha_constants import F0_COLUMNS, G1_COLUMNS"
+    ],
+    "submission/alpha_tcn_seq.py": [
+      "import numpy as np",
+      "import pandas as pd"
+    ],
+    "submission/alpha_tcn_static.py": [
+      "import numpy as np"
+    ],
+    "submission/alpha_tcn_train.py": [
+      "import time",
+      "import numpy as np",
+      "import pandas as pd",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "import alpha_dataio as dataio",
+      "from alpha_constants import BARRA_TABLE, MARKET_TABLE",
+      "from alpha_train_tabm import Design, _groups"
+    ],
+    "submission/alpha_train_model.py": [
+      "import torch",
+      "import torch.nn as nn"
+    ],
+    "submission/alpha_train_tabm.py": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from alpha_constants import F0_COLUMNS, G1_COLUMNS",
+      "from alpha_train_model import TabMWrapper"
+    ],
+    "submission/inference.py": [
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd",
+      "from . import alpha_features, alpha_tcn_seq",
+      "from .alpha_models import Scorer"
+    ],
+    "submission/train.py": [
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd",
+      "import alpha_cv",
+      "import alpha_panel",
+      "import alpha_train_tabm",
+      "import alpha_tcn_train",
+      "from alpha_constants import F0_COLUMNS, G1_COLUMNS",
+      "from catboost import CatBoostRegressor, Pool",
+      "import torch"
+    ]
+  },
+  "model_count": 9,
+  "model_hash_checks": {
+    "catboost_c1_seed20261005.cbm": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "catboost_c1_seed20261017.cbm": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "catboost_c1_seed20261029.cbm": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tabm_seed20261005.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tabm_seed20261017.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tabm_seed20261029.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tcn_seed20261005.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tcn_seed20261017.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    },
+    "tcn_seed20261029.npz": {
+      "source_exists": true,
+      "source_sha_match": true,
+      "package_sha_match": true
+    }
+  },
+  "member_count": 34,
+  "uncompressed_bytes": 17016667,
+  "build_all_equal": true
+}

@@ -1,0 +1,274 @@
+{
+  "score_stability": {
+    "DEV19": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.42746482425438026,
+        "mean_abs_rank_change": 70.27491800315437,
+        "mean_head10_overlap_high_score": 0.28962375073486185,
+        "mean_head20_overlap_high_score": 0.409044215476964,
+        "mean_tail10_overlap_low_score": 0.3427297668038409,
+        "mean_tail20_overlap_low_score": 0.44175020885547206,
+        "n_days": 243,
+        "n_stocks_in_pool": 335
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.4201274782165144,
+        "mean_abs_rank_change": 69.55730232966516,
+        "mean_head10_overlap_high_score": 0.3051342347638644,
+        "mean_head20_overlap_high_score": 0.42383633982074526,
+        "mean_tail10_overlap_low_score": 0.34488536155202826,
+        "mean_tail20_overlap_low_score": 0.43746583537031886,
+        "n_days": 243,
+        "n_stocks_in_pool": 335
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.4329029387815454,
+        "mean_abs_rank_change": 69.79429843892571,
+        "mean_head10_overlap_high_score": 0.30500685871056243,
+        "mean_head20_overlap_high_score": 0.413100395020473,
+        "mean_tail10_overlap_low_score": 0.3369488536155203,
+        "mean_tail20_overlap_low_score": 0.4432614457955589,
+        "n_days": 243,
+        "n_stocks_in_pool": 335
+      },
+      "blend_realinput_fixed": {
+        "mean_adjacent_rank_corr": 0.44188534341900376,
+        "mean_abs_rank_change": 69.1246161322263,
+        "mean_head10_overlap_high_score": 0.308034489515971,
+        "mean_head20_overlap_high_score": 0.4186657487339749,
+        "mean_tail10_overlap_low_score": 0.34410150891632363,
+        "mean_tail20_overlap_low_score": 0.44936569819610755,
+        "n_days": 243,
+        "n_stocks_in_pool": 335
+      }
+    },
+    "DEV20": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.37932599291275604,
+        "mean_abs_rank_change": 73.40569570093555,
+        "mean_head10_overlap_high_score": 0.289575407757226,
+        "mean_head20_overlap_high_score": 0.3810699974956173,
+        "mean_tail10_overlap_low_score": 0.3437721369539551,
+        "mean_tail20_overlap_low_score": 0.4348605595506421,
+        "n_days": 242,
+        "n_stocks_in_pool": 347
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.36164646527704924,
+        "mean_abs_rank_change": 74.06915087255456,
+        "mean_head10_overlap_high_score": 0.2871693121693122,
+        "mean_head20_overlap_high_score": 0.37734741154162643,
+        "mean_tail10_overlap_low_score": 0.36038851720669896,
+        "mean_tail20_overlap_low_score": 0.4355868305248471,
+        "n_days": 242,
+        "n_stocks_in_pool": 347
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.37966046724722496,
+        "mean_abs_rank_change": 73.4388059393948,
+        "mean_head10_overlap_high_score": 0.2918721850540032,
+        "mean_head20_overlap_high_score": 0.38011833208114204,
+        "mean_tail10_overlap_low_score": 0.3431708863527045,
+        "mean_tail20_overlap_low_score": 0.433185306429108,
+        "n_days": 242,
+        "n_stocks_in_pool": 347
+      },
+      "blend_realinput_fixed": {
+        "mean_adjacent_rank_corr": 0.38880846374330785,
+        "mean_abs_rank_change": 72.82452903934998,
+        "mean_head10_overlap_high_score": 0.2939383007564826,
+        "mean_head20_overlap_high_score": 0.38184009516654144,
+        "mean_tail10_overlap_low_score": 0.3492314924133106,
+        "mean_tail20_overlap_low_score": 0.43835059568530643,
+        "n_days": 242,
+        "n_stocks_in_pool": 347
+      }
+    },
+    "CONF21": {
+      "lgbm_p5": {
+        "mean_adjacent_rank_corr": 0.405224313726661,
+        "mean_abs_rank_change": 71.23934383332596,
+        "mean_head10_overlap_high_score": 0.31733241505968773,
+        "mean_head20_overlap_high_score": 0.40852046637170614,
+        "mean_tail10_overlap_low_score": 0.36253552844461934,
+        "mean_tail20_overlap_low_score": 0.44817110498928686,
+        "n_days": 242,
+        "n_stocks_in_pool": 353
+      },
+      "catboost": {
+        "mean_adjacent_rank_corr": 0.3834995436696784,
+        "mean_abs_rank_change": 72.75407724547371,
+        "mean_head10_overlap_high_score": 0.30861428134155405,
+        "mean_head20_overlap_high_score": 0.4005899212510783,
+        "mean_tail10_overlap_low_score": 0.35229787047968864,
+        "mean_tail20_overlap_low_score": 0.43559701700197573,
+        "n_days": 242,
+        "n_stocks_in_pool": 353
+      },
+      "blend_v1": {
+        "mean_adjacent_rank_corr": 0.4064413602935806,
+        "mean_abs_rank_change": 71.20873439364476,
+        "mean_head10_overlap_high_score": 0.31277165595347417,
+        "mean_head20_overlap_high_score": 0.4107243231210173,
+        "mean_tail10_overlap_low_score": 0.3609952337225064,
+        "mean_tail20_overlap_low_score": 0.4488938976542282,
+        "n_days": 242,
+        "n_stocks_in_pool": 353
+      },
+      "blend_realinput_fixed": {
+        "mean_adjacent_rank_corr": 0.41475144708054823,
+        "mean_abs_rank_change": 70.60117681125793,
+        "mean_head10_overlap_high_score": 0.31430211202938474,
+        "mean_head20_overlap_high_score": 0.41058658207418536,
+        "mean_tail10_overlap_low_score": 0.36457650094013727,
+        "mean_tail20_overlap_low_score": 0.45357709324651474,
+        "n_days": 242,
+        "n_stocks_in_pool": 353
+      }
+    }
+  },
+  "optimizer_use": {
+    "rev1 real input (2019-2020)": {
+      "label": "real-input",
+      "active_weight_L1_mean": 1.1560886896088864,
+      "active_share_mean_half_L1": 0.5780443448044432,
+      "active_weight_max": 0.010000000000000106,
+      "row_share_at_limit_mean": 0.20143909005763252,
+      "row_share_at_limit_min": 0.16,
+      "row_share_at_limit_max": 0.24
+    },
+    "v1 legacy REF (2019-2020)": {
+      "label": "REF-v1",
+      "active_weight_L1_mean": 1.1585548550757456,
+      "active_share_mean_half_L1": 0.5792774275378728,
+      "active_weight_max": 0.010000000000000106,
+      "row_share_at_limit_mean": 0.20159011750605638,
+      "row_share_at_limit_min": 0.16,
+      "row_share_at_limit_max": 0.24
+    }
+  },
+  "head_tail_by_score": {
+    "rev1 real input (2019-2020)": {
+      "label": "real-input",
+      "buckets": [
+        {
+          "bucket": "lowest score",
+          "mean_future_return": -0.0004246248967624088,
+          "mean_active_weight": -0.0024691971509775,
+          "mean_target_weight": 0.00030612800562068195,
+          "n_stock_days": 29160,
+          "mean_daily_contribution": 6.090974808623153e-05
+        },
+        {
+          "bucket": "q2",
+          "mean_future_return": 0.0007588877716044381,
+          "mean_active_weight": -0.0023746462412653456,
+          "mean_target_weight": 0.0006521748895510955,
+          "n_stock_days": 29061,
+          "mean_daily_contribution": -0.00010815107647209568
+        },
+        {
+          "bucket": "q3",
+          "mean_future_return": 0.0011744542947427837,
+          "mean_active_weight": -0.0018464355467992,
+          "mean_target_weight": 0.001336579518366769,
+          "n_stock_days": 28976,
+          "mean_daily_contribution": -0.00013775408905511145
+        },
+        {
+          "bucket": "q4",
+          "mean_future_return": 0.001750768558655607,
+          "mean_active_weight": 0.00044805840495470864,
+          "mean_target_weight": 0.00397217524988603,
+          "n_stock_days": 29061,
+          "mean_daily_contribution": 0.00018973250860070817
+        },
+        {
+          "bucket": "highest score",
+          "mean_future_return": 0.0026838437700512814,
+          "mean_active_weight": 0.006246786888766772,
+          "mean_target_weight": 0.010405328044795376,
+          "n_stock_days": 29157,
+          "mean_daily_contribution": 0.0009320435745245798
+        }
+      ],
+      "note": "H=1 O2O target-weight diagnostic; contributions are summed inside each day before averaging, and are not a close-to-close NAV attribution"
+    },
+    "v1 legacy REF (2019-2020)": {
+      "label": "REF-v1",
+      "buckets": [
+        {
+          "bucket": "lowest score",
+          "mean_future_return": -0.0004616180046847432,
+          "mean_active_weight": -0.0025048068922295095,
+          "mean_target_weight": 0.00031481052237567435,
+          "n_stock_days": 29160,
+          "mean_daily_contribution": 6.735733662429746e-05
+        },
+        {
+          "bucket": "q2",
+          "mean_future_return": 0.0007694416541328705,
+          "mean_active_weight": -0.0023901493042444923,
+          "mean_target_weight": 0.000668184403419726,
+          "n_stock_days": 29061,
+          "mean_daily_contribution": -0.00010714737597138191
+        },
+        {
+          "bucket": "q3",
+          "mean_future_return": 0.0012058664626021654,
+          "mean_active_weight": -0.0018390010879125772,
+          "mean_target_weight": 0.001343721029677036,
+          "n_stock_days": 28976,
+          "mean_daily_contribution": -0.00014697821814104204
+        },
+        {
+          "bucket": "q4",
+          "mean_future_return": 0.0017452750810757756,
+          "mean_active_weight": 0.0004935273870679951,
+          "mean_target_weight": 0.003993291358445704,
+          "n_stock_days": 29061,
+          "mean_daily_contribution": 0.00017443989227865916
+        },
+        {
+          "bucket": "highest score",
+          "mean_future_return": 0.002684579772483305,
+          "mean_active_weight": 0.006245144730734484,
+          "mean_target_weight": 0.010352544070665978,
+          "n_stock_days": 29157,
+          "mean_daily_contribution": 0.0009214820989634806
+        }
+      ],
+      "note": "H=1 O2O target-weight diagnostic; contributions are summed inside each day before averaging, and are not a close-to-close NAV attribution"
+    }
+  },
+  "cost_with_slippage": {
+    "rev1 real input (2019-2020)": {
+      "label": "real-input",
+      "n_trades": 53125,
+      "explicit_cost_sum": 573667.5967843349,
+      "slippage_sum": 283415.5855950468,
+      "total_friction_sum": 857083.1823793817,
+      "mean_daily_explicit_bp": 9.346471316521171,
+      "mean_daily_slippage_bp": 4.60816388064528,
+      "trades_at_min_commission_share": 0.7828517647058824,
+      "commission_amount_from_min_share": 0.7449794180023623,
+      "trades_below_10k_value_share": 0.4006588235294118,
+      "traded_value_below_10k_share": 0.0756420206946869,
+      "median_trade_value": 13210.855986389332
+    },
+    "v1 legacy REF (2019-2020)": {
+      "label": "REF-v1",
+      "n_trades": 53281,
+      "explicit_cost_sum": 572896.8633607089,
+      "slippage_sum": 282360.61996743345,
+      "total_friction_sum": 855257.4833281424,
+      "mean_daily_explicit_bp": 9.379439887400526,
+      "mean_daily_slippage_bp": 4.614336625383881,
+      "trades_at_min_commission_share": 0.7907509243445131,
+      "commission_amount_from_min_share": 0.7538235112315423,
+      "trades_below_10k_value_share": 0.4014939659540925,
+      "traded_value_below_10k_share": 0.07590362061748407,
+      "median_trade_value": 13166.074294452932
+    }
+  }
+}

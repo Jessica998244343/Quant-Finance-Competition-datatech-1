@@ -1,0 +1,48 @@
+{
+  "interpreter": {
+    "python": "3.11.17",
+    "executable": "/home/jessica998244343/miniconda3/envs/quant/bin/python3.11",
+    "implementation": "CPython"
+  },
+  "os": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "machine": "x86_64"
+  },
+  "cpu": {
+    "logical": 16,
+    "physical": 8
+  },
+  "memory": {
+    "total_bytes": 16393072640,
+    "available_bytes": 14337536000
+  },
+  "gpu_probe": {
+    "nvidia_smi": null,
+    "note": "see probe log"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "skd-backtest": "1.0.1"
+  },
+  "platform_commit": "ec5d35872fb3dec58d385039c8c18787460c18a9",
+  "platform_path": "vendor/skd-backtest",
+  "env_creation": "python3.11 -m venv .venv (from miniconda3/envs/quant python 3.11.17)",
+  "seeds": {
+    "main": 20261005,
+    "review": [
+      20261017,
+      20261029
+    ]
+  },
+  "thread_policy": {
+    "model_threads": 8,
+    "blas_threads": 4,
+    "max_total_threads": 12
+  }
+}

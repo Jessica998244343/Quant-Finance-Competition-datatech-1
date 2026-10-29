@@ -1,0 +1,6 @@
+{
+  "restored_at_epoch": 8,
+  "checked_through_epoch": 16,
+  "curve_exact_including_after_restart": true,
+  "max_ic_difference": 0.0
+}

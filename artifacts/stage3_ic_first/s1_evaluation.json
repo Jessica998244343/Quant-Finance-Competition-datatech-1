@@ -1,0 +1,107 @@
+{
+  "ic": {
+    "R_SINGLE_L0P5_dev": 0.07474747998701371,
+    "R_SINGLE_L0P5_conf21": 0.05933740159310065,
+    "R_WORK_cat0.5_dev": 0.07726786403186266,
+    "R_WORK_cat0.5_conf21": 0.061007147998725655,
+    "R_DEPLOY_dev": 0.07775570113136371,
+    "R_DEPLOY_conf21": 0.06264550438464096,
+    "MAIN_SINGLE_L3_dev": 0.07645343479384964,
+    "MAIN_SINGLE_L3_conf21": 0.06216834618956094,
+    "MAIN_SEED_ENSEMBLE_dev": 0.07757341151671654,
+    "MAIN_SEED_ENSEMBLE_conf21": 0.06325512548753097,
+    "L1_ranked_dev": 0.054753435373498124,
+    "G_sep_L3_dev": 0.07400012651574064,
+    "G_path_L3_dev": 0.07488529281422118
+  },
+  "stability": {
+    "DEV19": {
+      "window": "DEV19",
+      "segment_rounds": [
+        79,
+        720
+      ],
+      "median_rounds": 399,
+      "mean_rankic": 0.07734826000731601
+    },
+    "DEV20": {
+      "window": "DEV20",
+      "segment_rounds": [
+        362,
+        292
+      ],
+      "median_rounds": 327,
+      "mean_rankic": 0.0743140438761589
+    }
+  },
+  "backtests": {
+    "MAIN_SINGLE_L3": {
+      "mean_rankic": 0.0770863192585409,
+      "rankic_std": 0.13407892356560827,
+      "rankic_ir": 0.5749324144955608,
+      "positive_rankic_ratio": 0.7325102880658436,
+      "total_return": 0.4312373627757564,
+      "annualized_return": 0.20385336934096943,
+      "annualized_excess_return": -0.1244618330406222,
+      "annualized_volatility": 0.21758113985521518,
+      "maximum_drawdown": 0.2549637386454656,
+      "tracking_error": 0.03535445324807131,
+      "information_ratio": -3.520400447641259,
+      "sharpe_ratio": 0.96206116955466,
+      "turnover": 448.2569660965423,
+      "transaction_cost": 568707.1143808728,
+      "failed_orders": 451
+    },
+    "MAIN_SINGLE_L3_conf21": {
+      "mean_rankic": 0.06250739170088027,
+      "rankic_std": 0.13296586134221397,
+      "rankic_ir": 0.4701010550370152,
+      "positive_rankic_ratio": 0.6818181818181818,
+      "total_return": -0.18496842112907852,
+      "annualized_return": -0.19111906320066496,
+      "annualized_excess_return": -0.13726028821448677,
+      "annualized_volatility": 0.19808338261527755,
+      "maximum_drawdown": 0.2664825215624239,
+      "tracking_error": 0.0392800396760954,
+      "information_ratio": -3.4944029931318803,
+      "sharpe_ratio": -0.9713569099190436,
+      "turnover": 230.7210615903836,
+      "transaction_cost": 244089.09109011447,
+      "failed_orders": 92
+    },
+    "MAIN_SEED_ENSEMBLE": {
+      "mean_rankic": 0.07821452688321384,
+      "rankic_std": 0.13973208077093696,
+      "rankic_ir": 0.5597463835912603,
+      "positive_rankic_ratio": 0.7283950617283951,
+      "total_return": 0.36715772392510715,
+      "annualized_return": 0.17565490753801583,
+      "annualized_excess_return": -0.1526602948435758,
+      "annualized_volatility": 0.21655715801269068,
+      "maximum_drawdown": 0.25534980521728695,
+      "tracking_error": 0.034245992214762926,
+      "information_ratio": -4.457756513118818,
+      "sharpe_ratio": 0.8560696203695775,
+      "turnover": 445.3381174077175,
+      "transaction_cost": 555303.2883199322,
+      "failed_orders": 478
+    },
+    "MAIN_SEED_ENSEMBLE_conf21": {
+      "mean_rankic": 0.06357397490014047,
+      "rankic_std": 0.1377838314411383,
+      "rankic_ir": 0.4614037382702591,
+      "positive_rankic_ratio": 0.6776859504132231,
+      "total_return": -0.1768597137130511,
+      "annualized_return": -0.18277195939673907,
+      "annualized_excess_return": -0.12891318441056088,
+      "annualized_volatility": 0.19679012124943254,
+      "maximum_drawdown": 0.25947430990126014,
+      "tracking_error": 0.04079242381087541,
+      "information_ratio": -3.1602236976218157,
+      "sharpe_ratio": -0.9269232680196363,
+      "turnover": 230.1825516005768,
+      "transaction_cost": 243576.63782961093,
+      "failed_orders": 94
+    }
+  }
+}

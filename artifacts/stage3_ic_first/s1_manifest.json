@@ -1,0 +1,13 @@
+{
+  "stage": "S0+S1",
+  "identity": {
+    "R_SINGLE": "REF-corrected pipeline, F0+G1 (L0), LightGBM P5 (63/500/\u03bb2=20)",
+    "R_WORK": "REF-corrected daily rank fusion, CatBoost weight 0.5",
+    "R_DEPLOY": "v1 year models + real inputs + corrected daily fusion (bridge)",
+    "MAIN_SINGLE_v1": "L0, LightGBM 63/300/\u03bb2=20 (L3), seed 20261005",
+    "MAIN_SEED_ENSEMBLE_v1": "L3 recipe, mean of per-day ranks over seeds 20261005/20261017/20261029"
+  },
+  "official_identity": "strong_baseline_v1.zip only (sha256 b34712933d952da40ff903804096e0f104ad501b598d643b335a7b31dc0f87c5)",
+  "ir_policy": "IR is computed and recorded but is NOT used in any S0/S1 decision",
+  "registry_rows": 25
+}

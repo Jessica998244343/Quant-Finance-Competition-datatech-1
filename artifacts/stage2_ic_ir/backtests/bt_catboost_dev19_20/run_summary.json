@@ -1,0 +1,21 @@
+{
+  "run": "bt_catboost_dev19_20",
+  "seconds": 44.8,
+  "metrics": {
+    "mean_rankic": 0.0733224922257248,
+    "rankic_std": 0.14441062055569948,
+    "rankic_ir": 0.5077361481002997,
+    "positive_rankic_ratio": 0.7139917695473251,
+    "total_return": 0.3680521227757212,
+    "annualized_return": 0.17605282731055372,
+    "annualized_excess_return": -0.1522623750710379,
+    "annualized_volatility": 0.21474122197469722,
+    "maximum_drawdown": 0.24771970184162304,
+    "tracking_error": 0.0356251805919175,
+    "information_ratio": -4.2740099149303,
+    "sharpe_ratio": 0.8628886620655629,
+    "turnover": 454.03875424930015,
+    "transaction_cost": 567431.7841051769,
+    "failed_orders": 500
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "run": "rev1_bt_refcorrected_catboost_dev19_20",
+  "seconds": 43.3,
+  "metrics": {
+    "mean_rankic": 0.07474462606088944,
+    "rankic_std": 0.14320409063699177,
+    "rankic_ir": 0.5219447693736605,
+    "positive_rankic_ratio": 0.7016460905349794,
+    "total_return": 0.3756179703543143,
+    "annualized_return": 0.17941387793474828,
+    "annualized_excess_return": -0.14890132444684334,
+    "annualized_volatility": 0.21467684150156716,
+    "maximum_drawdown": 0.23950914171096135,
+    "tracking_error": 0.0347014043902197,
+    "information_ratio": -4.2909307869052675,
+    "sharpe_ratio": 0.8764334971068897,
+    "turnover": 454.4193637576989,
+    "transaction_cost": 571366.4506519735,
+    "failed_orders": 412
+  },
+  "scores": "[PosixPath('artifacts/stage2_ic_ir/a_revision1/predictions/ref_corrected_catboost__DEV19.parquet'), PosixPath('artifacts/stage2_ic_ir/a_revision1/predictions/ref_corrected_catboost__DEV20.parquet')]"
+}

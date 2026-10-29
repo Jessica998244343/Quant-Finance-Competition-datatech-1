@@ -1,0 +1,8 @@
+{
+  "clean_copy_passes": true,
+  "mutated_weight_rejected": true,
+  "mutated_preprocessing_rejected": true,
+  "dropped_seed_rejected": true,
+  "mutated_code_rejected": true,
+  "all_rejected": true
+}

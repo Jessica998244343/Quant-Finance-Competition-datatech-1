@@ -1,0 +1,12 @@
+{
+  "rows": 475200,
+  "universe_rows": 576407,
+  "dates": [
+    20160630,
+    20221230
+  ],
+  "n_dates": 1584,
+  "label_coverage": 0.9807091750841751,
+  "build_seconds": 145.1,
+  "data_dir": "Source/Data"
+}

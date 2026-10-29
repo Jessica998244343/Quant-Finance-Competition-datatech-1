@@ -1,0 +1,92 @@
+{
+  "tests": {
+    "1_offline_launch_outside_project": {
+      "extracted_to": "/tmp/final_v1_acceptance/submission",
+      "outside_project": true,
+      "loaded": true,
+      "network_denied": true,
+      "cuda_available": false
+    },
+    "2_scenarios": {
+      "normal": {
+        "rows": 300,
+        "pool_exact": true,
+        "unique": true,
+        "finite": true,
+        "date_ok": true
+      },
+      "constituent_change": {
+        "rows": 300,
+        "pool_exact": true,
+        "unique": true,
+        "finite": true,
+        "date_ok": true
+      },
+      "short_history_2d": {
+        "rows": 300,
+        "pool_exact": true,
+        "unique": true,
+        "finite": true,
+        "date_ok": true
+      },
+      "first_full_window": {
+        "rows": 300,
+        "pool_exact": true,
+        "unique": true,
+        "finite": true,
+        "date_ok": true
+      }
+    },
+    "3_invariants": {
+      "repeat_identical": true,
+      "permutation_max_abs_diff": 0.0,
+      "future_rows_removed_identical": true
+    },
+    "4_feature_parity": {
+      "columns": 61,
+      "max_abs_diff": 0.0,
+      "nan_mask_diff_cells": 0
+    },
+    "5_member_parity": {
+      "catboost_max_abs_diff_vs_safetensors_path": 0.0,
+      "tabm_max_abs_diff_package_vs_imported_weights": 0.0,
+      "all_finite": true
+    },
+    "6_cpu_timing": {
+      "days": 20,
+      "first_day_s": 0.10478835399953823,
+      "p50_s": 0.10148191150028651,
+      "p95_s": 0.10936725529950309,
+      "max_s": 0.11388185099986003,
+      "peak_rss_mib": 1308.5
+    },
+    "7_size_and_hash": {
+      "zip_bytes": 2866670,
+      "uncompressed_bytes": 3984036,
+      "sha256": "dabb26c7c45ca50ae497680e8637602d201d68c688accffb0c82947ef9967999",
+      "file_count": 20,
+      "files": [
+        "submission/LICENSE.tabm",
+        "submission/__init__.py",
+        "submission/alpha_constants.py",
+        "submission/alpha_cv.py",
+        "submission/alpha_dataio.py",
+        "submission/alpha_features.py",
+        "submission/alpha_labels.py",
+        "submission/alpha_models.py",
+        "submission/alpha_panel.py",
+        "submission/alpha_tabm_wrapper.py",
+        "submission/alpha_tabminput.py",
+        "submission/inference.py",
+        "submission/model/catboost_c1.cbm",
+        "submission/model/meta.json",
+        "submission/model/tabm.safetensors",
+        "submission/model/tabm_config.json",
+        "submission/model/tabm_design.json",
+        "submission/requirements.txt",
+        "submission/tabm_official.py",
+        "submission/train.py"
+      ]
+    }
+  }
+}

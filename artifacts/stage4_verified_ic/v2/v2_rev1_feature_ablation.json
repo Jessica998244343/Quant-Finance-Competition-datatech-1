@@ -1,0 +1,160 @@
+{
+  "seed": 20261005,
+  "alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "records": [
+    {
+      "window": "DEV19",
+      "group": "F1",
+      "selected_trees": 600,
+      "actual_tree_count": 600,
+      "feature_list_sha256": "62091d5cd7686ad43c7178e389a397b283f1ec84c51566d00d9093d2f6787229",
+      "standalone_rankic": 0.07696156660681304,
+      "control_rankic": 0.08043777454788151,
+      "delta_vs_control": -0.003476207941068468,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": -0.00012062999858518386,
+        "0.1": -0.0001103564427127196,
+        "0.25": -0.00041030446145291777,
+        "0.5": -0.001697916524044607
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F1_20261005__DEV19/manifest.json"
+    },
+    {
+      "window": "DEV19",
+      "group": "F2",
+      "selected_trees": 1150,
+      "actual_tree_count": 1150,
+      "feature_list_sha256": "1c281e3b33e7000325dac6fb3a3403d5a013fabd1cb6c36615c9666d1b1198e1",
+      "standalone_rankic": 0.07849208831666654,
+      "control_rankic": 0.08043777454788151,
+      "delta_vs_control": -0.0019456862312149659,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": 3.21953601604974e-05,
+        "0.1": 2.312349041318218e-05,
+        "0.25": 1.7026524932878262e-06,
+        "0.5": -0.0007494738792340055
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F2_20261005__DEV19/manifest.json"
+    },
+    {
+      "window": "DEV19",
+      "group": "F3",
+      "selected_trees": 975,
+      "actual_tree_count": 975,
+      "feature_list_sha256": "1a16804cb9f2f09921365138d119e6af10812bb4aaf4f991b6c610abc322d646",
+      "standalone_rankic": 0.07606484751073282,
+      "control_rankic": 0.08043777454788151,
+      "delta_vs_control": -0.004372927037148686,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": -0.00013573946144262994,
+        "0.1": -0.0002342871327240259,
+        "0.25": -0.0006312227127851094,
+        "0.5": -0.0019666746411505925
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F3_20261005__DEV19/manifest.json"
+    },
+    {
+      "window": "DEV20",
+      "group": "F1",
+      "selected_trees": 1200,
+      "actual_tree_count": 1200,
+      "feature_list_sha256": "62091d5cd7686ad43c7178e389a397b283f1ec84c51566d00d9093d2f6787229",
+      "standalone_rankic": 0.08061370661118389,
+      "control_rankic": 0.08077603185033849,
+      "delta_vs_control": -0.00016232523915460373,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": 5.480325549393761e-05,
+        "0.1": -8.520406278331172e-05,
+        "0.25": -0.0003670172979068631,
+        "0.5": -0.0015697663690939223
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F1_20261005__DEV20/manifest.json"
+    },
+    {
+      "window": "DEV20",
+      "group": "F2",
+      "selected_trees": 1400,
+      "actual_tree_count": 1400,
+      "feature_list_sha256": "1c281e3b33e7000325dac6fb3a3403d5a013fabd1cb6c36615c9666d1b1198e1",
+      "standalone_rankic": 0.08378312161242474,
+      "control_rankic": 0.08077603185033849,
+      "delta_vs_control": 0.003007089762086246,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": 0.00016488480611823175,
+        "0.1": 0.0003869124088379111,
+        "0.25": 0.0007307236386587396,
+        "0.5": 6.911057795244702e-05
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F2_20261005__DEV20/manifest.json"
+    },
+    {
+      "window": "DEV20",
+      "group": "F3",
+      "selected_trees": 1100,
+      "actual_tree_count": 1100,
+      "feature_list_sha256": "1a16804cb9f2f09921365138d119e6af10812bb4aaf4f991b6c610abc322d646",
+      "standalone_rankic": 0.07961502396289734,
+      "control_rankic": 0.08077603185033849,
+      "delta_vs_control": -0.001161007887441154,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": 7.7808365403359e-06,
+        "0.1": -7.090378116987595e-05,
+        "0.25": -0.0005238966603888645,
+        "0.5": -0.0019864932295488996
+      },
+      "manifest": "artifacts/stage4_verified_ic/v2/features_rev1/F3_20261005__DEV20/manifest.json"
+    }
+  ],
+  "feature_recipe": {
+    "F1": "f1_ret_1_5 = C[t-1]/C[t-5]-1; f1_ret_5_20 = C[t-5]/C[t-20]-1; endpoints must be finite positive closes, otherwise NaN; no forward fill",
+    "F2": "amt_abn = log1p(amount_t) - median(log1p(amount[t-20:t-1])) with >=16 valid history values else NaN; negative/zero amount -> NaN before log1p; turn_abn identical construction on Factor33 'turn' (turn<=0 -> NaN); interactions = centred cross-sectional rank of ret_1 (resp. ret_5) times centred rank of amt_abn within the same legal pool, no future ranking",
+    "F3": "on = log(O_j/C[j-1]), intra = log(C_j/O_j); f3_on_intra_mean_5/20 = mean over the window of (on-intra) with >=min(16,window) valid days else NaN; f3_path_eff_20 = |sum(r)|/(sum|r|+1e-12), f3_downside_share_20 = sum(min(r,0)^2)/(sum(r^2)+1e-12), r = 20 one-day log returns (21 price points), >=16 valid returns else NaN",
+    "suspension": "suspended or missing days stay missing (no fill); the panel key set is identical to panel_platform (same legal pool)"
+  },
+  "dev_merged": {
+    "F1": {
+      "delta_vs_control": -0.0018226689337479977,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": -3.3093487822911755e-05,
+        "0.1": -9.780607654671115e-05,
+        "0.25": -0.00038870532235293567,
+        "0.5": -0.0016339730175702408
+      }
+    },
+    "F2": {
+      "delta_vs_control": 0.0005256167798162343,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": 9.840385167534226e-05,
+        "0.1": 0.0002046444497092995,
+        "0.25": 0.0003654646640707104,
+        "0.5": -0.00034102208642844504
+      }
+    },
+    "F3": {
+      "delta_vs_control": -0.002770265120559507,
+      "delta_vs_parent": {
+        "0.0": 0.0,
+        "0.05": -6.412666388644781e-05,
+        "0.1": -0.00015276320166107224,
+        "0.25": -0.0005776698776058743,
+        "0.5": -0.0019765635877230536
+      }
+    }
+  },
+  "retained": [],
+  "note": "flat-graph increments; F123 kept as history only"
+}

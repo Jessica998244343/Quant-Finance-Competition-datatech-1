@@ -1,0 +1,96 @@
+{
+  "records": [
+    {
+      "recipe": "N0",
+      "seed": 20261005,
+      "window": "DEV19",
+      "best_epoch": 28,
+      "best_valid_ic": 0.10178137331639776,
+      "epochs_run": 40,
+      "n_input_dims": 141,
+      "mean_rankic": 0.049825883379880864,
+      "n_days": 244,
+      "seconds": 81.7
+    },
+    {
+      "recipe": "N0",
+      "seed": 20261005,
+      "window": "DEV20",
+      "best_epoch": 13,
+      "best_valid_ic": 0.05585984892995344,
+      "epochs_run": 25,
+      "n_input_dims": 141,
+      "mean_rankic": 0.07039416157005651,
+      "n_days": 243,
+      "seconds": 67.3
+    },
+    {
+      "recipe": "N1",
+      "seed": 20261005,
+      "window": "DEV19",
+      "best_epoch": 15,
+      "best_valid_ic": 0.060697575232401255,
+      "epochs_run": 27,
+      "n_input_dims": 122,
+      "mean_rankic": 0.04935084464261862,
+      "n_days": 244,
+      "seconds": 52.0
+    },
+    {
+      "recipe": "N1",
+      "seed": 20261005,
+      "window": "DEV20",
+      "best_epoch": 13,
+      "best_valid_ic": 0.03757527100762877,
+      "epochs_run": 25,
+      "n_input_dims": 122,
+      "mean_rankic": 0.04704371977229114,
+      "n_days": 243,
+      "seconds": 66.8
+    },
+    {
+      "recipe": "N0",
+      "seed": 20261017,
+      "window": "DEV19",
+      "best_epoch": 34,
+      "best_valid_ic": 0.09353880261287628,
+      "epochs_run": 46,
+      "n_input_dims": 141,
+      "mean_rankic": 0.05493686891950482,
+      "n_days": 244
+    },
+    {
+      "recipe": "N0",
+      "seed": 20261017,
+      "window": "DEV20",
+      "best_epoch": 19,
+      "best_valid_ic": 0.06014969857912249,
+      "epochs_run": 31,
+      "n_input_dims": 141,
+      "mean_rankic": 0.06835802716845756,
+      "n_days": 243
+    },
+    {
+      "recipe": "N0",
+      "seed": 20261029,
+      "window": "DEV19",
+      "best_epoch": 9,
+      "best_valid_ic": 0.08692390195366417,
+      "epochs_run": 21,
+      "n_input_dims": 141,
+      "mean_rankic": 0.06151384844281575,
+      "n_days": 244
+    },
+    {
+      "recipe": "N0",
+      "seed": 20261029,
+      "window": "DEV20",
+      "best_epoch": 18,
+      "best_valid_ic": 0.06403625249420698,
+      "epochs_run": 30,
+      "n_input_dims": 141,
+      "mean_rankic": 0.07284817719450803,
+      "n_days": 243
+    }
+  ]
+}

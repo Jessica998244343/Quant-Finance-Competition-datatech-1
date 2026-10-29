@@ -1,0 +1,68 @@
+{
+  "deploy": {
+    "train_label_cutoff": 20211231,
+    "predict_window_evaluated": false,
+    "max_outer_label_end": 20211231,
+    "seconds": 234.7,
+    "catboost": [
+      {
+        "seed": 20261005,
+        "selected_trees": 900,
+        "best_checkpoint": 950,
+        "best_inner_ic": 0.05853054487274255,
+        "actual_tree_count": 900,
+        "curve_file": "catboost_c1_seed20261005__curve.parquet",
+        "outer_metrics_computed": false
+      },
+      {
+        "seed": 20261017,
+        "selected_trees": 775,
+        "best_checkpoint": 1025,
+        "best_inner_ic": 0.06022618478123125,
+        "actual_tree_count": 775,
+        "curve_file": "catboost_c1_seed20261017__curve.parquet",
+        "outer_metrics_computed": false
+      },
+      {
+        "seed": 20261029,
+        "selected_trees": 500,
+        "best_checkpoint": 875,
+        "best_inner_ic": 0.05976199677112596,
+        "actual_tree_count": 500,
+        "curve_file": "catboost_c1_seed20261029__curve.parquet",
+        "outer_metrics_computed": false
+      }
+    ],
+    "tabm": [
+      {
+        "seed": 20261005,
+        "best_epoch": 2,
+        "best_inner_ic": 0.06952526119042801,
+        "inner_epochs_run": 14,
+        "outer_metrics_computed": false,
+        "source": "rebuilt from the saved inner curve (not a new training run)"
+      },
+      {
+        "seed": 20261017,
+        "best_epoch": 4,
+        "best_inner_ic": 0.06824406550716991,
+        "inner_epochs_run": 16,
+        "outer_metrics_computed": false,
+        "source": "rebuilt from the saved inner curve (not a new training run)"
+      },
+      {
+        "seed": 20261029,
+        "best_epoch": 23,
+        "best_inner_ic": 0.0630731585086472,
+        "inner_epochs_run": 35,
+        "outer_metrics_computed": false,
+        "source": "rebuilt from the saved inner curve (not a new training run)"
+      }
+    ],
+    "artifacts": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff",
+    "rebuilt_metadata": true,
+    "rebuilt_note": "CatBoost curves re-run with the same frozen protocol; TabM records rebuilt from curves saved during the original run.",
+    "note": "trained on label_end<=20211231; 2022 outer metrics NOT computed"
+  },
+  "half_year": {}
+}

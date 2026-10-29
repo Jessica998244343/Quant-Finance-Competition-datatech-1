@@ -1,0 +1,26 @@
+{
+  "tier": "3 (re-affirmed on corrected evidence)",
+  "dated": "2026-10-05",
+  "criteria": {
+    "systematic_row_difference": true,
+    "row_drop_fraction_per_day": "9.2%-14.5%",
+    "abs_delta_ic_2019": -0.0003,
+    "abs_delta_ic_2020": -0.00032,
+    "delta_ic_below_0.001": true,
+    "same_sign_2019_2020": true,
+    "delta_ir_dev": 0.1961,
+    "delta_ir_below_0.05": false,
+    "candidate_order_unchanged": false,
+    "max_abs_target_weight_delta_common_keys": 0.02,
+    "target_weight_delta_below_1e-6": false,
+    "rejection_change_relative": 0.0171,
+    "rejection_change_le_2pct": true
+  },
+  "why_order_changed": "under real inputs in 2021, CatBoost has the best IR (-2.788) and IC (0.0632); under legacy inputs pure P5 led on IR. The earlier 'fusion always lowers IR' and 'CatBoost is a negative contributor' conclusions do not survive the corrected blend",
+  "actions": [
+    "platform-semantics cache used for every new training",
+    "REF-corrected trained (semantics + fold-local weights + CatBoost round fix)",
+    "correction contribution and model contribution reported separately"
+  ],
+  "gate_for_B": "main reference = REF-corrected; bridge to the correct real-input v1 recipe is mandatory; no candidate may pass by beating a degraded reference"
+}

@@ -1,0 +1,13 @@
+{
+  "graph": "flat: u = sum_g w_g q_g ; output = rank_t(u)",
+  "family_stage_matches_reference": true,
+  "flat_fusion_matches_manual": true,
+  "alpha_weight_vector": {
+    "c1": 0.45,
+    "tabm": 0.45,
+    "new": 0.1
+  },
+  "nested_rank_differs_from_flat": true,
+  "nested_rank_is_self_consistent_but_a_different_algorithm": true,
+  "passed": true
+}

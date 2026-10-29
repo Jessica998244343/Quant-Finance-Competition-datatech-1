@@ -1,0 +1,260 @@
+{
+  "rebuild_source": "official raw input only; existing cache used only for this post-rebuild audit",
+  "rows": 475200,
+  "key_equal": true,
+  "columns": {
+    "turn": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "change_ratio": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "daily_return": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "momentum_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "reversal_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "volatility_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "sma_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ema_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "macd_diff_12_26_9": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "macd_dea_12_26_9": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "macd_hist_12_26_9": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "rsi_12": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "kdj_k_9_3_3": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "kdj_d_9_3_3": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "bias_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "cci_14": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "atr_14": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "total_market_cap": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "float_market_cap": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "pe_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "pb": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ps_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "roe_avg_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "roa_avg_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "gross_profit_rate_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "net_profit_rate_ttm": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "debt_to_asset_lf": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "current_ratio_lf": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "beta_000300SH_22": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "list_days": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "is_suspend": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "is_new": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_size": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_beta": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_momentum": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_residvol": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_nonlinear_size": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_bp": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_liquidity": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_earnings": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_growth": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "barra_leverage": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_1": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_2": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_10": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_60": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "ret_119": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "rv_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "rv_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "rv_60": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "relma_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "relma_20": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "relma_60": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "hl_range": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "close_pos": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "overnight": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "intraday": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "overnight_mean_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "intraday_mean_5": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "future_return": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    },
+    "label_end_date": {
+      "equal_including_nan": true,
+      "max_abs_diff": 0.0
+    }
+  },
+  "all_equal": true
+}

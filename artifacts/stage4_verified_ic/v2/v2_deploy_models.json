@@ -1,0 +1,20 @@
+{
+  "deploy": {},
+  "half_year": {
+    "2019H2": {
+      "train_label_cutoff": 20190628,
+      "anchor_rankic": 0.06831303798699699,
+      "seconds": 407.3
+    },
+    "2020H2": {
+      "train_label_cutoff": 20200630,
+      "anchor_rankic": 0.09637928304385021,
+      "seconds": 751.6
+    },
+    "2021H2": {
+      "train_label_cutoff": 20210630,
+      "anchor_rankic": 0.052842308083900065,
+      "seconds": 1133.5
+    }
+  }
+}

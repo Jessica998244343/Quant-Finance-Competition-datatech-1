@@ -1,0 +1,8 @@
+{
+  "clean_copy_passes": true,
+  "modified_file_rejected": true,
+  "tampered_config_rejected": true,
+  "deleted_required_file_rejected": true,
+  "missing_marked_entry_rejected": true,
+  "all_rejected": true
+}

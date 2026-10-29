@@ -1,0 +1,21 @@
+{
+  "run": "bt_realinput_conf21",
+  "seconds": 23.1,
+  "metrics": {
+    "mean_rankic": 0.0627125470159182,
+    "rankic_std": 0.13547021251252697,
+    "rankic_ir": 0.4629249917956625,
+    "positive_rankic_ratio": 0.6528925619834711,
+    "total_return": -0.1956085537915716,
+    "annualized_return": -0.20206734645638758,
+    "annualized_excess_return": -0.14820857147020938,
+    "annualized_volatility": 0.19890122971199325,
+    "maximum_drawdown": 0.27976996688949113,
+    "tracking_error": 0.04335773164157195,
+    "information_ratio": -3.418273185862544,
+    "sharpe_ratio": -1.0349939219031623,
+    "turnover": 231.35192762850647,
+    "transaction_cost": 243619.60885773317,
+    "failed_orders": 100
+  }
+}

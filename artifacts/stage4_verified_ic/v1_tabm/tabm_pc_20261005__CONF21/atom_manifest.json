@@ -1,0 +1,35 @@
+{
+  "recipe_id": "TABM_CORRECTED_CONF21_20261005",
+  "window": "CONF21",
+  "seed": 20261005,
+  "outer_protocol": {
+    "reinit_model": true,
+    "reinit_optimizer": true,
+    "reinit_rng": true,
+    "refit_preprocessing_on_outer_fit_set": true,
+    "selected_epochs_from_inner_only": 12,
+    "inner_fit_mask": "label_end_date < es_start and label_end_date <= train_end",
+    "outer_fit_mask": "label_end_date <= train_end"
+  },
+  "train_cutoff": 20201231,
+  "es_start": 20200629,
+  "max_inner_label_end": 20200624,
+  "max_early_label_end": 20201231,
+  "max_outer_label_end": 20201231,
+  "n_internal": 282360,
+  "n_early": 37731,
+  "best_epoch": 12,
+  "best_inner_ic": 0.09963247134458499,
+  "final_inner_ic": 0.09841296140150797,
+  "inner_epochs_run": 24,
+  "train_threads": 2,
+  "backend": "torch CPU 2.14.1",
+  "seconds": 367.9,
+  "outer_mean_rankic": 0.05227001834272219,
+  "outer_n_days": 243,
+  "hashes": {
+    "model": "2a7ea987c3720499b2700711e82c2a4660fc6ebe41e9501ca1aa07031628b9a4",
+    "design": "d00bb6c8feb5f5a1178349dacfdee1f83f3b6b60bad80cb19bf9884886eb8028",
+    "trainer_source": "c0e188106369986fa55effd1aef94718c5ec58daad5c043c41a78b2b69b921f1"
+  }
+}

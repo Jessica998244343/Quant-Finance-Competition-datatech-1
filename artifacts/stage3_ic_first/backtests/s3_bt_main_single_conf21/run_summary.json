@@ -1,0 +1,20 @@
+{
+  "run": "s3_bt_main_single_conf21",
+  "metrics": {
+    "mean_rankic": 0.06250739170088027,
+    "rankic_std": 0.13296586134221397,
+    "rankic_ir": 0.4701010550370152,
+    "positive_rankic_ratio": 0.6818181818181818,
+    "total_return": -0.18496842112907852,
+    "annualized_return": -0.19111906320066496,
+    "annualized_excess_return": -0.13726028821448677,
+    "annualized_volatility": 0.19808338261527755,
+    "maximum_drawdown": 0.2664825215624239,
+    "tracking_error": 0.0392800396760954,
+    "information_ratio": -3.4944029931318803,
+    "sharpe_ratio": -0.9713569099190436,
+    "turnover": 230.7210615903836,
+    "transaction_cost": 244089.09109011447,
+    "failed_orders": 92
+  }
+}

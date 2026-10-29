@@ -1,0 +1,21 @@
+{
+  "run": "b1_bt_cat0.125_dev19_20",
+  "seconds": 44.4,
+  "metrics": {
+    "mean_rankic": 0.07643858096153405,
+    "rankic_std": 0.13741548086166105,
+    "rankic_ir": 0.5562588762359775,
+    "positive_rankic_ratio": 0.7263374485596708,
+    "total_return": 0.3929057793848352,
+    "annualized_return": 0.18706049288094873,
+    "annualized_excess_return": -0.1412547095006429,
+    "annualized_volatility": 0.2165895029640641,
+    "maximum_drawdown": 0.2551726015050604,
+    "tracking_error": 0.03314826645551788,
+    "information_ratio": -4.261300049889322,
+    "sharpe_ratio": 0.9004783265928278,
+    "turnover": 448.17222768990626,
+    "transaction_cost": 565465.8546396529,
+    "failed_orders": 485
+  }
+}

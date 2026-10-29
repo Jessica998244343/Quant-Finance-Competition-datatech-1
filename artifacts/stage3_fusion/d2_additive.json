@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "recipe": "A0_DEV19",
+      "window": "DEV19",
+      "lambda": 0.01,
+      "inner_ic_at_lambda": 0.05033237046411996,
+      "n_features": 122,
+      "refit_seconds": 0.1,
+      "mean_rankic": 0.04296170605189025,
+      "n_days": 244
+    },
+    {
+      "recipe": "A0_DEV20",
+      "window": "DEV20",
+      "lambda": 0.01,
+      "inner_ic_at_lambda": 0.02477890282262081,
+      "n_features": 122,
+      "refit_seconds": 0.2,
+      "mean_rankic": 0.036312572813927954,
+      "n_days": 243
+    },
+    {
+      "recipe": "A1_DEV19",
+      "window": "DEV19",
+      "lambda": 0.01,
+      "inner_ic_at_lambda": 0.050678159423094615,
+      "n_features": 417,
+      "refit_seconds": 0.8,
+      "mean_rankic": 0.04373813877687081,
+      "n_days": 244
+    },
+    {
+      "recipe": "A1_DEV20",
+      "window": "DEV20",
+      "lambda": 0.01,
+      "inner_ic_at_lambda": 0.028030017682512138,
+      "n_features": 417,
+      "refit_seconds": 0.9,
+      "mean_rankic": 0.042001625014899326,
+      "n_days": 243
+    }
+  ]
+}

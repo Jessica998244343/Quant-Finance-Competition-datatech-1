@@ -1,0 +1,72 @@
+{
+  "real_20190603": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 1.4901161193847656e-08,
+    "p99_abs_err": 1.1175870895385742e-08,
+    "max_rel_err": 1.0485045095265377e-05,
+    "member_max_abs_err": 5.960464477539063e-08,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "real_20190604": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 1.4901161193847656e-08,
+    "p99_abs_err": 7.48783346438131e-09,
+    "max_rel_err": 0.00018581337644718587,
+    "member_max_abs_err": 5.960464477539063e-08,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "real_20191202": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 1.4901161193847656e-08,
+    "p99_abs_err": 7.469207474741779e-09,
+    "max_rel_err": 1.3692213542526588e-05,
+    "member_max_abs_err": 4.470348358154297e-08,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "extreme_clip": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 1.1920928955078125e-07,
+    "p99_abs_err": 7.465482099178189e-08,
+    "max_rel_err": 1.6557278286200017e-05,
+    "member_max_abs_err": 3.5762786865234375e-07,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "constant_cols": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 0.0,
+    "p99_abs_err": 0.0,
+    "max_rel_err": 0.0,
+    "member_max_abs_err": 1.1175870895385742e-08,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "missing_zeroed": {
+    "rows": 300,
+    "members": 8,
+    "max_abs_err": 1.4901161193847656e-08,
+    "p99_abs_err": 7.450580596923828e-09,
+    "max_rel_err": 5.861046156496741e-05,
+    "member_max_abs_err": 2.9802322387695312e-08,
+    "rank_identical": true,
+    "all_finite": true
+  },
+  "small_pool_37": {
+    "rows": 37,
+    "members": 8,
+    "max_abs_err": 7.450580596923828e-09,
+    "p99_abs_err": 7.450580596923828e-09,
+    "max_rel_err": 1.8292822687726584e-06,
+    "member_max_abs_err": 2.60770320892334e-08,
+    "rank_identical": true,
+    "all_finite": true
+  }
+}

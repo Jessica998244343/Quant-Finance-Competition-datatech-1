@@ -1,0 +1,42 @@
+{
+  "revision": "a_revision1",
+  "frozen_at": "2026-10-05",
+  "invalidated_products": {
+    "reason": "A-stage whole-array ranking bug in s2_models.centered_rank; the saved blend score column and everything derived from it are void",
+    "files": [
+      "artifacts/stage2_ic_ir/predictions/origmodel_realinput__*.parquet",
+      "artifacts/stage2_ic_ir/predictions/aligned_retrain__*.parquet",
+      "artifacts/stage2_ic_ir/backtests/bt_realinput_dev19_20",
+      "artifacts/stage2_ic_ir/backtests/bt_realinput_conf21",
+      "artifacts/stage2_ic_ir/backtests/bt_aligned_dev19_20",
+      "artifacts/stage2_ic_ir/backtests/bt_aligned_conf21"
+    ],
+    "still_valid": [
+      "artifacts/stage2_ic_ir/predictions/*_members__*.parquet (member raw scores)",
+      "artifacts/stage2_ic_ir/diagnostics/* (re-superseded by rev1 diagnostics)"
+    ]
+  },
+  "valid_run_dirs": {
+    "v1_bt_b0_dev19_20": "artifacts/beginning/backtests/bt_B0_dev19_20",
+    "v1_bt_ref_legacy_dev19_20": "artifacts/beginning/backtests/bt_SSTAR_dev19_20",
+    "v1_bt_ref_legacy_conf21": "artifacts/beginning/backtests/bt_SSTAR_conf21",
+    "v1_bt_p5_legacy_dev19_20": "artifacts/beginning/backtests/bt_P5_dev19_20",
+    "v1_bt_p5_legacy_conf21": "artifacts/beginning/backtests/bt_P5_conf21",
+    "v1_bt_ref_zerocost_dev19_20": "artifacts/beginning/backtests/bt_SSTAR_dev19_20_zerocost",
+    "a_bt_p5_realinput_dev19_20": "artifacts/stage2_ic_ir/backtests/bt_p5_realinput_dev19_20",
+    "a_bt_catboost_realinput_dev19_20": "artifacts/stage2_ic_ir/backtests/bt_catboost_realinput_dev19_20",
+    "a_bt_catboost_legacy_dev19_20": "artifacts/stage2_ic_ir/backtests/bt_catboost_dev19_20",
+    "a_bt_catboost_legacy_conf21": "artifacts/stage2_ic_ir/backtests/bt_catboost_conf21",
+    "rev1_bt_realinput_dev19_20": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_realinput_dev19_20",
+    "rev1_bt_realinput_conf21": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_realinput_conf21",
+    "rev1_bt_aligned_dev19_20": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_aligned_dev19_20",
+    "rev1_bt_aligned_conf21": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_aligned_conf21",
+    "rev1_bt_p5_realinput_conf21": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_p5_realinput_conf21",
+    "rev1_bt_catboost_realinput_conf21": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_catboost_realinput_conf21",
+    "rev1_bt_refcorrected_dev19_20": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_refcorrected_dev19_20",
+    "rev1_bt_refcorrected_conf21": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_refcorrected_conf21",
+    "rev1_bt_refcorrected_p5_dev19_20": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_refcorrected_p5_dev19_20",
+    "rev1_bt_refcorrected_catboost_dev19_20": "artifacts/stage2_ic_ir/a_revision1/backtests/rev1_bt_refcorrected_catboost_dev19_20"
+  },
+  "note": "all runs are separate directories with distinct run IDs; the rev1 script refuses to overwrite an existing run directory"
+}

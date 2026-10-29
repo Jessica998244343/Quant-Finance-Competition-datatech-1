@@ -1,0 +1,64 @@
+{
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 0.0001
+  },
+  "windows": {
+    "DEV19": {
+      "expected_days": [
+        20190102,
+        20190614
+      ],
+      "executed": [
+        20190102,
+        20190614
+      ],
+      "max_abs_diff": 0.0,
+      "pool_ok": true,
+      "finite_ok": true,
+      "rank_ok": true,
+      "fusion_max_abs_diff": 0.0,
+      "fusion_rank_ok": true,
+      "days_match": true,
+      "passed": true
+    },
+    "DEV20": {
+      "expected_days": [
+        20200102,
+        20200612
+      ],
+      "executed": [
+        20200102,
+        20200612
+      ],
+      "max_abs_diff": 0.0,
+      "pool_ok": true,
+      "finite_ok": true,
+      "rank_ok": true,
+      "fusion_max_abs_diff": 0.0,
+      "fusion_rank_ok": true,
+      "days_match": true,
+      "passed": true
+    },
+    "CONF21": {
+      "expected_days": [
+        20210104,
+        20210611
+      ],
+      "executed": [
+        20210104,
+        20210611
+      ],
+      "max_abs_diff": 0.0,
+      "pool_ok": true,
+      "finite_ok": true,
+      "rank_ok": true,
+      "fusion_max_abs_diff": 0.0,
+      "fusion_rank_ok": true,
+      "days_match": true,
+      "passed": true
+    }
+  },
+  "negative_cases": {},
+  "passed": true
+}

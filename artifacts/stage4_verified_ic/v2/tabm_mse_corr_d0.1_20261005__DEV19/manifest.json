@@ -1,0 +1,14 @@
+{
+  "tag": "tabm_mse_corr_d0.1_20261005__DEV19",
+  "window": "DEV19",
+  "seed": 20261005,
+  "dropout": 0.1,
+  "loss_mode": "mse_corr",
+  "best_epoch": 15,
+  "best_inner_ic": 0.09983882415511497,
+  "inner_epochs_run": 27,
+  "train_cutoff": 20181231,
+  "train_threads": 2,
+  "seconds": 200.7,
+  "protocol": "inner select -> fresh model/optimiser/RNG -> outer refit preprocessing"
+}

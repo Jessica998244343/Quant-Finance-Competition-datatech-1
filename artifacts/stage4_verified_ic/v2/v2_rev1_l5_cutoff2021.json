@@ -1,0 +1,31 @@
+{
+  "deploy": {},
+  "half_year": {},
+  "l5_cutoff2021": {
+    "train_label_cutoff": 20211231,
+    "rounds": 311,
+    "max_outer_label_end": 20211231,
+    "outer_metrics_computed": false,
+    "records": [
+      {
+        "seed": 20261005,
+        "num_rounds": 311,
+        "file": "l5_seed20261005.txt",
+        "sha256": "38f5c84532142065ce2294bef12628e1e723212c6f0b942535a9119e1d81e18f"
+      },
+      {
+        "seed": 20261017,
+        "num_rounds": 311,
+        "file": "l5_seed20261017.txt",
+        "sha256": "2d38320e6ed3903677ea569c6b5dc3c6239c5924bf26ad098db750f39bc896ad"
+      },
+      {
+        "seed": 20261029,
+        "num_rounds": 311,
+        "file": "l5_seed20261029.txt",
+        "sha256": "0e5f6f7a8e32e79898a67e851ff361c8b8cc59e9f75f3a46bb27d5b7b317aefb"
+      }
+    ],
+    "note": "TREE structure control (0.5 x L5 + 0.5 x C1); L5 fixed at 311 rounds"
+  }
+}

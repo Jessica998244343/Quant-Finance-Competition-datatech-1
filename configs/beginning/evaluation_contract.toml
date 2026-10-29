@@ -1,0 +1,39 @@
+[backtest]
+# The platform resolves paths relative to this configuration file.
+data_dir = "../../artifacts/beginning/data_zero_st"
+start_date = "2019-01-02"
+end_date = "2019-12-31"
+initial_cash = 1000000.0
+rebalance_interval = 1
+holding_period = 1
+lookback = 120
+price_mode = "adjusted_return"
+label_price_basis = "adjusted_open"
+trading_days_per_year = 252
+risk_free_rate = 0.0
+read_batch_months = 3
+prefetch = true
+async_inference = false
+random_seed = 20261005
+friendly_output = false
+output_dir = "../../artifacts/beginning/backtests/run_contract_smoke"
+
+[optimizer]
+method = "barra"
+long_only = true
+fully_invested = true
+single_name_weight_limit = 0.1
+active_weight_limit = 0.01
+industry_exposure_limit = 0.02
+barra_style_exposure_limit = 0.02
+turnover_limit = 1.0
+
+[costs]
+commission_rate = 0.0003
+minimum_commission = 5.0
+slippage = 0.0005
+
+[[costs.fee_schedule]]
+effective_date = "2016-01-01"
+stamp_tax_rate = 0.001
+transfer_fee_rate = 2e-05

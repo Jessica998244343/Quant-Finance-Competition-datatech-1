@@ -1,0 +1,46 @@
+{
+  "export_arrays": {
+    "tabm_seed20261005.npz": true,
+    "tabm_seed20261017.npz": true,
+    "tabm_seed20261029.npz": true,
+    "tcn_seed20261005.npz": true,
+    "tcn_seed20261017.npz": true,
+    "tcn_seed20261029.npz": true
+  },
+  "catboost": {
+    "catboost_c1_seed20261005.cbm": {
+      "trees": 700,
+      "feature_count": 61,
+      "features_match": true,
+      "task_type": "CPU"
+    },
+    "catboost_c1_seed20261017.cbm": {
+      "trees": 1250,
+      "feature_count": 61,
+      "features_match": true,
+      "task_type": "CPU"
+    },
+    "catboost_c1_seed20261029.cbm": {
+      "trees": 1875,
+      "feature_count": 61,
+      "features_match": true,
+      "task_type": "CPU"
+    }
+  },
+  "split": {
+    "max_label_end": 20221230,
+    "min_signal": 20160630,
+    "max_signal": 20221228,
+    "early_start": 20220628,
+    "train_valid_disjoint": true,
+    "internal_label_before_validation": true,
+    "outer_rows": 466033
+  },
+  "design_recomputed_from_cached_training_panel": {
+    "tabm_design.json": true,
+    "tcn_design.json": true
+  },
+  "train_import_success": true,
+  "torch": "2.14.1+cpu",
+  "not_full_training_reproduction": true
+}

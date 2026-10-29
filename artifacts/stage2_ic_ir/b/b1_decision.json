@@ -1,0 +1,58 @@
+{
+  "dated": "2026-10-05",
+  "decided_before": "B2 training",
+  "b1_reference_for_sweep": "REF-corrected members (platform semantics + fold-local weights + CatBoost round fix), CatBoost weight 0.25 = incumbent recipe",
+  "b1_findings": {
+    "dev_cat0": {
+      "ic": 0.075375,
+      "ir": -4.490958
+    },
+    "dev_cat0.125": {
+      "ic": 0.076439,
+      "ir": -4.2613
+    },
+    "dev_cat0.25": {
+      "ic": 0.077338,
+      "ir": -4.116888
+    },
+    "dev_cat0.5": {
+      "ic": 0.077934,
+      "ir": -4.046677
+    },
+    "dev_cat1": {
+      "ic": 0.074745,
+      "ir": -4.290931
+    },
+    "conf21_cat0": {
+      "ic": 0.059529,
+      "ir": -3.34579
+    },
+    "conf21_cat0.125": {
+      "ic": 0.060111,
+      "ir": -2.945491
+    },
+    "conf21_cat0.25": {
+      "ic": 0.060499,
+      "ir": -3.123025
+    },
+    "conf21_cat0.5": {
+      "ic": 0.061199,
+      "ir": -3.015131
+    }
+  },
+  "promotion_check_vs_incumbent_0.25": {
+    "dev_best_delta_ir": 0.0702,
+    "dev_best_delta_excess_pp": 0.16,
+    "conf21_best_delta_ir": 0.1775,
+    "conf21_best_delta_excess_pp": 0.55,
+    "thresholds": {
+      "delta_ir_at_least": 0.3,
+      "excess_at_least_pp": 2.0
+    },
+    "passes": false,
+    "note": "fusion weight alone does not clear the promotion bar; all weights keep IR about -2.9..-4.5"
+  },
+  "working_reference_selected": "REF-corrected, CatBoost weight 0.5",
+  "why_0.5": "best IC in both dev windows, best dev IR (-4.047), and second-best 2021 IR (-3.015, 0.07 behind 0.125); selection registered before B2",
+  "caveat": "0.5 does NOT pass the promotion bar by itself; it is only the working reference for B2/B3 comparisons"
+}

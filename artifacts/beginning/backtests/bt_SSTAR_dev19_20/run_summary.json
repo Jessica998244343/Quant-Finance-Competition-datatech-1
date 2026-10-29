@@ -1,0 +1,38 @@
+{
+  "run": "bt_SSTAR_dev19_20",
+  "seconds": 43.0,
+  "metrics": {
+    "mean_rankic": 0.0788382671284258,
+    "rankic_std": 0.13823259000212093,
+    "rankic_ir": 0.5703305358542162,
+    "positive_rankic_ratio": 0.7222222222222222,
+    "total_return": 0.4406442205106589,
+    "annualized_return": 0.2079411828457176,
+    "annualized_excess_return": -0.12037401953587401,
+    "annualized_volatility": 0.21630473037350342,
+    "maximum_drawdown": 0.24638082368561676,
+    "tracking_error": 0.0346638641176186,
+    "information_ratio": -3.4726082218482826,
+    "sharpe_ratio": 0.9821247923265608,
+    "turnover": 448.6921197339876,
+    "transaction_cost": 572896.8633607089,
+    "failed_orders": 467
+  },
+  "rankic": {
+    "mean_rankic": 0.0788382671284258,
+    "rankic_std": 0.13823259000212093,
+    "rankic_ir": 0.5703305358542162,
+    "positive_ratio": 0.7222222222222222,
+    "n_days": 486,
+    "n_pairs": 145415
+  },
+  "config": {
+    "windows": [
+      "DEV19",
+      "DEV20"
+    ],
+    "start": "2019-01-02",
+    "end": "2020-12-31",
+    "view": "artifacts/beginning/data_zero_st"
+  }
+}

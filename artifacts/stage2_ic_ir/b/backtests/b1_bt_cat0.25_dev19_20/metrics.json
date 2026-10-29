@@ -1,0 +1,17 @@
+{
+  "mean_rankic": 0.07733840652079527,
+  "rankic_std": 0.1393942443850308,
+  "rankic_ir": 0.5548177893713697,
+  "positive_rankic_ratio": 0.7263374485596708,
+  "total_return": 0.40190379054093106,
+  "annualized_return": 0.19102230572366086,
+  "annualized_excess_return": -0.13729289665793076,
+  "annualized_volatility": 0.216602582163592,
+  "maximum_drawdown": 0.2497203759573417,
+  "tracking_error": 0.03334870839486688,
+  "information_ratio": -4.116887977558473,
+  "sharpe_ratio": 0.9158530394130213,
+  "turnover": 447.78556983454865,
+  "transaction_cost": 567781.9505275459,
+  "failed_orders": 520
+}

@@ -1,0 +1,20 @@
+{
+  "run": "d3_bt_alt_v1_conf21",
+  "metrics": {
+    "mean_rankic": 0.0644946926488048,
+    "rankic_std": 0.13910404922392178,
+    "rankic_ir": 0.463643531648636,
+    "positive_rankic_ratio": 0.6776859504132231,
+    "total_return": -0.1889496525254819,
+    "annualized_return": -0.1952162192245207,
+    "annualized_excess_return": -0.1413574442383425,
+    "annualized_volatility": 0.1969541490330864,
+    "maximum_drawdown": 0.2717814201093287,
+    "tracking_error": 0.041907286264623235,
+    "information_ratio": -3.3730994497172166,
+    "sharpe_ratio": -1.0038572698326182,
+    "turnover": 230.5886833246694,
+    "transaction_cost": 243569.58964402726,
+    "failed_orders": 92
+  }
+}

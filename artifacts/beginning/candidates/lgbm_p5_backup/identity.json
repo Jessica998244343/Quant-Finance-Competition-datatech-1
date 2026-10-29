@@ -1,0 +1,43 @@
+{
+  "name": "lgbm_p5_backup",
+  "status": "备选（S-backup）",
+  "priority": 2,
+  "package": null,
+  "results_by_window": [
+    {
+      "version": "P5_s20261005",
+      "window": "DEV19",
+      "mean_rankic": 0.0772376863352168,
+      "rankic_std": 0.1353639151346196,
+      "rankic_ir": 0.5705928811116595,
+      "positive_ratio": 0.7049180327868853,
+      "n_days": 244
+    },
+    {
+      "version": "P5_s20261005",
+      "window": "DEV20",
+      "mean_rankic": 0.0769552816811392,
+      "rankic_std": 0.1337303359688405,
+      "rankic_ir": 0.5754511952999953,
+      "positive_ratio": 0.7448559670781894,
+      "n_days": 243
+    },
+    {
+      "version": "P5_s20261005",
+      "window": "CONF21",
+      "mean_rankic": 0.0595534500804467,
+      "rankic_std": 0.1361383953844577,
+      "rankic_ir": 0.437447862612649,
+      "positive_ratio": 0.6460905349794238,
+      "n_days": 243
+    }
+  ],
+  "confirmation": "CONF21 已在配方冻结后一次性读取，未用于调参",
+  "note": "单模型、CPU 成本最低；CONF21 与主候选同口径，IC 略低但 IR 略好",
+  "recipe": {
+    "model": "LightGBM P5",
+    "features": "F0+G1 (61)",
+    "rounds": 418,
+    "seed": 20261005
+  }
+}

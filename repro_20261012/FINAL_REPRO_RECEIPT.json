@@ -1,0 +1,200 @@
+{
+  "completed_at": "2026-10-12T15:39:16.980515+08:00",
+  "binding": "c8d344757c9308f5350ac8bd6f36275db00167647aa9a8bcf77c8c6ea04e2ced",
+  "original_zip_sha256": "8cb919e477504fa53813ed7218fda122107c4b86de4ae9beb29509958ae66153",
+  "scope": "Full raw-data rebuild and all nine members, via semantically equivalent epoch-resumable audit runner; not one uninterrupted original CLI process.",
+  "actual_interruption": "TabM seed20261017 restored at inner epoch8; after-restoration curve verified exact.",
+  "strict_gate_passed": true,
+  "members": [
+    {
+      "family": "c1",
+      "seed": 20261005,
+      "file": "catboost_c1_seed20261005.cbm",
+      "selected_rounds": 700,
+      "seconds_final_attempt": 162.819411277771,
+      "reference_sha256": "dd64a6b8f2c55849ed4bb91a3cb13c97e47b920cfc1a4835800e1dd2364c6b12",
+      "repro_sha256": "a15b5ef4fe212617e603f6a6ca6457477c1f67dd7f870d25e620d3f531a583a0",
+      "file_bytes_identical": false,
+      "tree_structure_exact": true,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 120,
+      "curve_reference_sha256": "947347b1c8de6f04f819854fa4902d217f38abde49ba2107a1b6c94b9f6350b0",
+      "curve_repro_sha256": "947347b1c8de6f04f819854fa4902d217f38abde49ba2107a1b6c94b9f6350b0"
+    },
+    {
+      "family": "tabm",
+      "seed": 20261005,
+      "file": "tabm_seed20261005.npz",
+      "selected_rounds": 20,
+      "seconds_final_attempt": 1447.751633644104,
+      "reference_sha256": "d6c30309b4634a8b0c5bbbd21a7c6702c9160a84eb4fb66ea3da0ab129bfef09",
+      "repro_sha256": "d6c30309b4634a8b0c5bbbd21a7c6702c9160a84eb4fb66ea3da0ab129bfef09",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 32,
+      "curve_reference_sha256": "4b6bfb87c2656a12e1bf489bf5680077c4fb38c8f6863f3a90d2a4380baab6e4",
+      "curve_repro_sha256": "4b6bfb87c2656a12e1bf489bf5680077c4fb38c8f6863f3a90d2a4380baab6e4"
+    },
+    {
+      "family": "tcn",
+      "seed": 20261005,
+      "file": "tcn_seed20261005.npz",
+      "selected_rounds": 13,
+      "seconds_final_attempt": 1720.9452867507935,
+      "reference_sha256": "de8ce00cd0fc305508e530fcdec3ac283451a6b591fd21fd88f9e515c80289ff",
+      "repro_sha256": "de8ce00cd0fc305508e530fcdec3ac283451a6b591fd21fd88f9e515c80289ff",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 23,
+      "curve_reference_sha256": "f4b6e00201f292cd0add6af4e8374099895966cda3fed08e3f279132d87ee572",
+      "curve_repro_sha256": "f4b6e00201f292cd0add6af4e8374099895966cda3fed08e3f279132d87ee572"
+    },
+    {
+      "family": "c1",
+      "seed": 20261017,
+      "file": "catboost_c1_seed20261017.cbm",
+      "selected_rounds": 1250,
+      "seconds_final_attempt": 182.42106771469116,
+      "reference_sha256": "c22d9f430b8d0a6708346276480b152c209e56a967096394cec83b3ce9416e7a",
+      "repro_sha256": "f59b94c802e0b4107df09c7e93e968ee4ae9f8f0b6303833a106541a2f80fa98",
+      "file_bytes_identical": false,
+      "tree_structure_exact": true,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 120,
+      "curve_reference_sha256": "b2910b10796da0c11ce74415a6bba50757acc68cca9d5b1f57d652f243698e72",
+      "curve_repro_sha256": "b2910b10796da0c11ce74415a6bba50757acc68cca9d5b1f57d652f243698e72"
+    },
+    {
+      "family": "tabm",
+      "seed": 20261017,
+      "file": "tabm_seed20261017.npz",
+      "selected_rounds": 17,
+      "seconds_final_attempt": 1049.1932728290558,
+      "reference_sha256": "d80445d389b8490f2d6b45eeea390aa763b365255f59ccbd541c5a779dd2887b",
+      "repro_sha256": "d80445d389b8490f2d6b45eeea390aa763b365255f59ccbd541c5a779dd2887b",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 29,
+      "curve_reference_sha256": "c6e1afb4e228281f25a97aa6aa8be0465359591d0959839ed12e9cf11e9b20fb",
+      "curve_repro_sha256": "c6e1afb4e228281f25a97aa6aa8be0465359591d0959839ed12e9cf11e9b20fb"
+    },
+    {
+      "family": "tcn",
+      "seed": 20261017,
+      "file": "tcn_seed20261017.npz",
+      "selected_rounds": 10,
+      "seconds_final_attempt": 946.8463442325592,
+      "reference_sha256": "ef08ca2684873779d49aa4704c3b4e6a24139843b8362f6bede67973e5de06bf",
+      "repro_sha256": "ef08ca2684873779d49aa4704c3b4e6a24139843b8362f6bede67973e5de06bf",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 20,
+      "curve_reference_sha256": "f09fd039b6ed3fb3f28913f009d3dacf701daf9df32c24b25605366a11bbf121",
+      "curve_repro_sha256": "f09fd039b6ed3fb3f28913f009d3dacf701daf9df32c24b25605366a11bbf121"
+    },
+    {
+      "family": "c1",
+      "seed": 20261029,
+      "file": "catboost_c1_seed20261029.cbm",
+      "selected_rounds": 1875,
+      "seconds_final_attempt": 209.03753542900085,
+      "reference_sha256": "644b3850c4a2eec44d10900b036e2ab5465cae5ce2b9eafaff9c999f81bfca93",
+      "repro_sha256": "e95e707c2ebd1091d07d4f4fd7f2b91a77b0e3733a9a5f0f409324c553c9c365",
+      "file_bytes_identical": false,
+      "tree_structure_exact": true,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 120,
+      "curve_reference_sha256": "8f160cb089790ca99856a0e8905e702daecefaf778cca52f944cc454f4f77333",
+      "curve_repro_sha256": "8f160cb089790ca99856a0e8905e702daecefaf778cca52f944cc454f4f77333"
+    },
+    {
+      "family": "tabm",
+      "seed": 20261029,
+      "file": "tabm_seed20261029.npz",
+      "selected_rounds": 8,
+      "seconds_final_attempt": 777.0311634540558,
+      "reference_sha256": "094c147cbb7b2f327881f6ccc176426a93a3b9cf1527aaa2df471458791b770d",
+      "repro_sha256": "094c147cbb7b2f327881f6ccc176426a93a3b9cf1527aaa2df471458791b770d",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 20,
+      "curve_reference_sha256": "b22cd3822de5d5f6d1597226a11755e881efd38483fcd616bf743aad2cb77dc8",
+      "curve_repro_sha256": "b22cd3822de5d5f6d1597226a11755e881efd38483fcd616bf743aad2cb77dc8"
+    },
+    {
+      "family": "tcn",
+      "seed": 20261029,
+      "file": "tcn_seed20261029.npz",
+      "selected_rounds": 15,
+      "seconds_final_attempt": 1265.4777681827545,
+      "reference_sha256": "3a9d2d1b3bde92d2c00f77bf08cbe2e19b6316e5468f7fb95e67678fb4eaa6f6",
+      "repro_sha256": "3a9d2d1b3bde92d2c00f77bf08cbe2e19b6316e5468f7fb95e67678fb4eaa6f6",
+      "file_bytes_identical": true,
+      "parameter_max_abs_diff": 0.0,
+      "full_selection_curve_exact": true,
+      "selection_curve_rows": 25,
+      "curve_reference_sha256": "d69792b0c0e96598126ea5df3fe60e9efb5563bf8c096e41e7811b6f624e1584",
+      "curve_repro_sha256": "d69792b0c0e96598126ea5df3fe60e9efb5563bf8c096e41e7811b6f624e1584"
+    }
+  ],
+  "all_selection_curves_exact": true,
+  "end_to_end": {
+    "days": 24,
+    "max_atom_raw_diff": 0.0,
+    "max_family_raw_diff": 0.0,
+    "max_final_raw_diff": 0.0,
+    "rank_mismatch_objects": 0,
+    "mean_daily_ic_reference": 0.19002665054319479,
+    "mean_daily_ic_candidate": 0.19002665054319479,
+    "mean_daily_ic_diff": 0.0,
+    "constituent_change_day": 20190617
+  },
+  "negative_controls": {
+    "standardisation": {
+      "rejected": true,
+      "problems": [
+        "tcn_channel_stats.json: preprocessing JSON is not exactly equal",
+        "tcn_channel_stats[0] differs"
+      ]
+    },
+    "fusion_weights": {
+      "rejected": true,
+      "problems": [
+        "fusion weights differ: {'c1': 1.0, 'tabm': 0.0, 'tcn': 0.0} vs {'c1': 0.375, 'tabm': 0.375, 'tcn': 0.25}"
+      ]
+    },
+    "deleted_member": {
+      "rejected": true,
+      "problems": [
+        "candidate missing packaged files: ['tcn_seed20261029.npz']",
+        "tcn: expected 3 members, found 2"
+      ]
+    },
+    "tensor": {
+      "rejected": true,
+      "problems": [
+        "candidate meta hash does not bind tabm_seed20261005.npz"
+      ]
+    },
+    "feature_order": {
+      "rejected": true,
+      "problems": [
+        "feature list/order differs from the frozen reference"
+      ]
+    }
+  },
+  "evidence_sha256": {
+    "repro_20261012/identity.json": "d39d4e67b2064b0abac2857b06049082737ca9340e4b185ab40e5b4f0223bb94",
+    "repro_20261012/resume_equivalence_selftest.json": "578d7cf53684653b9d147c7e05cbe75c64fbc8478da42789029e1119d09ddb1f",
+    "repro_20261012/real_resume_precheck.json": "1bd2c71e3c02cf4561f99859b0e42a176bf17543174cae68b1c47164313dd07a",
+    "repro_20261012/full_panel_alignment.json": "c777060526dbda3b000665ee9573b7fc3429a8d9f26ab8bb48cbd12d9350f476",
+    "artifacts/stage4_verified_ic/v3_train_repro.json": "da6363f975fc004ece9dd1e475aebdc60496ca80e3c5f30532197daf7f7e99f6",
+    "scripts/v3_repro_resume.py": "fae7b941de773138969e6f77ba27354c9d550bb612204943ef78ef016c9f4008",
+    "src/qf3/s6_v3_repro_check.py": "de283095d7c07e819db0193146ca784701e9591024023308b2a3842ad4704e63"
+  }
+}

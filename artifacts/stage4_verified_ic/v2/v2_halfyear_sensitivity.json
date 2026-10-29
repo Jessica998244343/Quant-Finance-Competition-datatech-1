@@ -1,0 +1,21 @@
+{
+  "note": "half-year retrain (labels mature before end-June) vs annual-window control, same H2 days; single seed 20261005",
+  "2019H2": {
+    "annual_control_rankic": 0.061638416268397986,
+    "half_year_retrain_rankic": 0.06831303798699699,
+    "delta": 0.006674621718599005,
+    "h2_days": 126
+  },
+  "2020H2": {
+    "annual_control_rankic": 0.09562746805482637,
+    "half_year_retrain_rankic": 0.09637928304385021,
+    "delta": 0.0007518149890238385,
+    "h2_days": 126
+  },
+  "2021H2": {
+    "annual_control_rankic": 0.05353724667328563,
+    "half_year_retrain_rankic": 0.052842308083900065,
+    "delta": -0.0006949385893855672,
+    "h2_days": 125
+  }
+}

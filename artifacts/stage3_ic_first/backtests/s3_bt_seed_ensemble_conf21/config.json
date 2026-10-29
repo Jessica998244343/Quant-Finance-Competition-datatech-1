@@ -1,0 +1,10 @@
+{
+  "windows": [
+    "CONF21"
+  ],
+  "start": "2021-01-04",
+  "end": "2021-12-31",
+  "source": "artifacts/stage3_ic_first/seed_ensemble_fixed__*.parquet",
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

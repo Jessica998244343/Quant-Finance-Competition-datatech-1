@@ -1,0 +1,21 @@
+{
+  "tag": "tcn_rev1_static_s20261005_DEV20",
+  "window": "DEV20",
+  "seed": 20261005,
+  "use_time": false,
+  "shuffle_time": false,
+  "steps": 20,
+  "price_points": 21,
+  "channels": 8,
+  "best_epoch": 13,
+  "best_inner_ic": 0.06571549855896881,
+  "inner_epochs_run": 23,
+  "train_cutoff": 20191231,
+  "train_threads": 2,
+  "seconds": 21.6,
+  "seed_set_before_construction": true,
+  "hashes": {
+    "model": "cbcdc81885c0700dce8628b26f1420078b0502898f75950ce70d96e4bdd6f9e6",
+    "predictions": "ed2a12a0f84a711739fb728b89e292845094ff9ee70b712261028cafbf354427"
+  }
+}

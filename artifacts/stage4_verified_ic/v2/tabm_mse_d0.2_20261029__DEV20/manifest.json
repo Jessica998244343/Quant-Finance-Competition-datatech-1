@@ -1,0 +1,14 @@
+{
+  "tag": "tabm_mse_d0.2_20261029__DEV20",
+  "window": "DEV20",
+  "seed": 20261029,
+  "dropout": 0.2,
+  "loss_mode": "mse",
+  "best_epoch": 24,
+  "best_inner_ic": 0.06835968767976215,
+  "inner_epochs_run": 36,
+  "train_cutoff": 20191231,
+  "train_threads": 2,
+  "seconds": 446.4,
+  "protocol": "inner select -> fresh model/optimiser/RNG -> outer refit preprocessing"
+}

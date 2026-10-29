@@ -1,0 +1,37 @@
+{
+  "arithmetic": {
+    "f1_ret_1_5": true,
+    "f1_ret_5_20": true,
+    "f2_amt_abn_zero": true,
+    "f2_turn_abn_zero": true,
+    "f3_mean_5": true,
+    "f3_path_eff_one": true,
+    "f3_downside_zero": true,
+    "falling_path_eff_one": true,
+    "falling_downside_one": true,
+    "short_history_amount_nan": true,
+    "insufficient_price_history_nan": true,
+    "passed": true
+  },
+  "panel": {
+    "panel": "artifacts/stage4_verified_ic/v2/panel_v2.parquet",
+    "base_rows": 475200,
+    "new_rows": 475200,
+    "keys_match_panel_platform": true,
+    "coverage": {
+      "f1_ret_1_5": 0.9966961279461279,
+      "f1_ret_5_20": 0.9865888047138047,
+      "f2_amt_abn": 0.9649936868686869,
+      "f2_turn_abn": 0.9649936868686869,
+      "f3_on_intra_mean_5": 0.9966961279461279,
+      "f3_on_intra_mean_20": 0.9893076599326599,
+      "f3_path_eff_20": 0.9893076599326599,
+      "f3_downside_share_20": 0.9893076599326599,
+      "f2_rank_ret1_x_amt": 0.9647874579124579,
+      "f2_rank_ret5_x_amt": 0.9646401515151515
+    },
+    "min_valid_history": 16,
+    "passed": true
+  },
+  "passed": true
+}

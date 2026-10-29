@@ -1,0 +1,61 @@
+{
+  "runs": {
+    "bt_p5_realinput_dev19_20": {
+      "mean_rankic": 0.07742386962906933,
+      "rankic_std": 0.13340614514288557,
+      "rankic_ir": 0.5803620931115576,
+      "positive_rankic_ratio": 0.7263374485596708,
+      "total_return": 0.4869664881253417,
+      "annualized_return": 0.22788558409711368,
+      "annualized_excess_return": -0.10042961828447794,
+      "annualized_volatility": 0.21619157640022652,
+      "maximum_drawdown": 0.2401256341288455,
+      "tracking_error": 0.03392616098128654,
+      "information_ratio": -2.960241164329624,
+      "sharpe_ratio": 1.058327719801241,
+      "turnover": 449.0929452180898,
+      "transaction_cost": 574431.00443405,
+      "failed_orders": 477
+    },
+    "bt_catboost_realinput_dev19_20": {
+      "mean_rankic": 0.07300504633478604,
+      "rankic_std": 0.14350035389282723,
+      "rankic_ir": 0.5087447128479531,
+      "positive_rankic_ratio": 0.7037037037037037,
+      "total_return": 0.3607784491813648,
+      "annualized_return": 0.17281310491624846,
+      "annualized_excess_return": -0.15550209746534316,
+      "annualized_volatility": 0.21439360415904837,
+      "maximum_drawdown": 0.2453379234978315,
+      "tracking_error": 0.03480432993878538,
+      "information_ratio": -4.467895165309709,
+      "sharpe_ratio": 0.8510809992567437,
+      "turnover": 453.71605661625927,
+      "transaction_cost": 565269.9468533548,
+      "failed_orders": 492
+    }
+  },
+  "constraint_checks": {
+    "bt_realinput_dev19_20_vs_bt_SSTAR_dev19_20": {
+      "comparable": true,
+      "max_abs_target_weight_delta": 0.0686903543579883,
+      "n_target_rows": 145806,
+      "n_relweight_changed_gt_1e-6": 9626,
+      "rejected_new": 469,
+      "rejected_reference": 467,
+      "rejected_relative_change": 0.004282655246252677
+    },
+    "bt_realinput_conf21_vs_bt_SSTAR_conf21": {
+      "comparable": true,
+      "max_abs_target_weight_delta": 0.02,
+      "n_target_rows": 72602,
+      "n_relweight_changed_gt_1e-6": 4728,
+      "rejected_new": 100,
+      "rejected_reference": 98,
+      "rejected_relative_change": 0.02040816326530612
+    },
+    "bt_aligned_dev19_20_vs_bt_SSTAR_dev19_20": {
+      "comparable": false
+    }
+  }
+}

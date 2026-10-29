@@ -1,0 +1,68 @@
+{
+  "created": "2026-10-06 (Asia/Shanghai)",
+  "purpose": "read-only freeze list that MUST be written before any 2022 evaluation (task \u00a79.1)",
+  "frozen_candidates": {
+    "new_candidates": [],
+    "reason": "no V2 candidate passed the retention rule: C2/C3, F1/F2/F3, TabM dropout0.2 / correlation loss and TCN W20 all failed the DEV gate or reversed under three seeds",
+    "fallback": "V1_FIXED_ANCHOR = 0.5 x C1 (3 seeds) + 0.5 x TabM (3 seeds), frozen graph",
+    "priority_order": [
+      "V1_FIXED_ANCHOR"
+    ]
+  },
+  "control": {
+    "c1": {
+      "recipe": "depth8/l2=15, RMSE, lr0.03, 3000-cap, 25-tree inner IC selection, near-opt 0.0005 earliest, fold-local weights, 6 threads"
+    },
+    "tabm": {
+      "recipe": "k8/width128/2 blocks/dropout0.1, AdamW lr1e-3 wd1e-3, clip1, batch 8 days, 100 epoch/patience12, inner IC epoch selection, outer refit from scratch"
+    },
+    "features": "F0 (33-1 banned) + G1 (19) = 61 columns, order as src/qf3/constants.py",
+    "fusion_graph": "atom rank -> seed mean -> family weight (0.5/0.5) -> final rank",
+    "seeds": [
+      20261005,
+      20261017,
+      20261029
+    ]
+  },
+  "cutoff_2021_artifacts": {
+    "dir": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff",
+    "train_label_cutoff": 20211231,
+    "max_outer_label_end": 20211231,
+    "outer_metrics_computed": false,
+    "files": {
+      "catboost_c1_seed20261005.cbm": "959c07b2f441201f649c4f9c0131d7c23fbcc58e584d6b60af5995bb882da052",
+      "catboost_c1_seed20261017.cbm": "0b7b15f344de5886157cb01a5b4b9785773173246a99ddaa56fc64f718647d71",
+      "catboost_c1_seed20261029.cbm": "8edcb264f2e71d4b2d5aa4e487330a272a3e215004379e428f91bf50b6c768a6",
+      "design_seed20261005.json": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4",
+      "design_seed20261017.json": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4",
+      "design_seed20261029.json": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4",
+      "inner_curve_seed20261005.parquet": "3681562fbd5c00e253c7f60bd2504c97e1dc80603d0acdf83aef7a070828c285",
+      "inner_curve_seed20261017.parquet": "a31149ed7fb60bfddeff017913ac48aead5b883fd0b1fa96d25ded198be083db",
+      "inner_curve_seed20261029.parquet": "24f750703514779955a55cc87b487e0bd3ae03728ade0b4087aef76ed57e1322",
+      "tabm_seed20261005.safetensors": "3549c0ab4d443630919f492d000d7ffa05d69722ec5e4527e99e40e82d77cd42",
+      "tabm_seed20261017.safetensors": "97dba211dffa09cea7afbd53d605ec4d5261720929a70a996944c5d2eedab32d",
+      "tabm_seed20261029.safetensors": "a48eda74a2dfdd8b2a55f46596078b3eab75389a8339ba03ffd2c8c918f2e918"
+    }
+  },
+  "evaluation_boundaries": {
+    "evaluation_days": "2022 legal signal days from the independent panel calendar",
+    "label_boundary": "models trained with label_end_date <= 20211231; no 2022 label used for fitting",
+    "block_bootstrap": {
+      "block": [
+        10,
+        20,
+        40
+      ],
+      "draws": 2000,
+      "seed": 20261005,
+      "scheme": "fixed-length paired moving block, per year, day count preserved"
+    }
+  },
+  "decision_rule": {
+    "support": "main candidate 2022 dIC > 0 and both halves >= -0.001",
+    "reject": "dIC <= 0 or materially split halves",
+    "no_recall": "no re-weighting, feature, seed or algorithm change after opening 2022"
+  },
+  "bridge_reference": "R_DEPLOY (artifacts/stage2_ic_ir/a_revision1/predictions/origmodel_realinput__*.parquet)",
+  "manifest_hash": "f4e317ba831ad8b8fbebc1276d7cd4247e54894e57ef4f34473a63bea7a25362"
+}

@@ -1,0 +1,117 @@
+{
+  "package_dir": "/tmp/v1accept3/submission",
+  "zip_requirements": [
+    "numpy==2.4.6",
+    "pandas==3.0.6",
+    "pyarrow==25.0.1",
+    "catboost==1.2.10"
+  ],
+  "python": "3.11.17",
+  "cpu_count": 16,
+  "thread_env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "load_seconds": 0.078,
+  "torch_imported_after_load": false,
+  "representative_days": {
+    "2021-01-04": {
+      "rows": 300,
+      "pool_exact": true,
+      "no_duplicates": true,
+      "finite": true,
+      "columns_exact": true,
+      "date_ok": true,
+      "max_abs_score_diff": 0.0,
+      "rank_identical": true,
+      "predict_seconds": 0.1179
+    },
+    "2021-07-06": {
+      "rows": 300,
+      "pool_exact": true,
+      "no_duplicates": true,
+      "finite": true,
+      "columns_exact": true,
+      "date_ok": true,
+      "max_abs_score_diff": 0.0,
+      "rank_identical": true,
+      "predict_seconds": 0.1079
+    },
+    "2021-12-31": {
+      "rows": 300,
+      "pool_exact": true,
+      "no_duplicates": true,
+      "finite": true,
+      "columns_exact": true,
+      "date_ok": true,
+      "max_abs_score_diff": 0.0,
+      "rank_identical": true,
+      "predict_seconds": 0.0972
+    }
+  },
+  "first_predict_seconds": 0.1179,
+  "cold_total_seconds": 0.1959,
+  "days_checked": 243,
+  "pool_exact_all_days": true,
+  "no_duplicates_all_days": true,
+  "finite_all_days": true,
+  "columns_exact_all_days": true,
+  "date_string_all_days": true,
+  "max_abs_score_diff_vs_anchor": 0.0,
+  "rank_identical_all_days": true,
+  "warm_seconds_p50": 0.1039,
+  "warm_seconds_p95": 0.1127,
+  "warm_seconds_max": 0.1293,
+  "p95_le_max": true,
+  "peak_rss_mib": 388.1,
+  "true_future_perturbation": {
+    "rows_added": 500,
+    "identical": true
+  },
+  "repeat_call_identical": true,
+  "cross_call_state_independent": true,
+  "input_order_permutation_identical": true,
+  "member_hashes": {
+    "catboost_c1_seed20261005.cbm": "d2d49603ea822d3bd6d91d344a551d8437ce703c1e31d9e3a0c8f2e7384f5b03",
+    "catboost_c1_seed20261017.cbm": "7b837f57f024e805a711a1de8705dc6cdfde0ed872fa0fb262373f196868b1f0",
+    "catboost_c1_seed20261029.cbm": "5cb02b562b7d581ddd4b67919a69b1154fbc4b34b66628cfb15078950e2ac027",
+    "meta.json": "089bd41dc46ff5ad56575c892362c8fcea7e7526d77a0aa4cce6c1debb2fc313",
+    "tabm_config.json": "5956542392c8b416d691ec5502b7f87440d3241da8095bafdef1c62dbedbdfbd",
+    "tabm_design.json": "d00bb6c8feb5f5a1178349dacfdee1f83f3b6b60bad80cb19bf9884886eb8028",
+    "tabm_seed20261005.npz": "4ef2b8181cd3b45aa8c7b6601df6ec8e2c567ef889b7ca76c9986c1d04dada01",
+    "tabm_seed20261017.npz": "890e3aab5a988f547eecb71a37e1d92d9092232f8a7988bea95c263ad31539c7",
+    "tabm_seed20261029.npz": "46a99e38ea49f6a1858b7f3b77222406b04b2f21ed367f56c53406232e60ae13"
+  },
+  "package_third_party_imports": [
+    "catboost",
+    "scipy"
+  ],
+  "requirement_closure": [
+    "catboost",
+    "contourpy",
+    "cycler",
+    "fonttools",
+    "graphviz",
+    "kiwisolver",
+    "matplotlib",
+    "narwhals",
+    "numpy",
+    "packaging",
+    "pandas",
+    "pillow",
+    "plotly",
+    "pyarrow",
+    "pyparsing",
+    "python-dateutil",
+    "scipy",
+    "six",
+    "tzdata"
+  ],
+  "outside_declared_requirements": [],
+  "harness_only_packages": [
+    "typeguard",
+    "typing_extensions"
+  ],
+  "passed": true
+}

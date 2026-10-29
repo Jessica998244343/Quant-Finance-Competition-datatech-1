@@ -1,0 +1,22 @@
+{
+  "run": "rev1_bt_catboost_realinput_conf21",
+  "seconds": 23.0,
+  "metrics": {
+    "mean_rankic": 0.06315867372512239,
+    "rankic_std": 0.13779439140393857,
+    "rankic_ir": 0.45835445899953464,
+    "positive_rankic_ratio": 0.6652892561983471,
+    "total_return": -0.16955646220621579,
+    "annualized_return": -0.17525138391442707,
+    "annualized_excess_return": -0.12139260892824888,
+    "annualized_volatility": 0.19757148657750132,
+    "maximum_drawdown": 0.25556962663365634,
+    "tracking_error": 0.04353937619616935,
+    "information_ratio": -2.78811089027337,
+    "sharpe_ratio": -0.8761770858812578,
+    "turnover": 232.9761981604279,
+    "transaction_cost": 247512.95689851942,
+    "failed_orders": 102
+  },
+  "scores": "[PosixPath('artifacts/stage2_ic_ir/predictions/origmodel_realinput_members__CONF21.parquet')]"
+}

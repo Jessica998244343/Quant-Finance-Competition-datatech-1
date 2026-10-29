@@ -1,0 +1,118 @@
+{
+  "created": "2026-10-06 (Asia/Shanghai)",
+  "supersedes": "v2/v2_frozen_manifest_for_2022.json (historical draft only; no force)",
+  "purpose": "read-only freeze list that MUST exist before any 2022 evaluation (task \u00a79.1); written before any 2022 performance was computed",
+  "candidates": [
+    {
+      "id": "TCN_W20_a0.25",
+      "priority": 1,
+      "kind": "new candidate",
+      "recipe": "TCN W20 (8 channels, 20 return steps from 21 price points, 32 channels, two residual blocks of two causal k3 convs, dilations 1/2), AdamW lr1e-3 wd1e-3, clip1, batch4 days, MSE, max80 epoch/patience10, inner IC epoch selection, outer refit from scratch, seed reset before every construction",
+      "fusion": "flat graph; weights {c1:0.375, tabm:0.375, TCN:0.25}",
+      "alpha": 0.25,
+      "evidence_2021_robustness": {
+        "dev_merged_delta_vs_parent": 0.001749,
+        "conf21_delta_vs_parent": 5.1e-05,
+        "static_control_dev_merged": 0.000102,
+        "shuffle_negative": true
+      },
+      "cutoff_2021_models": {
+        "20261005": "d908880fb9a61d3750b6e9ed8580eb01266428f1b4b91e4702803ed921f83671",
+        "20261017": "8ca3a9bec8b0e962b4cf86dfc5bef759c04dfae64cd242b194930b3aa542eabb",
+        "20261029": "2f4155ec7edd2804f26ad12a7ea5b4a08b67d54c806029a63e1f76a3afa46d12"
+      },
+      "cutoff_2021_manifests": {
+        "20261005": "8e1e5ddd5c5c88f194ad489787f15fccdbd2e571063020cd7e7fdab4370104ff",
+        "20261017": "e5f5101c32df2cfd93a122d0c94cb91e96d30fbce2e3d5c37bee831e51f21a88",
+        "20261029": "8f2eede1026ee94de69a2940a26d8b8a3f84e2b3f85d89059ba9ff71837ba371"
+      }
+    },
+    {
+      "id": "V1_FIXED_ANCHOR",
+      "priority": 2,
+      "kind": "fallback control",
+      "recipe": "0.5 x C1 (3 seeds, depth8/l2=15, per-seed inner IC tree selection) + 0.5 x TabM (3 seeds, k8/width128/2 blocks/dropout0.1, inner IC epoch selection)",
+      "cutoff_2021_models": {
+        "c1": {
+          "catboost_c1_seed20261005.cbm": "e00f7d39c95bcc031ff52c3daafc1f8dbd9421b5f17b9254955e2b223045b2f4",
+          "catboost_c1_seed20261017.cbm": "bdc248fe45f3e9bd47c3530aee6cb27c5d14c61304bfe73091bdfad67e5160ad",
+          "catboost_c1_seed20261029.cbm": "aab6590cce019784ee29a32526755449a28be87feb5e299ba5cde4cd30c68cd5"
+        },
+        "tabm": {
+          "tabm_seed20261005.safetensors": "3549c0ab4d443630919f492d000d7ffa05d69722ec5e4527e99e40e82d77cd42",
+          "tabm_seed20261017.safetensors": "97dba211dffa09cea7afbd53d605ec4d5261720929a70a996944c5d2eedab32d",
+          "tabm_seed20261029.safetensors": "a48eda74a2dfdd8b2a55f46596078b3eab75389a8339ba03ffd2c8c918f2e918"
+        }
+      }
+    }
+  ],
+  "controls": {
+    "c1_fixed": {
+      "recipe": "depth8/l2=15 RMSE, 25-tree inner IC selection, near-opt 0.0005 earliest, fold-local weights, 6 threads",
+      "files": {
+        "catboost_c1_seed20261005.cbm": "e00f7d39c95bcc031ff52c3daafc1f8dbd9421b5f17b9254955e2b223045b2f4",
+        "catboost_c1_seed20261017.cbm": "bdc248fe45f3e9bd47c3530aee6cb27c5d14c61304bfe73091bdfad67e5160ad",
+        "catboost_c1_seed20261029.cbm": "aab6590cce019784ee29a32526755449a28be87feb5e299ba5cde4cd30c68cd5"
+      }
+    },
+    "tabm_fixed": {
+      "files": {
+        "tabm_seed20261005.safetensors": "3549c0ab4d443630919f492d000d7ffa05d69722ec5e4527e99e40e82d77cd42",
+        "tabm_seed20261017.safetensors": "97dba211dffa09cea7afbd53d605ec4d5261720929a70a996944c5d2eedab32d",
+        "tabm_seed20261029.safetensors": "a48eda74a2dfdd8b2a55f46596078b3eab75389a8339ba03ffd2c8c918f2e918"
+      }
+    },
+    "tree_structure": {
+      "recipe": "TREE_v1 structure: 0.5 x L5 (311 rounds, fixed) + 0.5 x C1 (3 seeds)",
+      "l5_files": {
+        "l5_seed20261005.txt": "38f5c84532142065ce2294bef12628e1e723212c6f0b942535a9119e1d81e18f",
+        "l5_seed20261017.txt": "2d38320e6ed3903677ea569c6b5dc3c6239c5924bf26ad098db750f39bc896ad",
+        "l5_seed20261029.txt": "0e5f6f7a8e32e79898a67e851ff361c8b8cc59e9f75f3a46bb27d5b7b317aefb"
+      },
+      "c1_files": {
+        "catboost_c1_seed20261005.cbm": "e00f7d39c95bcc031ff52c3daafc1f8dbd9421b5f17b9254955e2b223045b2f4",
+        "catboost_c1_seed20261017.cbm": "bdc248fe45f3e9bd47c3530aee6cb27c5d14c61304bfe73091bdfad67e5160ad",
+        "catboost_c1_seed20261029.cbm": "aab6590cce019784ee29a32526755449a28be87feb5e299ba5cde4cd30c68cd5"
+      }
+    }
+  },
+  "bridge_reference": {
+    "R_DEPLOY": "artifacts/stage2_ic_ir/a_revision1/predictions/origmodel_realinput__*.parquet",
+    "comparability": "R_DEPLOY has no label_end<=20211231 model and no 2022 predictions; it is NOT usable as a 2022 control. Any R_DEPLOY number must be labelled as an annual-window reference only."
+  },
+  "evaluation_boundaries": {
+    "evaluation_days": "2022 legal signal days from the independent panel calendar",
+    "label_boundary": "all models fitted with label_end_date <= 20211231; no 2022 label used for fitting or selection",
+    "block_bootstrap": {
+      "block": [
+        10,
+        20,
+        40
+      ],
+      "draws": 2000,
+      "seed": 20261005,
+      "scheme": "fixed-length paired moving block, resampled per year with each year's day count preserved"
+    }
+  },
+  "decision_rule": {
+    "primary_delta": "dIC = IC(candidate fusion) - IC(tree_structure control), daily Spearman, same days/pool/label mask",
+    "secondary_delta": "dIC = IC(candidate fusion) - IC(c1_fixed control)",
+    "support": "primary dIC > 0 and both calendar halves of 2022 >= -0.001",
+    "reject": "primary dIC <= 0 or a materially split half",
+    "on_reject": "do not search other weights; report the fallback V1_FIXED_ANCHOR time-out-of-sample dIC against the same two controls and label it a validation of the existing anchor, not a new-candidate win",
+    "no_recall": "no feature, seed, weight or algorithm change after opening 2022"
+  },
+  "budget": {
+    "extra_recipes_used": 11,
+    "extra_recipes_cap": 18,
+    "expert_recipes_cap": 4,
+    "seeds_per_recipe_cap": 3,
+    "joint_weight_vectors_cap": 40,
+    "note": "unchanged from the master task"
+  },
+  "rebuilt_metadata": {
+    "deploy_summary": "v2/v2_rev1_deploy_models_deploy.json (CatBoost curves re-run; TabM records rebuilt from saved curves)",
+    "c1_cbm_files_were_re_written_by_the_curve_re_run (same frozen protocol)": true
+  },
+  "manifest_hash": "1cf0f32ce76a1f769e92d6573e2ac57294fdf6609c500ea9ff7502b0787afa22"
+}

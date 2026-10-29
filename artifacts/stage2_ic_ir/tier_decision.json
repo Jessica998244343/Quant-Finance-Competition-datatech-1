@@ -1,0 +1,31 @@
+{
+  "tier": "3",
+  "reason": "row-level difference is systematic (9.2-14.5% of rows dropped every day) AND target active weights change beyond numerical tolerance (max delta 0.0687, 9626/145806 rows > 1e-6)",
+  "criteria": {
+    "systematic": true,
+    "affected_share_lt_1pct": false,
+    "abs_delta_ic_lt_0.001_dev": true,
+    "same_sign_2019_2020": true,
+    "abs_delta_ir_lt_0.05": true,
+    "candidate_order_unchanged": true,
+    "target_weight_delta_lt_1e-6": false,
+    "rejection_change_le_2pct": true
+  },
+  "actions_taken": [
+    "built platform-semantics cache (panel_platform.parquet)",
+    "trained REF-aligned fold models and OOF",
+    "ran aligned portfolio backtests",
+    "separated correction contribution from model-improvement contribution"
+  ],
+  "measured": {
+    "delta_ic_2019": -0.0003,
+    "delta_ic_2020": -0.00032,
+    "delta_ic_2021": 0.00198,
+    "delta_ir_dev": 0.0274,
+    "aligned_vs_v1_ic_dev": -0.00204,
+    "aligned_vs_v1_ir_dev": -0.846,
+    "max_abs_target_weight_delta": 0.06869
+  },
+  "finding": "alignment has no performance benefit; it is a correctness/hygiene change. No hidden gain was masked by the mismatch.",
+  "gate_for_B": "main reference = REF-aligned (same semantics); bridge column vs v1 required; candidates must win on REF-aligned AND not be worse than v1 on the bridge"
+}

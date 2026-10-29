@@ -1,0 +1,25 @@
+{
+  "window": "DEV20",
+  "validation_year": 2020,
+  "train_label_cutoff": 20191231,
+  "expected_days": 243,
+  "anchor_days": 243,
+  "days_match_independent_calendar": true,
+  "pool_exact_all_days": true,
+  "no_duplicates_all_days": true,
+  "finite_atoms_all_days": true,
+  "atom_keys_match": true,
+  "max_abs_atom_diff_vs_saved": {
+    "c1_20261005": 0.0,
+    "c1_20261017": 0.0,
+    "c1_20261029": 0.0,
+    "tabm_20261005": 5.960464477539063e-08,
+    "tabm_20261017": 3.725290298461914e-08,
+    "tabm_20261029": 5.960464477539063e-08
+  },
+  "max_abs_fused_diff_vs_anchor": 0.0,
+  "rank_identical_all_days": true,
+  "rankic_fused": 0.08673170482062849,
+  "fixture": "/tmp/v1fixtures/DEV20",
+  "passed": true
+}

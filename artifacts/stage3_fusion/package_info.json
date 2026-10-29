@@ -1,0 +1,36 @@
+{
+  "zip_bytes": 2866631,
+  "uncompressed_bytes": 3983976,
+  "files": [
+    "submission/LICENSE.tabm",
+    "submission/__init__.py",
+    "submission/alpha_constants.py",
+    "submission/alpha_cv.py",
+    "submission/alpha_dataio.py",
+    "submission/alpha_features.py",
+    "submission/alpha_labels.py",
+    "submission/alpha_models.py",
+    "submission/alpha_panel.py",
+    "submission/alpha_tabm_wrapper.py",
+    "submission/alpha_tabminput.py",
+    "submission/inference.py",
+    "submission/model/catboost_c1.cbm",
+    "submission/model/meta.json",
+    "submission/model/tabm.safetensors",
+    "submission/model/tabm_config.json",
+    "submission/model/tabm_design.json",
+    "submission/requirements.txt",
+    "submission/tabm_official.py",
+    "submission/train.py"
+  ],
+  "sha256": "64bfb8593df71dfd3a12febc934f6d0c47a07de4bfc8ab88acd3d7927020eb30",
+  "version": "FINAL_v1",
+  "weights": {
+    "catboost_c1": 0.5,
+    "tabm": 0.5
+  },
+  "rounds": {
+    "catboost_c1_trees": 875,
+    "tabm_epochs": 13
+  }
+}

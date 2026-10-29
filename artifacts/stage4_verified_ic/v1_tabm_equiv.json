@@ -1,0 +1,18 @@
+{
+  "k": 8,
+  "width": 128,
+  "blocks": 2,
+  "dropout": 0.1,
+  "d_in": 141,
+  "seed": 20261005,
+  "state_dict_keys_equal": true,
+  "init_max_abs_diff": 0.0,
+  "init_bit_identical": true,
+  "eval_forward_max_abs_diff": 0.0,
+  "train_forward_max_abs_diff": 0.0,
+  "loss_abs_diff": 0.0,
+  "grad_max_abs_diff": 0.0,
+  "adamw_step_max_abs_diff": 0.0,
+  "forward_ops": "h = ((x * r) @ W.T) * s + b; ReLU; LinearEnsemble head; member mean",
+  "passed": true
+}

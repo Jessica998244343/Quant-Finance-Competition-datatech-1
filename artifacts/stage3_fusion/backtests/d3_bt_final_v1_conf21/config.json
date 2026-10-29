@@ -1,0 +1,11 @@
+{
+  "candidate": "FINAL_v1",
+  "windows": [
+    "CONF21"
+  ],
+  "start": "2021-01-04",
+  "end": "2021-12-31",
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json",
+  "ir_policy": "reported only; not used for any decision"
+}

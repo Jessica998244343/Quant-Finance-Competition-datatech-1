@@ -1,0 +1,45 @@
+{
+  "window": "DEV19",
+  "fixture": "artifacts/stage4_verified_ic/v1_fixtures/DEV19/submission",
+  "checks": {
+    "representative_days": {
+      "2019-01-02": {
+        "pool_exact": true,
+        "rows": 300,
+        "finite": true,
+        "max_abs_score_diff": 0.0,
+        "rank_identical": true
+      },
+      "2019-06-03": {
+        "pool_exact": true,
+        "rows": 300,
+        "finite": true,
+        "max_abs_score_diff": 0.0,
+        "rank_identical": true
+      },
+      "2019-06-17": {
+        "pool_exact": true,
+        "rows": 300,
+        "finite": true,
+        "max_abs_score_diff": 0.0,
+        "rank_identical": true
+      },
+      "2019-12-30": {
+        "pool_exact": true,
+        "rows": 300,
+        "finite": true,
+        "max_abs_score_diff": 0.0,
+        "rank_identical": true
+      }
+    },
+    "full_year": {
+      "days": 244,
+      "max_abs_diff_overall": 0.0,
+      "days_all_rank_identical": true
+    },
+    "true_future_perturbation": {
+      "identical": true,
+      "rows_added": 500
+    }
+  }
+}

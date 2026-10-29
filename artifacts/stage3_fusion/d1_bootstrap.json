@@ -1,0 +1,338 @@
+{
+  "validation": {
+    "n487_b10": {
+      "lengths_unique": [
+        487
+      ],
+      "all_equal_n": true
+    },
+    "n487_b20": {
+      "lengths_unique": [
+        487
+      ],
+      "all_equal_n": true
+    },
+    "n487_b40": {
+      "lengths_unique": [
+        487
+      ],
+      "all_equal_n": true
+    },
+    "n243_b10": {
+      "lengths_unique": [
+        243
+      ],
+      "all_equal_n": true
+    },
+    "n243_b20": {
+      "lengths_unique": [
+        243
+      ],
+      "all_equal_n": true
+    },
+    "n243_b40": {
+      "lengths_unique": [
+        243
+      ],
+      "all_equal_n": true
+    },
+    "constant_series_compounds": true,
+    "same_index_paired": true
+  },
+  "comparisons": {
+    "dev_seed_ensemble_vs_R_WORK": {
+      "block20": {
+        "n_days": 487,
+        "block": 20,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.1144737706967085,
+          "ir": -3.361913617636811
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": 0.6847630758466638,
+        "delta_excess_point": 0.021235135346054035,
+        "delta_ir_ci90": [
+          0.316299147770953,
+          1.0695776297178645
+        ],
+        "delta_ir_ci95": [
+          0.2682294646460362,
+          1.164069815091912
+        ],
+        "delta_excess_ci95": [
+          0.007712778220258651,
+          0.0376408945307095
+        ],
+        "share_delta_ir_positive": 0.9995
+      },
+      "block10": {
+        "n_days": 487,
+        "block": 10,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.1144737706967085,
+          "ir": -3.361913617636811
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": 0.6847630758466638,
+        "delta_excess_point": 0.021235135346054035,
+        "delta_ir_ci90": [
+          0.321901682932658,
+          1.1401807636436652
+        ],
+        "delta_ir_ci95": [
+          0.2547951601962711,
+          1.2471782278851575
+        ],
+        "delta_excess_ci95": [
+          0.0073473438902063645,
+          0.038357792662046857
+        ],
+        "share_delta_ir_positive": 0.999
+      },
+      "block40": {
+        "n_days": 487,
+        "block": 40,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.1144737706967085,
+          "ir": -3.361913617636811
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": 0.6847630758466638,
+        "delta_excess_point": 0.021235135346054035,
+        "delta_ir_ci90": [
+          0.3975400826437844,
+          0.9976889668809634
+        ],
+        "delta_ir_ci95": [
+          0.3476013044832849,
+          1.0674269196485549
+        ],
+        "delta_excess_ci95": [
+          0.01075032860699442,
+          0.03399609427286392
+        ],
+        "share_delta_ir_positive": 1.0
+      }
+    },
+    "conf21_seed_ensemble_vs_R_WORK": {
+      "block20": {
+        "n_days": 243,
+        "block": 20,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 243,
+        "draw_length_max": 243,
+        "candidate": {
+          "excess": -0.13485590085976062,
+          "ir": -3.1743485197502577
+        },
+        "reference": {
+          "excess": -0.12220025031998605,
+          "ir": -3.015130570575122
+        },
+        "delta_ir_point": -0.15921794917513576,
+        "delta_excess_point": -0.012655650539774577,
+        "delta_ir_ci90": [
+          -0.5846311267931356,
+          0.3132039237392811
+        ],
+        "delta_ir_ci95": [
+          -0.6746465809867175,
+          0.3900757698506255
+        ],
+        "delta_excess_ci95": [
+          -0.03341394559887209,
+          0.007766220249290958
+        ],
+        "share_delta_ir_positive": 0.33
+      },
+      "block10": {
+        "n_days": 243,
+        "block": 10,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 243,
+        "draw_length_max": 243,
+        "candidate": {
+          "excess": -0.13485590085976062,
+          "ir": -3.1743485197502577
+        },
+        "reference": {
+          "excess": -0.12220025031998605,
+          "ir": -3.015130570575122
+        },
+        "delta_ir_point": -0.15921794917513576,
+        "delta_excess_point": -0.012655650539774577,
+        "delta_ir_ci90": [
+          -0.6284707948386442,
+          0.28025695422179325
+        ],
+        "delta_ir_ci95": [
+          -0.7311046339049992,
+          0.3830738101534738
+        ],
+        "delta_excess_ci95": [
+          -0.03341528467316744,
+          0.008124568203310615
+        ],
+        "share_delta_ir_positive": 0.258
+      },
+      "block40": {
+        "n_days": 243,
+        "block": 40,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 243,
+        "draw_length_max": 243,
+        "candidate": {
+          "excess": -0.13485590085976062,
+          "ir": -3.1743485197502577
+        },
+        "reference": {
+          "excess": -0.12220025031998605,
+          "ir": -3.015130570575122
+        },
+        "delta_ir_point": -0.15921794917513576,
+        "delta_excess_point": -0.012655650539774577,
+        "delta_ir_ci90": [
+          -0.6101763047966913,
+          0.2524591566643926
+        ],
+        "delta_ir_ci95": [
+          -0.6962607835394361,
+          0.3395177379712335
+        ],
+        "delta_excess_ci95": [
+          -0.03500323630939791,
+          0.005192617869157519
+        ],
+        "share_delta_ir_positive": 0.295
+      }
+    },
+    "dev_main_seed_ensemble_vs_R_WORK": {
+      "block20": {
+        "n_days": 487,
+        "block": 20,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.15266029484356736,
+          "ir": -4.457756513118585
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": -0.41107981963511,
+        "delta_excess_point": -0.016951388800804823,
+        "delta_ir_ci90": [
+          -0.9772307425789378,
+          0.38856221177923317
+        ],
+        "delta_ir_ci95": [
+          -1.1549718722477411,
+          0.4989708467973541
+        ],
+        "delta_excess_ci95": [
+          -0.03985078556832466,
+          0.013299963342888452
+        ],
+        "share_delta_ir_positive": 0.248
+      },
+      "block10": {
+        "n_days": 487,
+        "block": 10,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.15266029484356736,
+          "ir": -4.457756513118585
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": -0.41107981963511,
+        "delta_excess_point": -0.016951388800804823,
+        "delta_ir_ci90": [
+          -0.9936064465898266,
+          0.2840275108657573
+        ],
+        "delta_ir_ci95": [
+          -1.096807332471682,
+          0.3740045326390724
+        ],
+        "delta_excess_ci95": [
+          -0.038681392707697895,
+          0.010359671622825768
+        ],
+        "share_delta_ir_positive": 0.1885
+      },
+      "block40": {
+        "n_days": 487,
+        "block": 40,
+        "n_boot": 2000,
+        "per_year": true,
+        "lengths_all_equal_n": true,
+        "draw_length_min": 487,
+        "draw_length_max": 487,
+        "candidate": {
+          "excess": -0.15266029484356736,
+          "ir": -4.457756513118585
+        },
+        "reference": {
+          "excess": -0.13570890604276253,
+          "ir": -4.046676693483475
+        },
+        "delta_ir_point": -0.41107981963511,
+        "delta_excess_point": -0.016951388800804823,
+        "delta_ir_ci90": [
+          -1.0721107577990938,
+          0.43363032935039075
+        ],
+        "delta_ir_ci95": [
+          -1.3082216423509934,
+          0.5566848922269056
+        ],
+        "delta_excess_ci95": [
+          -0.04518510940926513,
+          0.013912449697818682
+        ],
+        "share_delta_ir_positive": 0.287
+      }
+    }
+  }
+}

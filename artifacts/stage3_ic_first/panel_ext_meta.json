@@ -1,0 +1,35 @@
+{
+  "base": "artifacts/stage2_ic_ir/panel_platform.parquet",
+  "rows": 475200,
+  "l1_columns": [
+    "L1_ret_1",
+    "L1_ret_2",
+    "L1_ret_5",
+    "L1_ret_10",
+    "L1_ret_20",
+    "L1_ret_60",
+    "L1_ret_119",
+    "L1_rv_5",
+    "L1_rv_20",
+    "L1_rv_60",
+    "L1_relma_5",
+    "L1_relma_20",
+    "L1_relma_60",
+    "L1_hl_range",
+    "L1_close_pos",
+    "L1_overnight",
+    "L1_intraday",
+    "L1_overnight_mean_5",
+    "L1_intraday_mean_5"
+  ],
+  "g_sep": [
+    "sep_1_5",
+    "sep_5_20"
+  ],
+  "g_path": [
+    "path_downvar_share",
+    "path_efficiency",
+    "path_drawdown"
+  ],
+  "note": "L1 = daily centred rank of G1 with no max-abs rescaling; G_path uses the last 20 daily returns (>=16 valid) and 20 visible closes"
+}

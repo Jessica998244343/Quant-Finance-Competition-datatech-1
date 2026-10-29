@@ -1,0 +1,25 @@
+{
+  "members": [
+    {
+      "member": "catboost_c1",
+      "trees": 875,
+      "actual_tree_count": 875,
+      "seconds": 20.7,
+      "rows": 466033,
+      "path": "artifacts/stage3_fusion/final_models/catboost_c1.cbm"
+    },
+    {
+      "member": "tabm",
+      "epochs": 13,
+      "seconds": 178.8,
+      "rows": 466033,
+      "path": "artifacts/stage3_fusion/final_models/tabm.pt",
+      "design": "artifacts/stage3_fusion/final_models/tabm_design.json"
+    }
+  ],
+  "round_rules": {
+    "catboost_c1_trees": 875,
+    "tabm_epochs": 13,
+    "rule": "median of the three inner selections, floored"
+  }
+}

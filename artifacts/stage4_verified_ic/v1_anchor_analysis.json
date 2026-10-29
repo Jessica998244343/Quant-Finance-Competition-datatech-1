@@ -1,0 +1,112 @@
+{
+  "tabm_seed_means": {},
+  "anchor": {
+    "DEV19": {
+      "tabm_seedmean": 0.07698384860073039,
+      "c1_seedmean": 0.08215203709001169,
+      "anchor_0.5_0.5": 0.0825765750548329,
+      "year": 2019
+    },
+    "DEV20": {
+      "tabm_seedmean": 0.08636456139952192,
+      "c1_seedmean": 0.08113617118796686,
+      "anchor_0.5_0.5": 0.08673170482062849,
+      "year": 2020
+    },
+    "CONF21": {
+      "tabm_seedmean": 0.06118387108624533,
+      "c1_seedmean": 0.06390434004522143,
+      "anchor_0.5_0.5": 0.06441037075738926,
+      "year": 2021
+    }
+  },
+  "p1": {
+    "DEV19": {
+      "p0_epoch": 15,
+      "p1_epoch": 15,
+      "p0_ic": 0.0754378818018116,
+      "p1_ic": 0.0754378818018116,
+      "delta": 0.0
+    },
+    "DEV20": {
+      "p0_epoch": 13,
+      "p1_epoch": 13,
+      "p0_ic": 0.08146257369027317,
+      "p1_ic": 0.08146257369027317,
+      "delta": 0.0
+    },
+    "CONF21": {
+      "p0_epoch": 12,
+      "p1_epoch": 12,
+      "p0_ic": 0.05227001834272219,
+      "p1_ic": 0.05227001834272219,
+      "delta": 0.0
+    }
+  },
+  "c1_control": {
+    "DEV19": {
+      "seeds": [
+        [
+          20261005,
+          true,
+          "6981150831d9"
+        ],
+        [
+          20261017,
+          true,
+          "4a476f6f7d23"
+        ],
+        [
+          20261029,
+          true,
+          "271bda125b9c"
+        ]
+      ],
+      "all_present": true,
+      "distinct": true
+    },
+    "DEV20": {
+      "seeds": [
+        [
+          20261005,
+          true,
+          "0db6604b16ac"
+        ],
+        [
+          20261017,
+          true,
+          "b6f801d1c219"
+        ],
+        [
+          20261029,
+          true,
+          "7c47150fb580"
+        ]
+      ],
+      "all_present": true,
+      "distinct": true
+    },
+    "CONF21": {
+      "seeds": [
+        [
+          20261005,
+          true,
+          "d2d49603ea82"
+        ],
+        [
+          20261017,
+          true,
+          "7b837f57f024"
+        ],
+        [
+          20261029,
+          true,
+          "5cb02b562b7d"
+        ]
+      ],
+      "all_present": true,
+      "distinct": true
+    }
+  },
+  "p0_epoch_source": "artifacts/stage4_verified_ic/v1_tabm/tabm_pc_20261005__*/atom_manifest.json (best_epoch)"
+}

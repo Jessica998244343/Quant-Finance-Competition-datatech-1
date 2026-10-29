@@ -1,0 +1,46 @@
+{
+  "name": "B0",
+  "status": "冻结参照",
+  "priority": 3,
+  "package": {
+    "zip": "releases/baseline_v1.zip",
+    "bytes": 434572,
+    "sha256": "0b7d5e031e941ca9364b2d58aac9049eb6de2ba031ee6b632f4f173a5a326872",
+    "uncompressed_bytes": 1033453,
+    "model_files": {
+      "lgbm_b0.txt": 984762,
+      "meta.json": 1227
+    }
+  },
+  "results_by_window": [
+    {
+      "version": "B0",
+      "window": "DEV19",
+      "mean_rankic": 0.0517760997301737,
+      "rankic_std": 0.1262126862866513,
+      "rankic_ir": 0.410228965514458,
+      "positive_ratio": 0.6516393442622951,
+      "n_days": 244
+    },
+    {
+      "version": "B0",
+      "window": "DEV20",
+      "mean_rankic": 0.0438723161811774,
+      "rankic_std": 0.1235327292921349,
+      "rankic_ir": 0.3551473073781642,
+      "positive_ratio": 0.6419753086419753,
+      "n_days": 243
+    },
+    {
+      "version": "B0",
+      "window": "CONF21",
+      "mean_rankic": 0.0496337205204449,
+      "rankic_std": 0.1345484291692866,
+      "rankic_ir": 0.3688911184388231,
+      "positive_ratio": 0.6502057613168725,
+      "n_days": 243
+    }
+  ],
+  "confirmation": "CONF21 已在配方冻结后一次性读取，未用于调参",
+  "note": "永不覆盖；作为全量回退包 releases/baseline_v1.zip 交付"
+}

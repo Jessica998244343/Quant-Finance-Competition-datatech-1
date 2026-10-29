@@ -1,0 +1,7 @@
+{
+  "start": "2021-01-04",
+  "end": "2021-12-31",
+  "rows": 72900,
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

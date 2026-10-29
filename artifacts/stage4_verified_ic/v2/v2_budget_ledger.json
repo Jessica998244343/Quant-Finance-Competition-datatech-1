@@ -1,0 +1,40 @@
+{
+  "budget_unit": "a recipe = unique (feature set x architecture params x target x training window x selection protocol)",
+  "allocation": {
+    "cat_capacity_target_recency": {"used": 2, "cap": 4, "items": ["C2 depth6/l2=15", "C3 depth8/l2=30"], "note": "reused existing legal DEV predictions"},
+    "tabm_regularisation_loss_recency": {"used": 2, "cap": 3, "items": ["dropout 0.1->0.2", "MSE + 0.1*(1-Pearson) intraday loss"]},
+    "feature_groups_and_joint": {"used": 4, "cap": 5, "items": ["F1", "F2", "F3", "F1+F2+F3"]},
+    "winning_feature_to_tabm": {"used": 0, "cap": 2, "items": [], "note": "no feature group won the C1 gate"},
+    "tcn_control_w60": {"used": 3, "cap": 3, "items": ["TCN W20", "static-only same-budget control", "time-order shuffle diagnostic"], "note": "no W60 because no increment"},
+    "reserve": {"used": 0, "cap": 1}
+  },
+  "total_recipes_used": 11,
+  "total_cap": 18,
+  "final_fusion": {
+    "retained_members": ["C1 x3 seeds (0.5)", "TabM x3 seeds (0.5)"],
+    "new_members_retained": 0,
+    "weight_vectors_used": 0,
+    "weight_vector_cap": 40,
+    "note": "with no retained new member the joint fusion is the frozen V1 anchor; the coordinate-scan budget is unused. Deletion ablation of the anchor is recorded in v1_anchor_compare.json."
+  },
+  "conditional_branches": {
+    "recency_504day_expert": {"triggered": false, "reason": "half-year retrain vs annual control: 2019H2 +0.006675, 2020H2 +0.000752, 2021H2 -0.000695 (not consistent)"},
+    "pairlogit": {"triggered": false, "reason": "low priority; no evidence base, not combined with the searched dimensions"},
+    "industry_relative_F4": {"triggered": false, "reason": "no industry identifier in the three legal tables (registered skip)"},
+    "xgboost_rf_family_search": {"triggered": false, "reason": "not the current bottleneck"}
+  },
+  "results_summary": {
+    "C2_vs_anchor_alpha0.10": {"DEV19": 0.000365, "DEV20": -0.000085},
+    "C3_vs_anchor_alpha0.10": {"DEV19": 0.000204, "DEV20": -0.000253},
+    "F1_standalone_vs_C1": {"DEV19": -0.003476, "DEV20": -0.000162},
+    "F2_standalone_vs_C1": {"DEV19": -0.001946, "DEV20": 0.003007},
+    "F3_standalone_vs_C1": {"DEV19": -0.004373, "DEV20": -0.001161},
+    "F123_standalone_vs_C1": {"DEV19": -0.002995, "DEV20": 0.003269},
+    "tabm_dropout0.2_seedmean_vs_base": {"DEV19": 0.001145, "DEV20": -0.001596},
+    "tabm_corr_loss_single_seed_vs_base": {"DEV19": 0.001284, "DEV20": -0.001137},
+    "tcn_vs_anchor_alpha0.10": {"DEV19": 0.000884, "DEV20": 0.000256},
+    "static_control_vs_anchor_alpha0.10": {"DEV19": 0.000198, "DEV20": -0.000289},
+    "tcn_shuffled_vs_anchor_alpha0.10": {"DEV19": -0.000300, "DEV20": 0.000335}
+  },
+  "conclusion": "No V2 candidate passed the retention rule; the frozen algorithm remains the V1 anchor. 2022 performance has not been computed."
+}

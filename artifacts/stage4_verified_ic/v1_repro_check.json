@@ -1,0 +1,54 @@
+{
+  "reference": "releases/stage4_verified_ic/build/V1_pkg/model",
+  "candidate": "/tmp/v1repro2",
+  "panel": "artifacts/stage2_ic_ir/panel_platform.parquet",
+  "window": "CONF21",
+  "n_predict_rows": 72900,
+  "n_days": 243,
+  "seeds": {
+    "20261005": {
+      "cbm_bytes_identical": false,
+      "cbm_tree_content_identical": true,
+      "npz_bytes_identical": true,
+      "npz_parameter_max_abs_diff": 0.0
+    },
+    "20261017": {
+      "cbm_bytes_identical": false,
+      "cbm_tree_content_identical": true,
+      "npz_bytes_identical": true,
+      "npz_parameter_max_abs_diff": 0.0
+    },
+    "20261029": {
+      "cbm_bytes_identical": false,
+      "cbm_tree_content_identical": true,
+      "npz_bytes_identical": true,
+      "npz_parameter_max_abs_diff": 0.0
+    }
+  },
+  "design_hash_equal": true,
+  "design_hash": "d00bb6c8feb5f5a1178349dacfdee1f83f3b6b60bad80cb19bf9884886eb8028",
+  "config_equal": true,
+  "member_raw_max_abs_diff": {
+    "c1_20261005": 0.0,
+    "c1_20261017": 0.0,
+    "c1_20261029": 0.0,
+    "tabm_20261005": 0.0,
+    "tabm_20261017": 0.0,
+    "tabm_20261029": 0.0
+  },
+  "atom_max_abs_diff": {
+    "c1": 0.0,
+    "tabm": 0.0
+  },
+  "fused_max_abs_diff": 0.0,
+  "fused_daily_rank_identical": true,
+  "rankic_reference": 0.06441037075738926,
+  "rankic_days": 243,
+  "rankic_candidate": 0.06441037075738926,
+  "anchor_rows": 72900,
+  "anchor_keys_match": true,
+  "max_abs_diff_vs_anchor": 0.0,
+  "rankic_anchor": 0.06441037075738926,
+  "mixed_date_rejected": true,
+  "passed": true
+}

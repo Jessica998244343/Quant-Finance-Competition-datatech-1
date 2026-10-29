@@ -1,0 +1,45 @@
+{
+  "corr2_weight_normalisation": {
+    "DEV19": {
+      "window": "DEV19",
+      "cutoff": 20181231,
+      "perturbed_future_rows": 291600,
+      "n_internal_samples": 137649,
+      "old_global_normalisation_constant": 0.003394609394613686,
+      "internal_weight_mean_old": 1.0315354764765239,
+      "drop_future_rows": {
+        "common_samples": 137649,
+        "fold_local_max_abs_weight_diff": 0.0,
+        "old_global_max_abs_weight_diff": 0.027984778250264908
+      },
+      "invalidate_future_labels": {
+        "common_samples": 137649,
+        "fold_local_max_abs_weight_diff": 0.0,
+        "old_global_max_abs_weight_diff": 0.027984778250264908
+      }
+    },
+    "DEV20": {
+      "window": "DEV20",
+      "cutoff": 20191231,
+      "perturbed_future_rows": 218400,
+      "n_internal_samples": 209636,
+      "old_global_normalisation_constant": 0.003394609394613686,
+      "internal_weight_mean_old": 1.0201897303468808,
+      "drop_future_rows": {
+        "common_samples": 209636,
+        "fold_local_max_abs_weight_diff": 0.0,
+        "old_global_max_abs_weight_diff": 0.015409964694143019
+      },
+      "invalidate_future_labels": {
+        "common_samples": 209636,
+        "fold_local_max_abs_weight_diff": 0.0,
+        "old_global_max_abs_weight_diff": 0.015409964694143019
+      }
+    }
+  },
+  "corr1_catboost_rounds": {
+    "old_implementation": "iterations = get_best_iteration(); final tree count = that value",
+    "example_old_model_tree_count": 290,
+    "note": "index is 0-based; the corrected trainer uses index+1 as the tree count and only falls back to the full iteration budget when get_best_iteration() is None"
+  }
+}

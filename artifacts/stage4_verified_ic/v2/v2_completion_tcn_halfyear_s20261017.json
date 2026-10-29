@@ -1,0 +1,24 @@
+{
+  "seed": 20261017,
+  "windows": {
+    "2020H2": {
+      "train_label_cutoff": 20200630,
+      "best_epoch": 17,
+      "seconds": 449.5,
+      "manifest": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_2020H2/manifest.json"
+    },
+    "2021H2": {
+      "train_label_cutoff": 20210630,
+      "best_epoch": 12,
+      "seconds": 443.3,
+      "manifest": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_2021H2/manifest.json"
+    }
+  },
+  "alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ]
+}

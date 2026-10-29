@@ -1,0 +1,8 @@
+{
+  "seed": 20261017,
+  "selected_trees": 1250,
+  "best_checkpoint": 1300,
+  "best_inner_ic": 0.07665182831631538,
+  "actual_tree_count": 1250,
+  "seconds_this_attempt": 182.42106771469116
+}

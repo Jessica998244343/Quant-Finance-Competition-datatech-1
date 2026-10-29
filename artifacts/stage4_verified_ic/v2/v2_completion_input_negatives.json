@@ -1,0 +1,10 @@
+{
+  "missing_day_rejected": true,
+  "missing_stock_rejected": true,
+  "nan_atom_rejected": true,
+  "tampered_reference_rejected": true,
+  "future_rows_do_not_change_t": true,
+  "rows_added": 500,
+  "all_rejected": true,
+  "passed": true
+}

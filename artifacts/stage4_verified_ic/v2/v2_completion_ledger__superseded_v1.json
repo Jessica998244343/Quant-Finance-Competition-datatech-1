@@ -1,0 +1,70 @@
+{
+  "unit": "recipe = unique (feature set x architecture params x target x training window x selection protocol)",
+  "recipes": {
+    "cat_capacity_target_recency": [
+      "C2 depth6/l2=15",
+      "C3 depth8/l2=30"
+    ],
+    "tabm_regularisation_loss_recency": [
+      "dropout 0.1->0.2",
+      "MSE + 0.1*(1-Pearson) intraday"
+    ],
+    "feature_groups": [
+      "F1",
+      "F2",
+      "F3"
+    ],
+    "feature_group_history": [
+      "F123 (three-group joint; kept as history, not extended)"
+    ],
+    "tcn": [
+      "TCN W20",
+      "static same-budget control",
+      "time-shuffle diagnostic (diagnostic only)"
+    ],
+    "tabm_recent_504": [
+      "TabM last 504 legal trading days"
+    ]
+  },
+  "recipes_used": 10,
+  "recipes_cap": 18,
+  "member_screening_weight_vectors": {
+    "description": "each member was scanned over alpha in {0.05,0.10,0.25,0.50} under the flat graph",
+    "members_scanned": [
+      "C2",
+      "C3",
+      "tabm_dropout0.2",
+      "tabm_corr_loss",
+      "resmlp_n0",
+      "tcn",
+      "static",
+      "shuffle"
+    ],
+    "count": 32,
+    "note": "member screening vectors, distinct from the final joint-fusion budget"
+  },
+  "final_joint_fusion_vectors": {
+    "registered": [
+      "full {c1:0.375, tabm:0.375, tcn:0.25}",
+      "drop_c1 {tabm:0.6, tcn:0.4}",
+      "drop_tabm {c1:0.6, tcn:0.4}",
+      "drop_tcn {c1:0.5, tabm:0.5}"
+    ],
+    "count": 4,
+    "cap": 40,
+    "note": "V1 0.5/0.5 counted once; no further search performed"
+  },
+  "failed_or_superseded_runs": [
+    "v2_tcn.json (pre-fix TCN; superseded)",
+    "v2_rev1_tcn_family.json (contradictory fields; superseded by v2_completion_family_*.json)",
+    "halfyear_2020H2/2021H2__superseded_mixedseeds (overwritten run IDs; superseded)",
+    "tabm_recent504_20261005__* (predictions+manifest only: NO model/preprocessing/curve -> not usable for deployment or promotion)"
+  ],
+  "conditional_branches": {
+    "recency_504": "triggered and executed; DEV19 -0.004225 / DEV20 +0.004442 -> no extension",
+    "pairlogit": "not triggered",
+    "industry_relative_F4": "interface unavailable (no industry field in the three tables)",
+    "xgboost_rf": "not triggered"
+  },
+  "conclusion": "TCN half-year starting-point check failed at three seeds (2020H2 reversal persists) -> V2 defaults to V1_FIXED_ANCHOR; TCN retained as a research finding only."
+}

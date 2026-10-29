@@ -1,0 +1,26 @@
+{
+  "rank_operator": "(average_rank(x) - (n+1)/2)/n computed inside each signal day's pool",
+  "members": [
+    "lgbm_seed_20261005",
+    "lgbm_seed_20261017",
+    "lgbm_seed_20261029",
+    "catboost"
+  ],
+  "weights": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.5
+  ],
+  "layers": {
+    "layer1": "per-seed: 0.5*rank(lgbm) + 0.5*rank(catboost)",
+    "layer2": "mean of the three per-seed fused scores"
+  },
+  "invariants": [
+    "no cross-date ranking at any layer",
+    "member pool must equal the day's legal universe by outer join",
+    "NaN/Inf or missing members raise",
+    "other dates cannot change a fixed date's score",
+    "permuting stock order does not change per-code values"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "strong_baseline_v1",
+  "status": "主候选（S*）",
+  "priority": 1,
+  "package": {
+    "zip": "releases/strong_baseline_v1.zip",
+    "bytes": 2337136,
+    "sha256": "5a219cb822df16c989ab1ca4a49f88bc650d7fbf84b0d860dd83bc305935b2c8",
+    "uncompressed_bytes": 4419482,
+    "model_files": {
+      "lgbm_p5.txt": 3050629,
+      "catboost_d8_l2_15.cbm": 1317336,
+      "meta.json": 1783
+    }
+  },
+  "results_by_window": [
+    {
+      "version": "SSTAR",
+      "window": "DEV19",
+      "mean_rankic": 0.0787574158858398,
+      "rankic_std": 0.1414432768357745,
+      "rankic_ir": 0.556812721309353,
+      "positive_ratio": 0.7008196721311475,
+      "n_days": 244
+    },
+    {
+      "version": "SSTAR",
+      "window": "DEV20",
+      "mean_rankic": 0.0775772677232324,
+      "rankic_std": 0.1365450337657322,
+      "rankic_ir": 0.568144190848642,
+      "positive_ratio": 0.7407407407407407,
+      "n_days": 243
+    },
+    {
+      "version": "SSTAR",
+      "window": "CONF21",
+      "mean_rankic": 0.060836478017059,
+      "rankic_std": 0.1384577416310745,
+      "rankic_ir": 0.4393866121199637,
+      "positive_ratio": 0.6502057613168725,
+      "n_days": 243
+    }
+  ],
+  "confirmation": "CONF21 已在配方冻结后一次性读取，未用于调参",
+  "members": [
+    {
+      "name": "lgbm_p5",
+      "weight": 0.75,
+      "features": "F0+G1 (61)",
+      "rounds": 418,
+      "seed": 20261005
+    },
+    {
+      "name": "catboost_d8_l2_15",
+      "weight": 0.25,
+      "features": "F0+G1 (61)",
+      "rounds": 310,
+      "seed": 20261005
+    }
+  ],
+  "blend": "每日截面中心化秩加权和"
+}

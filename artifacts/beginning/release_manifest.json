@@ -1,0 +1,59 @@
+{
+  "packages": {
+    "baseline_v1": {
+      "zip": "releases/baseline_v1.zip",
+      "bytes": 435055,
+      "sha256": "565c7907c7519d3f801237dcaee98a862c7aed2527a0ec27e1703b0ac8fcb171",
+      "uncompressed_bytes": 1034124,
+      "model_files": {
+        "lgbm_b0.txt": 984762,
+        "meta.json": 1227
+      }
+    },
+    "strong_baseline_v1": {
+      "zip": "releases/strong_baseline_v1.zip",
+      "bytes": 2337622,
+      "sha256": "b34712933d952da40ff903804096e0f104ad501b598d643b335a7b31dc0f87c5",
+      "uncompressed_bytes": 4420153,
+      "model_files": {
+        "lgbm_p5.txt": 3050629,
+        "catboost_d8_l2_15.cbm": 1317336,
+        "meta.json": 1783
+      }
+    }
+  },
+  "artifacts": {
+    "acceptance": {
+      "path": "artifacts/beginning/cpu_acceptance/acceptance_report.json",
+      "bytes": 4424
+    },
+    "reproduction": {
+      "path": "artifacts/beginning/cpu_acceptance/reproduction_report.json",
+      "bytes": 486
+    },
+    "b0_freeze": {
+      "path": "artifacts/beginning/B0_FREEZE.md",
+      "bytes": 2784
+    },
+    "decisions": {
+      "path": "artifacts/beginning/decisions_pre_conf21.md",
+      "bytes": 1481
+    },
+    "feature_catalog": {
+      "path": "artifacts/beginning/feature_catalog.csv",
+      "bytes": 4337
+    },
+    "splits": {
+      "path": "artifacts/beginning/splits.json",
+      "bytes": 19215
+    },
+    "experiments": {
+      "path": "artifacts/beginning/experiments.jsonl",
+      "bytes": 101576
+    },
+    "panel_cache": {
+      "path": "artifacts/beginning/cache/panel.parquet",
+      "bytes": 129564653
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "package_sha256": "8cb919e477504fa53813ed7218fda122107c4b86de4ae9beb29509958ae66153",
+  "python": "3.11.17 (main, Oct  1 2026, 20:17:42) [GCC 14.3.0]",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "catboost": "1.2.10"
+  },
+  "model_load_seconds": 0.07177922900001477,
+  "days": {
+    "20160104": {
+      "rows": 300,
+      "seconds": 0.42086932000000843,
+      "valid": true,
+      "market_days": 1
+    },
+    "20160105": {
+      "rows": 300,
+      "seconds": 0.34360615800000005,
+      "valid": true,
+      "market_days": 2
+    },
+    "20160630": {
+      "rows": 300,
+      "seconds": 0.5225180429999909,
+      "valid": true,
+      "market_days": 120
+    },
+    "20170103": {
+      "rows": 300,
+      "seconds": 0.5182710409999913,
+      "valid": true,
+      "market_days": 120
+    },
+    "20180102": {
+      "rows": 300,
+      "seconds": 0.49910670200000595,
+      "valid": true,
+      "market_days": 120
+    },
+    "20190102": {
+      "rows": 300,
+      "seconds": 0.5140486699999656,
+      "valid": true,
+      "market_days": 120
+    },
+    "20200102": {
+      "rows": 300,
+      "seconds": 0.5020393890000037,
+      "valid": true,
+      "market_days": 120
+    },
+    "20210104": {
+      "rows": 300,
+      "seconds": 0.5219180029999961,
+      "valid": true,
+      "market_days": 120
+    },
+    "20220104": {
+      "rows": 300,
+      "seconds": 0.5078536720000102,
+      "valid": true,
+      "market_days": 120
+    },
+    "20220613": {
+      "rows": 300,
+      "seconds": 0.5175154059999727,
+      "valid": true,
+      "market_days": 120
+    },
+    "20221228": {
+      "rows": 300,
+      "seconds": 0.5595779210000273,
+      "valid": true,
+      "market_days": 120
+    },
+    "20221230": {
+      "rows": 300,
+      "seconds": 0.6268679840000004,
+      "valid": true,
+      "market_days": 120
+    }
+  },
+  "banned_columns_removed_exact": true,
+  "row_shuffle_exact": true,
+  "future_rows_ignored_exact": true,
+  "cross_call_order_exact": true,
+  "sample_training_feature_alignment": {
+    "20160630": {
+      "keys_equal": true,
+      "equal_including_nan": true,
+      "max_abs": 0.0
+    },
+    "20190102": {
+      "keys_equal": true,
+      "equal_including_nan": true,
+      "max_abs": 0.0
+    },
+    "20220613": {
+      "keys_equal": true,
+      "equal_including_nan": true,
+      "max_abs": 0.0
+    },
+    "20221228": {
+      "keys_equal": true,
+      "equal_including_nan": true,
+      "max_abs": 0.0
+    }
+  },
+  "torch_imported_during_inference": false
+}

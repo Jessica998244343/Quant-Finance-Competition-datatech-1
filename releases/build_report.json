@@ -1,0 +1,41 @@
+{
+  "baseline_v1": {
+    "target": "releases/build/baseline_v1",
+    "modules": [
+      "alpha_constants.py",
+      "alpha_features.py",
+      "alpha_dataio.py",
+      "alpha_labels.py",
+      "alpha_panel.py",
+      "alpha_cv.py",
+      "alpha_trainers.py"
+    ],
+    "model_files": [
+      "lgbm_b0.txt",
+      "meta.json"
+    ],
+    "zip": "releases/baseline_v1.zip",
+    "bytes": 435055,
+    "sha256": "565c7907c7519d3f801237dcaee98a862c7aed2527a0ec27e1703b0ac8fcb171"
+  },
+  "strong_baseline_v1": {
+    "target": "releases/build/strong_baseline_v1",
+    "modules": [
+      "alpha_constants.py",
+      "alpha_features.py",
+      "alpha_dataio.py",
+      "alpha_labels.py",
+      "alpha_panel.py",
+      "alpha_cv.py",
+      "alpha_trainers.py"
+    ],
+    "model_files": [
+      "catboost_d8_l2_15.cbm",
+      "lgbm_p5.txt",
+      "meta.json"
+    ],
+    "zip": "releases/strong_baseline_v1.zip",
+    "bytes": 2337622,
+    "sha256": "b34712933d952da40ff903804096e0f104ad501b598d643b335a7b31dc0f87c5"
+  }
+}

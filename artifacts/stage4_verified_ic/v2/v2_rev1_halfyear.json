@@ -1,0 +1,27 @@
+{
+  "note": "same-seed20261005 comparison; annual expanding control vs half-year retrain (labels mature before end-June); flat 0.5/0.5 fusion",
+  "2019H2": {
+    "annual_same_seed": 0.06361517166403383,
+    "half_year_retrain": 0.06831303798699699,
+    "delta": 0.004697866322963165,
+    "c1_delta": 0.005950317176721356,
+    "tabm_delta": 0.006866350609233324,
+    "h2_days": 126
+  },
+  "2020H2": {
+    "annual_same_seed": 0.09229775955205147,
+    "half_year_retrain": 0.09637928304385021,
+    "delta": 0.004081523491798744,
+    "c1_delta": 0.0032959440930282885,
+    "tabm_delta": 0.004881194091450811,
+    "h2_days": 126
+  },
+  "2021H2": {
+    "annual_same_seed": 0.05035326746436178,
+    "half_year_retrain": 0.052842308083900065,
+    "delta": 0.0024890406195382866,
+    "c1_delta": -0.00022721420957583227,
+    "tabm_delta": 0.0037224731729340044,
+    "h2_days": 125
+  }
+}

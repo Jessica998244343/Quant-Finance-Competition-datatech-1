@@ -1,0 +1,19 @@
+{
+  "member": "tabm_seed20261005.npz",
+  "max_parameter_abs_diff": 0.0,
+  "per_tensor": {
+    "W0": 0.0,
+    "r0": 0.0,
+    "s0": 0.0,
+    "b0": 0.0,
+    "W1": 0.0,
+    "r1": 0.0,
+    "s1": 0.0,
+    "b1": 0.0,
+    "Wh": 0.0,
+    "bh": 0.0,
+    "k": 0.0
+  },
+  "full_inner_curve_exact": true,
+  "selected_epoch": 20
+}

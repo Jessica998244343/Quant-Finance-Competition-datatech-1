@@ -1,0 +1,16 @@
+{
+  "tabm": {
+    "parameters_bit_identical": true,
+    "history_bit_identical": true,
+    "best_epoch": 2,
+    "completed_outer_restore": true,
+    "corrupt_checkpoint_fallback_tested": true
+  },
+  "tcn": {
+    "parameters_bit_identical": true,
+    "history_bit_identical": true,
+    "best_epoch": 35,
+    "completed_outer_restore": true,
+    "corrupt_checkpoint_fallback_tested": true
+  }
+}

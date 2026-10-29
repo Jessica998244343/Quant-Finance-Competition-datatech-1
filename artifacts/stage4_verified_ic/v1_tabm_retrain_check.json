@@ -1,0 +1,15 @@
+{
+  "purpose": "confirm the explicit TabM wrapper still trains the shipped weights",
+  "window": "CONF21",
+  "seed": 20261005,
+  "train_label_cutoff": 20201231,
+  "best_epoch": 12,
+  "best_inner_ic": 0.09963247134458499,
+  "inner_epochs_run": 24,
+  "npz_bytes_identical": true,
+  "npz_sha_produced": "4ef2b8181cd3b45aa8c7b6601df6ec8e2c567ef889b7ca76c9986c1d04dada01",
+  "npz_sha_shipped": "4ef2b8181cd3b45aa8c7b6601df6ec8e2c567ef889b7ca76c9986c1d04dada01",
+  "design_identical": true,
+  "explicit_wrapper_sha256": "f84fa389351ae75f4987976ed7c876078e446a73ea3498ef7b8d4d46c4ecb148",
+  "passed": true
+}

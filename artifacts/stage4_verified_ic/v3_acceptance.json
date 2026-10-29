@@ -1,0 +1,505 @@
+{
+  "package": "releases/stage4_verified_ic/V3_full_pkg.zip",
+  "model_load_seconds": 0.13311243399994055,
+  "days": {
+    "20220104": {
+      "date": "2022-01-04",
+      "n": 300,
+      "atoms": {
+        "c1_20261005": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261017": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261029": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261005": {
+          "raw": {
+            "max_abs_diff": 1.1175870895385742e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261017": {
+          "raw": {
+            "max_abs_diff": 8.381903171539307e-09,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261029": {
+          "raw": {
+            "max_abs_diff": 7.450580596923828e-09,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261005": {
+          "raw": {
+            "max_abs_diff": 3.3527612686157227e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261017": {
+          "raw": {
+            "max_abs_diff": 2.9802322387695312e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261029": {
+          "raw": {
+            "max_abs_diff": 2.2351741790771484e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "families": {
+        "c1": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "final": {
+        "raw": {
+          "max_abs_diff": 0.0,
+          "tolerance_pass": true
+        },
+        "rank": {
+          "identical_rank_order": true,
+          "max_rank_gap": 0.0,
+          "spearman": 1.0
+        },
+        "reference_final_is_rank": true,
+        "platform_entry_matches_scorer": true
+      },
+      "frame_checks": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true
+      }
+    },
+    "20220613": {
+      "date": "2022-06-13",
+      "n": 300,
+      "atoms": {
+        "c1_20261005": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261017": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261029": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261005": {
+          "raw": {
+            "max_abs_diff": 7.450580596923828e-09,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261017": {
+          "raw": {
+            "max_abs_diff": 1.4901161193847656e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261029": {
+          "raw": {
+            "max_abs_diff": 1.4901161193847656e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261005": {
+          "raw": {
+            "max_abs_diff": 2.9802322387695312e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261017": {
+          "raw": {
+            "max_abs_diff": 2.2351741790771484e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261029": {
+          "raw": {
+            "max_abs_diff": 3.725290298461914e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "families": {
+        "c1": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 0.9999999999999999
+          }
+        },
+        "tabm": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "final": {
+        "raw": {
+          "max_abs_diff": 0.0,
+          "tolerance_pass": true
+        },
+        "rank": {
+          "identical_rank_order": true,
+          "max_rank_gap": 0.0,
+          "spearman": 1.0
+        },
+        "reference_final_is_rank": true,
+        "platform_entry_matches_scorer": true
+      },
+      "frame_checks": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true
+      }
+    },
+    "20221228": {
+      "date": "2022-12-28",
+      "n": 300,
+      "atoms": {
+        "c1_20261005": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261017": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "c1_20261029": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261005": {
+          "raw": {
+            "max_abs_diff": 1.4901161193847656e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261017": {
+          "raw": {
+            "max_abs_diff": 1.4901161193847656e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm_20261029": {
+          "raw": {
+            "max_abs_diff": 7.450580596923828e-09,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261005": {
+          "raw": {
+            "max_abs_diff": 2.2351741790771484e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261017": {
+          "raw": {
+            "max_abs_diff": 1.862645149230957e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn_20261029": {
+          "raw": {
+            "max_abs_diff": 2.2351741790771484e-08,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "families": {
+        "c1": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tabm": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        },
+        "tcn": {
+          "raw": {
+            "max_abs_diff": 0.0,
+            "tolerance_pass": true
+          },
+          "rank": {
+            "identical_rank_order": true,
+            "max_rank_gap": 0.0,
+            "spearman": 1.0
+          }
+        }
+      },
+      "final": {
+        "raw": {
+          "max_abs_diff": 0.0,
+          "tolerance_pass": true
+        },
+        "rank": {
+          "identical_rank_order": true,
+          "max_rank_gap": 0.0,
+          "spearman": 1.0
+        },
+        "reference_final_is_rank": true,
+        "platform_entry_matches_scorer": true
+      },
+      "frame_checks": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true
+      }
+    }
+  },
+  "identifier_invariance_max_abs_diff": 0.0,
+  "future_truncation_ok": true,
+  "row_permutation_ok": true,
+  "timing": {
+    "n_days": 40,
+    "cold_start_seconds": 0.25293811799997457,
+    "warm_p50_seconds": 0.28415611699995225,
+    "warm_p95_seconds": 0.34058137750000705,
+    "warm_max_seconds": 0.3859063130000777,
+    "peak_rss_mb": 948.625
+  },
+  "suspended_stock_scored": true,
+  "feature_deficient_stock": {
+    "code": "SH600487",
+    "nan_features": 21,
+    "scored": true,
+    "score_finite": true
+  },
+  "package_bytes": 12389102
+}

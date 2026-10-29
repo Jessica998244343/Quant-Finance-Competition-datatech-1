@@ -1,0 +1,34 @@
+{
+  "frozen_at": "2026-10-05 (Asia/Shanghai)",
+  "REF_v1": {
+    "release": "strong_baseline_v1",
+    "zip": "releases/strong_baseline_v1.zip",
+    "sha256": "b34712933d952da40ff903804096e0f104ad501b598d643b335a7b31dc0f87c5",
+    "zip_bytes": 2337622,
+    "uncompressed_bytes": 4420153,
+    "recipe": "F0+G1 (61 features); 0.75*rank(LightGBM P5) + 0.25*rank(CatBoost depth8 l2=15); seed 20261005",
+    "official_score_source": "user-reported official leaderboard (this session)",
+    "note": "official score stays attached to this zip identity only"
+  },
+  "B0_history": {
+    "release": "baseline_v1",
+    "zip": "releases/baseline_v1.zip",
+    "sha256": "565c7907c7519d3f801237dcaee98a862c7aed2527a0ec27e1703b0ac8fcb171",
+    "note": "historical fallback; background only in stage 2"
+  },
+  "research_models": {
+    "legacy_fold_models_refit": "artifacts/stage2_ic_ir/models_fold/legacy_{p5,catboost}_{DEV19,DEV20,CONF21}.*",
+    "aligned_fold_models": "artifacts/stage2_ic_ir/models_fold/aligned_{p5,catboost}_{DEV19,DEV20,CONF21}.*",
+    "refit_check": "legacy refit reproduces stage-1 OOF predictions with max abs diff 0.0"
+  },
+  "caches": {
+    "legacy_panel": "artifacts/beginning/cache/panel.parquet",
+    "platform_semantics_panel": "artifacts/stage2_ic_ir/panel_platform.parquet"
+  },
+  "platform": {
+    "repo": "vendor/skd-backtest",
+    "commit": "ec5d35872fb3dec58d385039c8c18787460c18a9",
+    "version": "1.0.1"
+  },
+  "contract": "configs/beginning/evaluation_contract.json (inherited unchanged: H=1, daily, Barra limits, zero_proxy, stage-1 fees)"
+}

@@ -1,0 +1,15 @@
+{
+  "windows": [
+    "DEV19",
+    "DEV20"
+  ],
+  "start": "2019-01-02",
+  "end": "2020-12-31",
+  "view": "artifacts/beginning/data_zero_st",
+  "zero_cost": true,
+  "ids": [
+    "SSTAR"
+  ],
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

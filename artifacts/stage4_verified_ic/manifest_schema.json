@@ -1,0 +1,112 @@
+{
+  "manifest_schema_version": "stage4-v1",
+  "purpose": "single source of truth for training, offline evaluation, inference and packaging",
+  "required_fields": {
+    "recipe_id": "unique id, never reused",
+    "code_hash": "sha256 of the training/feature/inference source used",
+    "feature_order": [
+      "ordered list of feature column names"
+    ],
+    "feature_order_hash": "sha256 of the ordered feature list",
+    "feature_def_hash": "sha256 of the feature definitions",
+    "legal_input_contract": "three tables, lookback<=120, daily Barra universe",
+    "train_cutoff": "last legal training date (YYYYMMDD)",
+    "label_maturity_end": "max label_end_date actually used",
+    "preprocessing": {
+      "file": "path",
+      "hash": "sha256"
+    },
+    "family": "lgbm | catboost | tabm | resmlp | tcn | ridge",
+    "arch_params": "family-specific, explicit (no implicit defaults)",
+    "objective": "daily centred rank target description",
+    "inner_protocol": "inner fit / validation split with label_end boundary",
+    "outer_protocol": "outer refit rule; must re-initialise model, optimiser and RNG",
+    "seed": "int",
+    "n_trees_or_epochs": "selected rounds/epochs for this run",
+    "train_threads": "int (LightGBM is not bit-identical across thread counts)",
+    "backend": "training backend (torch/cpu, lightgbm, catboost)",
+    "atom_weight_files": [
+      "relative paths inside model/"
+    ],
+    "atom_weight_hashes": [
+      "sha256, same order as atom_weight_files"
+    ],
+    "fusion_graph_id": "must match the frozen graph definition",
+    "family_weights": {
+      "member": "non-negative, sums to 1"
+    },
+    "package_hash": "sha256 of the released zip (filled at packaging time)"
+  },
+  "hard_rules": [
+    "number of declared seeds must equal the number of atom weight files",
+    "duplicate atom hashes are rejected (they cannot stand in for different seeds)",
+    "fusion must follow the frozen graph: atom rank -> seed mean -> weighted sum -> final rank",
+    "no member may be silently dropped or zero-filled at inference time"
+  ],
+  "frozen_fusion_graph": {
+    "rank_operator": "r_t(x)=(average_rank(x)-(n_t+1)/2)/n_t inside the day's legal pool",
+    "step1": "atom raw score s -> r_t(s)",
+    "step2": "same recipe seeds: q_g = mean_seed r_t(s_g,seed) (no extra family rank)",
+    "step3": "u = sum_g w_g q_g, w_g>=0, sum w_g = 1",
+    "step4": "submitted score = r_t(u)"
+  },
+  "manifest_kinds": {
+    "atom_manifest": {
+      "scope": "one recipe x one seed x one training cutoff x one weight file",
+      "required": [
+        "recipe_id",
+        "seed",
+        "train_cutoff",
+        "label_maturity_end",
+        "preprocessing_hash",
+        "weight_file",
+        "weight_hash",
+        "train_backend",
+        "infer_backend",
+        "arch_params",
+        "objective",
+        "inner_protocol",
+        "outer_protocol",
+        "n_trees_or_epochs",
+        "train_threads"
+      ],
+      "outer_protocol_required_fields": [
+        "reinit_model",
+        "reinit_optimizer",
+        "reinit_rng",
+        "refit_preprocessing_on_outer_fit_set",
+        "fit_data_bounds",
+        "selected_epoch_or_trees_evidence"
+      ]
+    },
+    "ensemble_manifest": {
+      "scope": "expert list x seed list x frozen fusion graph",
+      "required": [
+        "ensemble_id",
+        "atom_manifests[]",
+        "fusion_graph_id",
+        "family_weights",
+        "declared_seed_count",
+        "atom_weight_file_count",
+        "package_hash"
+      ],
+      "hard_fail_if": [
+        "declared_seed_count != atom_weight_file_count",
+        "duplicate atom weight hashes",
+        "family weights negative or not summing to 1",
+        "feature order hash mismatch vs feature list",
+        "extra family-level rank found in the shipped scorer"
+      ]
+    }
+  },
+  "package_hash_location": "release manifest OUTSIDE the zip; never written back into the zip's own internal manifest (that would be a self-referential hash)",
+  "negative_fixtures_required": [
+    "missing member file",
+    "duplicate seed hash",
+    "wrong weight hash",
+    "wrong feature order",
+    "illegal family weights",
+    "extra family rank detected"
+  ],
+  "enforcement": "these are machine assertions in the packing/acceptance code from V1 on; the schema text itself is not the enforcement"
+}

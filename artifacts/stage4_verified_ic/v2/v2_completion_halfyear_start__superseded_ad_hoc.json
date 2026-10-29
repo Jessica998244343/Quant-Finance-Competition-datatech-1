@@ -1,0 +1,70 @@
+{
+  "windows": {
+    "2019H2": {
+      "annual": {
+        "parent": 0.06361517166403383,
+        "candidate": 0.06435883177497564
+      },
+      "half": {
+        "parent": 0.06831303798699699,
+        "candidate": 0.06892575730323641
+      },
+      "days": 126,
+      "seeds": [
+        20261005
+      ],
+      "parent_annual_to_half": 0.004697866322963165,
+      "candidate_annual_to_half": 0.004566925528260768,
+      "increment_annual": 0.0007436601109418184,
+      "increment_half": 0.0006127193162394212,
+      "increment_change": -0.00013094079470239717,
+      "reverse_flag": false
+    },
+    "2020H2": {
+      "annual": {
+        "parent": 0.09562746805482637,
+        "candidate": 0.09891564562549326
+      },
+      "half": {
+        "parent": 0.09878598295559396,
+        "candidate": 0.09995469068013804
+      },
+      "days": 126,
+      "seeds": [
+        20261005,
+        20261017,
+        20261029
+      ],
+      "parent_annual_to_half": 0.0031585149007675867,
+      "candidate_annual_to_half": 0.0010390450546447771,
+      "increment_annual": 0.003288177570666892,
+      "increment_half": 0.0011687077245440824,
+      "increment_change": -0.0021194698461228095,
+      "reverse_flag": true
+    },
+    "2021H2": {
+      "annual": {
+        "parent": 0.05353724667328563,
+        "candidate": 0.05273108064249528
+      },
+      "half": {
+        "parent": 0.05579893782792589,
+        "candidate": 0.055708692999749204
+      },
+      "days": 125,
+      "seeds": [
+        20261005,
+        20261017,
+        20261029
+      ],
+      "parent_annual_to_half": 0.002261691154640255,
+      "candidate_annual_to_half": 0.0029776123572539254,
+      "increment_annual": -0.0008061660307903534,
+      "increment_half": -9.024482817668322e-05,
+      "increment_change": 0.0007159212026136702,
+      "reverse_flag": false
+    }
+  },
+  "any_reverse_3seed": true,
+  "verdict": "TCN half-year starting-point check FAILED (3-seed reversal persists); V2 defaults to V1"
+}

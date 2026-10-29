@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "member_files_exist": true,
+    "member_names_exact": true,
+    "member_hash_keys_exact": true,
+    "hashes_match_files": true,
+    "hashes_unique": true,
+    "families_exact": true,
+    "c1_seed_identity": true,
+    "tabm_seed_identity": true,
+    "seed_identity_matches": true,
+    "weight_keys_exact": true,
+    "weights_nonneg_sum1": true,
+    "fusion_graph_exact": true,
+    "fusion_graph_no_extra_family_rank": true,
+    "training_cutoff_exact": true,
+    "validation_year_exact": true,
+    "preprocessing_cutoff_exact": true,
+    "feature_count_61": true,
+    "feature_order_matches_contract": true,
+    "no_banned_fields": true,
+    "tabm_config_d_in": true,
+    "tabm_config_architecture": true,
+    "design_hash_matches": true
+  },
+  "negative_fixtures": {
+    "missing_member_detected": true,
+    "empty_hash_map_detected": true,
+    "extra_family_rank_detected": true,
+    "unknown_weight_key_detected": true,
+    "illegal_weights_detected": true,
+    "wrong_training_cutoff_detected": true,
+    "duplicate_seed_hash_detected": true,
+    "feature_order_detected": true
+  },
+  "all_pass": true
+}

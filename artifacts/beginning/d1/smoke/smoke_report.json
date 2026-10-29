@@ -1,0 +1,62 @@
+{
+  "rows": 8100,
+  "label_values_match": true,
+  "label_missing_mask_match": true,
+  "rankic_matches_engine": true,
+  "engine_metrics": {
+    "mean_rankic": 0.024092145782804716,
+    "rankic_std": 0.19211508361029825,
+    "rankic_ir": 0.1254047591165469,
+    "positive_rankic_ratio": 0.5555555555555556,
+    "total_return": 0.1116342758935267,
+    "annualized_return": 1.5921334910212281,
+    "annualized_excess_return": 0.05551605813333582,
+    "annualized_volatility": 0.16748157642395492,
+    "maximum_drawdown": 0.017691591366513947,
+    "tracking_error": 0.04967873595697055,
+    "information_ratio": 1.117501423172709,
+    "sharpe_ratio": 5.778281165305683,
+    "turnover": 10.332930961975794,
+    "transaction_cost": 19206.182585863142,
+    "failed_orders": 28
+  },
+  "independent_rankic": {
+    "mean_rankic": 0.02409214578280472,
+    "rankic_std": 0.19211508361029828,
+    "rankic_ir": 0.1254047591165469,
+    "positive_ratio": 0.5555555555555556,
+    "n_days": 27,
+    "n_pairs": 8087
+  },
+  "independent_annualized_portfolio": 1.5921334910212281,
+  "independent_annualized_benchmark": 1.5366174328878923,
+  "independent_tracking_error": 0.04967873595697056,
+  "independent_ir": 1.1175014231727087,
+  "trades": 2782,
+  "orders": 2810,
+  "reject_reasons": {
+    "NaN": 2764,
+    "INSUFFICIENT_CASH": 36,
+    "SUSPENDED": 10
+  },
+  "transaction_cost_sum": 19206.182585863142,
+  "target_weight_complete": true,
+  "universe_coverage_ok": true,
+  "no_duplicate_scores": true,
+  "all_scores_finite": true,
+  "n_signal_days": 27,
+  "target_weights_per_day": 300,
+  "constraints": {
+    "max_single_name_weight": 0.0770832663129886,
+    "max_active_weight": 0.0100000000000001,
+    "max_daily_turnover": 0.9768925240393848,
+    "max_industry_exposure": 0.0200000000000016,
+    "max_style_exposure": 0.02000000000000651,
+    "min_target_codes_per_signal": 300,
+    "actual_positions_min": 83,
+    "actual_positions_max": 98,
+    "target_vs_actual_differs": true
+  },
+  "contract": "documented in configs/beginning/evaluation_contract.json",
+  "signal": "Barra_factor.\u52a8\u91cf percentile (engineering signal, not a baseline)"
+}

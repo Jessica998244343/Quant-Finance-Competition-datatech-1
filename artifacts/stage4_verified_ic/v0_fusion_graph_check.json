@@ -1,0 +1,7 @@
+{
+  "graph_A_frozen(no_extra_family_rank)": 0.08119548439732117,
+  "graph_B_extra_family_rank": 0.08125795509352217,
+  "delta_B_minus_A": 6.247069620099466e-05,
+  "detectable": true,
+  "mean_abs_score_diff": 0.008709335154826959
+}

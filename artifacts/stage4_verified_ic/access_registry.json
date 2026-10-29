@@ -1,0 +1,181 @@
+{
+  "note": "2021 and 2022 are already-used public research years, not blind holdouts. Accesses include confirmation, full fitting and reproduction; historical records are retained.",
+  "year_2021": [
+    {
+      "who": "executor (stage 2/3)",
+      "purpose": "CONF21 annual window for C1/L5/N0/TabM research and the TREE/ALT/FINAL packages",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V1)",
+      "purpose": "corrected TabM CONF21 fold (3 seeds) + C1 CONF21 (3 seeds) + V1 anchor; P0/P1 epoch comparison",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V1 correction)",
+      "purpose": "per-day reproduction check vs the frozen anchor (243 days)",
+      "performance_computed": true,
+      "scope": "verification of saved predictions"
+    },
+    {
+      "who": "executor (V1 correction)",
+      "purpose": "clean-environment CPU inference acceptance over the whole 2021 window (243 days)",
+      "performance_computed": true,
+      "scope": "verification of the packaged models"
+    },
+    {
+      "who": "executor (V1 correction)",
+      "purpose": "six-member annual fixtures for DEV19/DEV20 (2021 covered by the run acceptance)",
+      "performance_computed": true,
+      "scope": "entry-point verification"
+    },
+    {
+      "who": "executor (V1 correction)",
+      "purpose": "coarse weight grid computed on ALL five weights for CONF21 (grid IC reported for every weight, not only the frozen one)",
+      "performance_computed": true,
+      "scope": "already-used research data; DEV-only selection respected"
+    },
+    {
+      "who": "executor (V1 correction)",
+      "purpose": "per-seed deletion ablation and paired block intervals on CONF21",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V2)",
+      "purpose": "RES22-style control reproduction and the two TabM single-variable comparisons (DEV only)",
+      "performance_computed": false,
+      "scope": "DEV windows only"
+    },
+    {
+      "who": "executor (V2 REV1)",
+      "purpose": "corrected TCN W20 (train cutoff 2020-12-31, predict 2021) for the registered 2021 robustness check, 3 seeds x (tcn + static control)",
+      "performance_computed": true,
+      "scope": "already-used robustness year"
+    },
+    {
+      "who": "executor (V2 REV1)",
+      "purpose": "half-year window 2021H2 (labels mature before 2021-06-30, predict Jul-Dec 2021)",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "main agent",
+      "purpose": "V1/V2 reviews: read-only recomputation of saved predictions and intervals",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V2 completion)",
+      "purpose": "TCN 3-seed family IC and the alpha grid re-evaluated on CONF21 (2021) under the hardened contract",
+      "performance_computed": true,
+      "scope": "already-used robustness year"
+    },
+    {
+      "who": "executor (V2 completion)",
+      "purpose": "half-year window 2021H2 re-trained for the two extra seeds (C1/TabM/TCN) and evaluated on Jul-Dec 2021",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V2 completion)",
+      "purpose": "B1 intervals, B2 deletion ablation and B5 real-input reconstruction (2019/2020/2021 sampled days)",
+      "performance_computed": true,
+      "scope": "verification of saved predictions and inputs"
+    },
+    {
+      "who": "main agent",
+      "purpose": "V2 COMPLETION review: read-only recomputation of the 2020/2021 H2 three-seed results, the prescribed deletion vectors and the 2021 intervals",
+      "performance_computed": true,
+      "scope": "already-used research data"
+    },
+    {
+      "who": "executor (V2 completion REV1)",
+      "purpose": "corrected deletion vectors, A2 half-year comparison entry, B1-B3 online provider-only acceptance (2019/2020/2021 sampled days and negative cases)",
+      "performance_computed": true,
+      "scope": "verification of saved predictions and real inputs"
+    },
+    {
+      "who": "main agent (explicitly authorised full reproduction)",
+      "run_id": "repro_20261012",
+      "recorded_at": "2026-10-12T14:31:46.495382+08:00",
+      "purpose": "Rebuild raw 2016-2022 data and train fixed V3 recipe; original-model self-reference gate and later candidate reproduction comparisons; no new model selection.",
+      "performance_computed": true,
+      "scope": "Already-used public training data; inner selection follows unchanged recipe; any full-model local IC is in-sample reproduction diagnostics only."
+    }
+  ],
+  "year_2022": [
+    {
+      "who": "executor (V0/V1 acceptance)",
+      "purpose": "raw 2022 MarketData rows appended after t in the future-perturbation invariance test",
+      "performance_computed": false,
+      "scope": "inputs only, no labels, no metrics"
+    },
+    {
+      "who": "executor (V1 acceptance)",
+      "purpose": "raw 2022 MarketData rows (500) appended in the clean-env future-perturbation check",
+      "performance_computed": false,
+      "scope": "inputs only, no labels, no metrics"
+    },
+    {
+      "who": "executor (V2 REV1)",
+      "purpose": "cutoff-2021 control/candidate models trained with label_end<=20211231; the 2022 outer window is NOT predicted or scored (evaluate=False)",
+      "performance_computed": false,
+      "scope": "fitting only, no 2022 evaluation"
+    },
+    {
+      "who": "executor (V3 confirmation)",
+      "purpose": "2022 confirmation attempted at 2026-10-07T09:35:59+08:00 under manifest 8a9466d0b635e48a; VOIDED because that manifest bound a loader source that could not run (fixed afterwards)",
+      "performance_computed": true,
+      "scope": "voided opening; same frozen set, no selection"
+    },
+    {
+      "who": "executor (V3 confirmation)",
+      "purpose": "single 2022 confirmation re-opened at 2026-10-07T09:38:08+08:00 under the corrected manifest 83550fbe6baf5d27; 240 legal signal days scored for three_member / V1 / C1_fixed / TREE_structure; results identical to the voided run",
+      "performance_computed": true,
+      "scope": "one-time time-out-of-sample confirmation; no selection performed"
+    },
+    {
+      "who": "executor (V3 full fit)",
+      "purpose": "2016-2022 full-data refit of the frozen three-member recipe (C1 x3, TabM x3, TCN x3) with label_end_date <= 20221230; the 2022 outer window is never predicted (outer_metrics_computed=false)",
+      "performance_computed": false,
+      "scope": "training on 2022 labels, no 2022 outer evaluation"
+    },
+    {
+      "who": "executor (V3 full package acceptance)",
+      "purpose": "package<->research equivalence, invariance and full-pool/finiteness checks on 2022 days (20160105, 20220104, 20220613, 20221228, plus a 40-day timing run); no labels used",
+      "performance_computed": false,
+      "scope": "verification of the packaged inference only"
+    },
+    {
+      "who": "executor (V3 full package smoke)",
+      "purpose": "main-cost smoke backtest of the packaged 2016-2022 model over 2019-2020 and 2021 via the platform submission_dir entry",
+      "performance_computed": true,
+      "scope": "IN-TRAINING smoke backtest; not out-of-sample"
+    },
+    {
+      "who": "executor (V3 OOS report)",
+      "purpose": "one-time main-cost backtest replay of the saved 2022 confirmation scores (cutoff-2021 three_member / V1 / C1_fixed / TREE_structure) to report out-of-sample IR alongside the confirmation IC",
+      "performance_computed": true,
+      "scope": "post-confirmation 2022 combination report; no selection performed"
+    },
+    {
+      "who": "main agent (explicitly authorised full reproduction)",
+      "run_id": "repro_20261012",
+      "recorded_at": "2026-10-12T14:31:46.495382+08:00",
+      "purpose": "Rebuild raw 2016-2022 data and train fixed V3 recipe; original-model self-reference gate and later candidate reproduction comparisons; no new model selection.",
+      "performance_computed": true,
+      "scope": "Already-used public training data; inner selection follows unchanged recipe; any full-model local IC is in-sample reproduction diagnostics only."
+    }
+  ],
+  "frozen": {
+    "2022_performance_access": "OPENED. First attempt 2026-10-07T09:35:59 under manifest 8a9466d0 (later voided: it bound a non-runnable loader); confirmation re-run 09:38:08 under manifest 83550fbe. The first run's outputs were overwritten by the second (same output path), so 'bit-identical' cannot be independently verified. The manifest was re-frozen again to 211c953c after the review-mandated entry/validator fixes; the 2022 numbers are unchanged and were recomputed from the saved per-combination scores. 2022 is no longer an unused blind year.",
+    "manifest_chain": [
+      "8a9466d0b635e48a (voided)",
+      "83550fbe6baf5d27 (2022 confirmation)",
+      "211c953c025ef57b (post-review fixes; current)"
+    ]
+  }
+}

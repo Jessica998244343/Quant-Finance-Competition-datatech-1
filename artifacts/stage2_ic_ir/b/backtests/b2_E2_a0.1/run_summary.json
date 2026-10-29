@@ -1,0 +1,21 @@
+{
+  "run": "b2_E2_a0.1",
+  "seconds": 45.8,
+  "metrics": {
+    "mean_rankic": 0.07671575486022182,
+    "rankic_std": 0.14345054204795007,
+    "rankic_ir": 0.5347888809968989,
+    "positive_rankic_ratio": 0.7098765432098766,
+    "total_return": 0.40000443316980494,
+    "annualized_return": 0.19018704513823037,
+    "annualized_excess_return": -0.13812815724336125,
+    "annualized_volatility": 0.2158502740853868,
+    "maximum_drawdown": 0.2495820608396178,
+    "tracking_error": 0.03408550943769229,
+    "information_ratio": -4.052401138256627,
+    "sharpe_ratio": 0.9150263255290547,
+    "turnover": 440.3933114481551,
+    "transaction_cost": 561056.6783220968,
+    "failed_orders": 508
+  }
+}

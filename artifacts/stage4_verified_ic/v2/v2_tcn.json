@@ -1,0 +1,55 @@
+{
+  "seed": 20261005,
+  "window_len": 20,
+  "channels": 8,
+  "records": [
+    {
+      "window": "DEV19",
+      "label": "tcn_w20",
+      "best_epoch": 19,
+      "seconds": 252.9,
+      "standalone_rankic": 0.07090116294597439,
+      "anchor_plus_alpha0.10_rankic": 0.08346033602305387
+    },
+    {
+      "window": "DEV19",
+      "label": "static_control",
+      "best_epoch": 12,
+      "seconds": 15.0,
+      "standalone_rankic": 0.07207570725348057,
+      "anchor_plus_alpha0.10_rankic": 0.0827750231330017
+    },
+    {
+      "window": "DEV19",
+      "label": "tcn_shuffled",
+      "best_epoch": 12,
+      "seconds": 177.3,
+      "standalone_rankic": 0.05979068643048464,
+      "anchor_plus_alpha0.10_rankic": 0.08227699537036907
+    },
+    {
+      "window": "DEV20",
+      "label": "tcn_w20",
+      "best_epoch": 17,
+      "seconds": 328.7,
+      "standalone_rankic": 0.06944697351874232,
+      "anchor_plus_alpha0.10_rankic": 0.08698793434197545
+    },
+    {
+      "window": "DEV20",
+      "label": "static_control",
+      "best_epoch": 13,
+      "seconds": 19.6,
+      "standalone_rankic": 0.07090596861548712,
+      "anchor_plus_alpha0.10_rankic": 0.08644261507599656
+    },
+    {
+      "window": "DEV20",
+      "label": "tcn_shuffled",
+      "best_epoch": 10,
+      "seconds": 223.1,
+      "standalone_rankic": 0.06965400794022887,
+      "anchor_plus_alpha0.10_rankic": 0.08706707705201984
+    }
+  ]
+}

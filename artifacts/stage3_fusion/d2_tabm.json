@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "recipe": "TABM",
+      "seed": 20261005,
+      "window": "DEV19",
+      "k": 8,
+      "best_epoch": 15,
+      "best_valid_ic": 0.10166913595099197,
+      "epochs_run": 27,
+      "n_input_dims": 141,
+      "mean_rankic": 0.08146349515726926,
+      "n_days": 244,
+      "seconds": 201.9,
+      "commit": "28e47ae301c92ec37787dde1ce923a0793f405b4"
+    },
+    {
+      "recipe": "TABM",
+      "seed": 20261005,
+      "window": "DEV20",
+      "k": 8,
+      "best_epoch": 13,
+      "best_valid_ic": 0.06695133518228753,
+      "epochs_run": 25,
+      "n_input_dims": 141,
+      "mean_rankic": 0.08135201741914402,
+      "n_days": 243,
+      "seconds": 263.3,
+      "commit": "28e47ae301c92ec37787dde1ce923a0793f405b4"
+    },
+    {
+      "recipe": "TABM",
+      "seed": 20261005,
+      "window": "CONF21",
+      "k": 8,
+      "best_epoch": 12,
+      "best_valid_ic": 0.09963247134458499,
+      "epochs_run": 24,
+      "n_input_dims": 141,
+      "mean_rankic": 0.059020820752103215,
+      "n_days": 243,
+      "seconds": 325.0,
+      "commit": "28e47ae301c92ec37787dde1ce923a0793f405b4"
+    }
+  ]
+}

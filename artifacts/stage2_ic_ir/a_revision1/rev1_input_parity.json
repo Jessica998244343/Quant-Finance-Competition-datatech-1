@@ -1,0 +1,3444 @@
+{
+  "data_dir": "Source/Data",
+  "records": [
+    {
+      "day": 20190603,
+      "label": "normal day",
+      "provider_start_date": "2019-01-02",
+      "provider_window_days": 120,
+      "provider_rows": {
+        "Factor33_winsor": 36000,
+        "Barra_factor": 36000,
+        "MarketData": 36000
+      },
+      "legacy_rows": 40018,
+      "model_features": {
+        "n_common_stocks": 300,
+        "n_columns": 61,
+        "cells": 18300,
+        "cells_exact_diff_gt0": 56,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 7.993605777301127e-15,
+        "cells_nan_mask_diff": 24,
+        "columns_with_material_diff": [
+          "ret_119"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 3.226585665316861e-16,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 9.020562075079397e-17,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.3877787807814457e-17,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 2.3314683517128287e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 7.993605777301127e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 2.3314683517128287e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "all_features": {
+        "n_common_stocks": 300,
+        "n_columns": 72,
+        "cells": 21600,
+        "cells_exact_diff_gt0": 84,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 7.993605777301127e-15,
+        "cells_nan_mask_diff": 24,
+        "columns_with_material_diff": [
+          "ret_119"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 3.226585665316861e-16,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 9.020562075079397e-17,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.3877787807814457e-17,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 2.3314683517128287e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 7.993605777301127e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 2.3314683517128287e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "amt_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 2.1094237467877974e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "vol_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "turn_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.6653345369377348e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "std_shock",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.1102230246251565e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "dir_x_amt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "on_intra_diff",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "on_intra_diff_z",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.3322676295501878e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roe_minus_pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roa_minus_debt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_gross_minus_net",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_rev5_x_roe",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "provider_matches_reconstruction_keys": true,
+      "provider_vs_reconstruction_rows": {
+        "provider": 36000,
+        "rebuilt": 36000
+      }
+    },
+    {
+      "day": 20190617,
+      "label": "constituent-change adjacent",
+      "provider_start_date": "2019-01-02",
+      "provider_window_days": 120,
+      "provider_rows": {
+        "Factor33_winsor": 36000,
+        "Barra_factor": 36000,
+        "MarketData": 36000
+      },
+      "legacy_rows": 39847,
+      "model_features": {
+        "n_common_stocks": 300,
+        "n_columns": 61,
+        "cells": 18300,
+        "cells_exact_diff_gt0": 27,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 9.992007221626409e-16,
+        "cells_nan_mask_diff": 309,
+        "columns_with_material_diff": [
+          "intraday_mean_5",
+          "overnight",
+          "overnight_mean_5",
+          "relma_20",
+          "relma_5",
+          "relma_60",
+          "ret_1",
+          "ret_10",
+          "ret_119",
+          "ret_2",
+          "ret_20",
+          "ret_5",
+          "ret_60",
+          "rv_20",
+          "rv_5",
+          "rv_60"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 2.7755575615628914e-17,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 1.3877787807814457e-17,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 9.992007221626409e-16,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 4.440892098500626e-16,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          }
+        ]
+      },
+      "all_features": {
+        "n_common_stocks": 300,
+        "n_columns": 72,
+        "cells": 21600,
+        "cells_exact_diff_gt0": 319,
+        "cells_gt_1e-12": 280,
+        "cells_gt_1e-9": 280,
+        "cells_gt_1e-6": 280,
+        "max_abs_finite_diff": 0.009818121681393649,
+        "cells_nan_mask_diff": 442,
+        "columns_with_material_diff": [
+          "amt_abn",
+          "dir_x_amt",
+          "intraday_mean_5",
+          "on_intra_diff",
+          "on_intra_diff_z",
+          "overnight",
+          "overnight_mean_5",
+          "relma_20",
+          "relma_5",
+          "relma_60",
+          "ret_1",
+          "ret_10",
+          "ret_119",
+          "ret_2",
+          "ret_20",
+          "ret_5",
+          "ret_60",
+          "rv_20",
+          "rv_5",
+          "rv_60",
+          "std_shock",
+          "turn_abn",
+          "vol_abn"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 2.7755575615628914e-17,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 1.3877787807814457e-17,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 9.992007221626409e-16,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 4.440892098500626e-16,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "amt_abn",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 1.9984014443252818e-15,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "vol_abn",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "turn_abn",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 1.5543122344752192e-15,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "std_shock",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 6.661338147750939e-16,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "dir_x_amt",
+            "n_stocks_affected": 299,
+            "max_abs_diff": 0.009818121681393649,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "on_intra_diff",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "on_intra_diff_z",
+            "n_stocks_affected": 19,
+            "max_abs_diff": 2.220446049250313e-15,
+            "nan_mask_diff_cells": 19
+          },
+          {
+            "feature": "g3_roe_minus_pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roa_minus_debt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_gross_minus_net",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_rev5_x_roe",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "provider_matches_reconstruction_keys": true,
+      "provider_vs_reconstruction_rows": {
+        "provider": 36000,
+        "rebuilt": 36000
+      }
+    },
+    {
+      "day": 20160630,
+      "label": "first panel day (full window)",
+      "provider_start_date": "2016-01-04",
+      "provider_window_days": 120,
+      "provider_rows": {
+        "Factor33_winsor": 36000,
+        "Barra_factor": 36000,
+        "MarketData": 36000
+      },
+      "legacy_rows": 42064,
+      "model_features": {
+        "n_common_stocks": 300,
+        "n_columns": 61,
+        "cells": 18300,
+        "cells_exact_diff_gt0": 46,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 8.881784197001252e-15,
+        "cells_nan_mask_diff": 163,
+        "columns_with_material_diff": [
+          "relma_20",
+          "relma_60",
+          "ret_119",
+          "ret_20",
+          "ret_60",
+          "rv_20",
+          "rv_60"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.6653345369377348e-16,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 23,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 23
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 8.881784197001252e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "all_features": {
+        "n_common_stocks": 300,
+        "n_columns": 72,
+        "cells": 21600,
+        "cells_exact_diff_gt0": 311,
+        "cells_gt_1e-12": 265,
+        "cells_gt_1e-9": 265,
+        "cells_gt_1e-6": 265,
+        "max_abs_finite_diff": 0.006180187877277754,
+        "cells_nan_mask_diff": 303,
+        "columns_with_material_diff": [
+          "amt_abn",
+          "dir_x_amt",
+          "on_intra_diff_z",
+          "relma_20",
+          "relma_60",
+          "ret_119",
+          "ret_20",
+          "ret_60",
+          "rv_20",
+          "rv_60",
+          "std_shock",
+          "turn_abn",
+          "vol_abn"
+        ],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 1.6653345369377348e-16,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 23,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 23
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 8.881784197001252e-15,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "amt_abn",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "vol_abn",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "turn_abn",
+            "n_stocks_affected": 24,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "std_shock",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "dir_x_amt",
+            "n_stocks_affected": 289,
+            "max_abs_diff": 0.006180187877277754,
+            "nan_mask_diff_cells": 24
+          },
+          {
+            "feature": "on_intra_diff",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "on_intra_diff_z",
+            "n_stocks_affected": 22,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 22
+          },
+          {
+            "feature": "g3_roe_minus_pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roa_minus_debt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_gross_minus_net",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_rev5_x_roe",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "provider_matches_reconstruction_keys": true,
+      "provider_vs_reconstruction_rows": {
+        "provider": 36000,
+        "rebuilt": 36000
+      }
+    },
+    {
+      "day": 20160105,
+      "label": "short history (2 days)",
+      "provider_start_date": "2016-01-04",
+      "provider_window_days": 2,
+      "provider_rows": {
+        "Factor33_winsor": 600,
+        "Barra_factor": 600,
+        "MarketData": 600
+      },
+      "legacy_rows": 700,
+      "model_features": {
+        "n_common_stocks": 300,
+        "n_columns": 61,
+        "cells": 18300,
+        "cells_exact_diff_gt0": 0,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 0.0,
+        "cells_nan_mask_diff": 0,
+        "columns_with_material_diff": [],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "all_features": {
+        "n_common_stocks": 300,
+        "n_columns": 72,
+        "cells": 21600,
+        "cells_exact_diff_gt0": 0,
+        "cells_gt_1e-12": 0,
+        "cells_gt_1e-9": 0,
+        "cells_gt_1e-6": 0,
+        "max_abs_finite_diff": 0.0,
+        "cells_nan_mask_diff": 0,
+        "columns_with_material_diff": [],
+        "per_column": [
+          {
+            "feature": "turn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "change_ratio",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "daily_return",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "momentum_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "reversal_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "volatility_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "sma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ema_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_diff_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_dea_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "macd_hist_12_26_9",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rsi_12",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_k_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "kdj_d_9_3_3",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "bias_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "cci_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "atr_14",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "total_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "float_market_cap",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pe_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ps_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roe_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "roa_avg_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "gross_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "net_profit_rate_ttm",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "debt_to_asset_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "current_ratio_lf",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "beta_000300SH_22",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "list_days",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_suspend",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "is_new",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_beta",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_momentum",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_residvol",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_nonlinear_size",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_bp",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_liquidity",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_earnings",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_growth",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "barra_leverage",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_1",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_2",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_10",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "ret_119",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "rv_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_20",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "relma_60",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "hl_range",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "close_pos",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "overnight_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "intraday_mean_5",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "amt_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "vol_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "turn_abn",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "std_shock",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "dir_x_amt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "on_intra_diff",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "on_intra_diff_z",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roe_minus_pb",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_roa_minus_debt",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_gross_minus_net",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          },
+          {
+            "feature": "g3_rev5_x_roe",
+            "n_stocks_affected": 0,
+            "max_abs_diff": 0.0,
+            "nan_mask_diff_cells": 0
+          }
+        ]
+      },
+      "provider_matches_reconstruction_keys": true,
+      "provider_vs_reconstruction_rows": {
+        "provider": 600,
+        "rebuilt": 600
+      }
+    }
+  ]
+}

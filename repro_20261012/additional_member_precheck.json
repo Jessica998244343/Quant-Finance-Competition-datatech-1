@@ -1,0 +1,11 @@
+{
+  "tcn_first": {
+    "parameter_max_abs_diff": 0.0,
+    "inner_curve_exact": true
+  },
+  "c1_second": {
+    "trees": 1250,
+    "leaf_values_exact": true,
+    "borders_exact": true
+  }
+}

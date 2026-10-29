@@ -1,0 +1,114 @@
+{
+  "rev1_realinput_vs_legacy_ref": {
+    "label": "rev1_realinput_vs_legacy_ref",
+    "rows_new": 145806,
+    "rows_ref": 145806,
+    "common_keys": 145806,
+    "only_in_new": {
+      "n": 0,
+      "sample": []
+    },
+    "only_in_ref": {
+      "n": 0,
+      "sample": []
+    },
+    "max_abs_target_weight_delta": 0.0200000000000001,
+    "n_common_gt_1e-6": 8354,
+    "max_abs_benchmark_weight_delta": 0.0,
+    "active_weight_max_new": 0.010000000000000106,
+    "active_weight_max_ref": 0.010000000000000106,
+    "industry_exposure_max_abs_diff": 8.673617379884035e-16,
+    "style_exposure_max_abs_diff": 1.3149203947904198e-14,
+    "rejected_new": 459,
+    "rejected_ref": 467,
+    "rejected_relative_change": 0.017130620985010708
+  },
+  "rev1_aligned_vs_legacy_ref": {
+    "label": "rev1_aligned_vs_legacy_ref",
+    "rows_new": 145807,
+    "rows_ref": 145806,
+    "common_keys": 145804,
+    "only_in_new": {
+      "n": 3,
+      "sample": [
+        {
+          "signal_date": "2019-12-16",
+          "code": "SZ000402"
+        },
+        {
+          "signal_date": "2020-06-15",
+          "code": "SZ000423"
+        },
+        {
+          "signal_date": "2020-12-14",
+          "code": "SH601997"
+        }
+      ]
+    },
+    "only_in_ref": {
+      "n": 2,
+      "sample": [
+        {
+          "signal_date": "2020-12-14",
+          "code": "SH600372"
+        },
+        {
+          "signal_date": "2020-12-14",
+          "code": "SH600516"
+        }
+      ]
+    },
+    "max_abs_target_weight_delta": 0.0200000000000001,
+    "n_common_gt_1e-6": 20526,
+    "max_abs_benchmark_weight_delta": 0.0,
+    "active_weight_max_new": 0.010000000000000106,
+    "active_weight_max_ref": 0.010000000000000106,
+    "industry_exposure_max_abs_diff": 1.2975731600306517e-15,
+    "style_exposure_max_abs_diff": 1.3090223349720986e-14,
+    "rejected_new": 482,
+    "rejected_ref": 467,
+    "rejected_relative_change": 0.032119914346895075
+  },
+  "rev1_realinput_vs_a_old_buggy": {
+    "label": "rev1_realinput_vs_a_old_buggy",
+    "rows_new": 145806,
+    "rows_ref": 145806,
+    "common_keys": 145804,
+    "only_in_new": {
+      "n": 2,
+      "sample": [
+        {
+          "signal_date": "2020-06-15",
+          "code": "SH600100"
+        },
+        {
+          "signal_date": "2020-12-14",
+          "code": "SH600516"
+        }
+      ]
+    },
+    "only_in_ref": {
+      "n": 2,
+      "sample": [
+        {
+          "signal_date": "2020-06-15",
+          "code": "SZ000423"
+        },
+        {
+          "signal_date": "2020-12-14",
+          "code": "SH600089"
+        }
+      ]
+    },
+    "max_abs_target_weight_delta": 0.02,
+    "n_common_gt_1e-6": 8040,
+    "max_abs_benchmark_weight_delta": 0.0,
+    "active_weight_max_new": 0.010000000000000106,
+    "active_weight_max_ref": 0.010000000000000106,
+    "industry_exposure_max_abs_diff": 7.945033519973776e-16,
+    "style_exposure_max_abs_diff": 1.259409243559162e-14,
+    "rejected_new": 459,
+    "rejected_ref": 469,
+    "rejected_relative_change": 0.021321961620469083
+  }
+}

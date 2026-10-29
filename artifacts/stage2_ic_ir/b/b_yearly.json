@@ -1,0 +1,109 @@
+{
+  "reference_cat0.5": {
+    "2019": {
+      "days": 244,
+      "annualized_excess_return": -0.111320459303059,
+      "tracking_error": 0.031097429281124765,
+      "information_ratio": -3.5797318902700193,
+      "mean_daily_active_bp": -2.74666314677172
+    },
+    "2020": {
+      "days": 243,
+      "annualized_excess_return": -0.16937129849957588,
+      "tracking_error": 0.03571928833531166,
+      "information_ratio": -4.74173216749499,
+      "mean_daily_active_bp": -5.783584535355871
+    }
+  },
+  "seed_average": {
+    "2019": {
+      "days": 244,
+      "annualized_excess_return": -0.09037875845188115,
+      "tracking_error": 0.03117592110667214,
+      "information_ratio": -2.8989924032281014,
+      "mean_daily_active_bp": -2.102562073997938
+    },
+    "2020": {
+      "days": 243,
+      "annualized_excess_return": -0.14877599000557185,
+      "tracking_error": 0.03651508681384067,
+      "information_ratio": -4.074370431160521,
+      "mean_daily_active_bp": -5.068204640455451
+    }
+  },
+  "E1_a0.1": {
+    "2019": {
+      "days": 244,
+      "annualized_excess_return": -0.1124655860194328,
+      "tracking_error": 0.03137113975511881,
+      "information_ratio": -3.5850015937365445,
+      "mean_daily_active_bp": -2.7790036330921137
+    },
+    "2020": {
+      "days": 243,
+      "annualized_excess_return": -0.16887467880512408,
+      "tracking_error": 0.035406287558805524,
+      "information_ratio": -4.769623997563818,
+      "mean_daily_active_bp": -5.759325652829805
+    }
+  },
+  "E1_a0.2": {
+    "2019": {
+      "days": 244,
+      "annualized_excess_return": -0.09556017551690177,
+      "tracking_error": 0.030854156349314456,
+      "information_ratio": -3.0971572981941216,
+      "mean_daily_active_bp": -2.250138187107029
+    },
+    "2020": {
+      "days": 243,
+      "annualized_excess_return": -0.16755598736929067,
+      "tracking_error": 0.036564654622826626,
+      "information_ratio": -4.582457816097861,
+      "mean_daily_active_bp": -5.711991679088272
+    }
+  },
+  "E2_a0.1": {
+    "2019": {
+      "days": 244,
+      "annualized_excess_return": -0.10764233791713917,
+      "tracking_error": 0.03167329024578413,
+      "information_ratio": -3.398520869850801,
+      "mean_daily_active_bp": -2.632194740563858
+    },
+    "2020": {
+      "days": 243,
+      "annualized_excess_return": -0.17676520852092792,
+      "tracking_error": 0.03620852875149701,
+      "information_ratio": -4.8818666379428555,
+      "mean_daily_active_bp": -6.054117610189499
+    }
+  },
+  "reference_cat0.5_2021": {
+    "2021": {
+      "days": 243,
+      "annualized_excess_return": -0.11169156721974727,
+      "tracking_error": 0.0405290077691977,
+      "information_ratio": -2.755842626491181,
+      "mean_daily_active_bp": -5.404026833346454
+    }
+  },
+  "seed_average_2021": {
+    "2021": {
+      "days": 243,
+      "annualized_excess_return": -0.13110721922850155,
+      "tracking_error": 0.042298996338123826,
+      "information_ratio": -3.099534990865384,
+      "mean_daily_active_bp": -6.346231401180535
+    }
+  },
+  "E1_a0.1_2021": {
+    "2021": {
+      "days": 243,
+      "annualized_excess_return": -0.11235996801338133,
+      "tracking_error": 0.04084881593035804,
+      "information_ratio": -2.750629741751648,
+      "mean_daily_active_bp": -5.429886929659885
+    }
+  }
+}

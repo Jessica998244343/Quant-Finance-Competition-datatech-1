@@ -1,0 +1,38 @@
+{
+  "run": "bt_B0_dev19_20_storig",
+  "seconds": 42.9,
+  "metrics": {
+    "mean_rankic": 0.048203981351383644,
+    "rankic_std": 0.12467538814299521,
+    "rankic_ir": 0.3866359036002885,
+    "positive_rankic_ratio": 0.6481481481481481,
+    "total_return": 0.22220636727989196,
+    "annualized_return": 0.10941306044220189,
+    "annualized_excess_return": -0.21890214193938973,
+    "annualized_volatility": 0.21741557336357986,
+    "maximum_drawdown": 0.3008488445584063,
+    "tracking_error": 0.03464862303436602,
+    "information_ratio": -6.317773197574779,
+    "sharpe_ratio": 0.586645269338895,
+    "turnover": 377.6586945728046,
+    "transaction_cost": 485884.12958985276,
+    "failed_orders": 411
+  },
+  "rankic": {
+    "mean_rankic": 0.04820398135138365,
+    "rankic_std": 0.12467538814299521,
+    "rankic_ir": 0.38663590360028854,
+    "positive_ratio": 0.6481481481481481,
+    "n_days": 486,
+    "n_pairs": 145415
+  },
+  "config": {
+    "windows": [
+      "DEV19",
+      "DEV20"
+    ],
+    "start": "2019-01-02",
+    "end": "2020-12-31",
+    "view": "Source/Data"
+  }
+}

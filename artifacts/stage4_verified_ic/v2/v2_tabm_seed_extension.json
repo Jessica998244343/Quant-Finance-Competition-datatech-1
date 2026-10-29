@@ -1,0 +1,49 @@
+{
+  "seeds": [
+    20261017,
+    20261029
+  ],
+  "configs": "mse:0.2",
+  "records": [
+    {
+      "window": "DEV19",
+      "seed": 20261017,
+      "loss_mode": "mse",
+      "dropout": 0.2,
+      "best_epoch": 34,
+      "seconds": 403.0,
+      "standalone_rankic": 0.07006973394529141,
+      "anchor_plus_alpha0.10_rankic": 0.08197870634136459
+    },
+    {
+      "window": "DEV19",
+      "seed": 20261029,
+      "loss_mode": "mse",
+      "dropout": 0.2,
+      "best_epoch": 9,
+      "seconds": 149.8,
+      "standalone_rankic": 0.0741904717455425,
+      "anchor_plus_alpha0.10_rankic": 0.082383849516717
+    },
+    {
+      "window": "DEV20",
+      "seed": 20261017,
+      "loss_mode": "mse",
+      "dropout": 0.2,
+      "best_epoch": 45,
+      "seconds": 765.9,
+      "standalone_rankic": 0.08172824335324139,
+      "anchor_plus_alpha0.10_rankic": 0.08673645088359083
+    },
+    {
+      "window": "DEV20",
+      "seed": 20261029,
+      "loss_mode": "mse",
+      "dropout": 0.2,
+      "best_epoch": 24,
+      "seconds": 446.4,
+      "standalone_rankic": 0.08330465552230011,
+      "anchor_plus_alpha0.10_rankic": 0.08679792270979263
+    }
+  ]
+}

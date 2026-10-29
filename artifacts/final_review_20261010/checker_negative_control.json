@@ -1,0 +1,175 @@
+{
+  "repro_dir": "/tmp/qf3_final_review_20261010_g9ls62jk/NEGATIVE_CONTROL_not_a_model",
+  "members": {
+    "catboost_c1_seed20261005.cbm": {
+      "kind": "catboost",
+      "trees_packaged": 700,
+      "trees_repro": 700,
+      "tree_count_match": true,
+      "file_sha_equal": true,
+      "prediction_max_abs_diff": 0.0,
+      "prediction_bit_identical": true
+    },
+    "catboost_c1_seed20261017.cbm": {
+      "kind": "catboost",
+      "trees_packaged": 1250,
+      "trees_repro": 1250,
+      "tree_count_match": true,
+      "file_sha_equal": true,
+      "prediction_max_abs_diff": 0.0,
+      "prediction_bit_identical": true
+    },
+    "catboost_c1_seed20261029.cbm": {
+      "kind": "catboost",
+      "trees_packaged": 1875,
+      "trees_repro": 1875,
+      "tree_count_match": true,
+      "file_sha_equal": true,
+      "prediction_max_abs_diff": 0.0,
+      "prediction_bit_identical": true
+    },
+    "tabm_seed20261005.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "W0": 0.0,
+        "r0": 0.0,
+        "s0": 0.0,
+        "b0": 0.0,
+        "W1": 0.0,
+        "r1": 0.0,
+        "s1": 0.0,
+        "b1": 0.0,
+        "Wh": 0.0,
+        "bh": 0.0,
+        "k": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tabm_seed20261017.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "W0": 0.0,
+        "r0": 0.0,
+        "s0": 0.0,
+        "b0": 0.0,
+        "W1": 0.0,
+        "r1": 0.0,
+        "s1": 0.0,
+        "b1": 0.0,
+        "Wh": 0.0,
+        "bh": 0.0,
+        "k": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tabm_seed20261029.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "W0": 0.0,
+        "r0": 0.0,
+        "s0": 0.0,
+        "b0": 0.0,
+        "W1": 0.0,
+        "r1": 0.0,
+        "s1": 0.0,
+        "b1": 0.0,
+        "Wh": 0.0,
+        "bh": 0.0,
+        "k": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tcn_seed20261005.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "static_W": 0.0,
+        "static_b": 0.0,
+        "input_W": 0.0,
+        "input_b": 0.0,
+        "fuse0_W": 0.0,
+        "fuse0_b": 0.0,
+        "fuse2_W": 0.0,
+        "fuse2_b": 0.0,
+        "b0_c1w": 0.0,
+        "b0_c1b": 0.0,
+        "b0_c2w": 0.0,
+        "b0_c2b": 0.0,
+        "b1_c1w": 0.0,
+        "b1_c1b": 0.0,
+        "b1_c2w": 0.0,
+        "b1_c2b": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tcn_seed20261017.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "static_W": 0.0,
+        "static_b": 0.0,
+        "input_W": 0.0,
+        "input_b": 0.0,
+        "fuse0_W": 0.0,
+        "fuse0_b": 0.0,
+        "fuse2_W": 0.0,
+        "fuse2_b": 0.0,
+        "b0_c1w": 0.0,
+        "b0_c1b": 0.0,
+        "b0_c2w": 0.0,
+        "b0_c2b": 0.0,
+        "b1_c1w": 0.0,
+        "b1_c1b": 0.0,
+        "b1_c2w": 0.0,
+        "b1_c2b": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tcn_seed20261029.npz": {
+      "kind": "nn",
+      "max_abs_diff": 0.0,
+      "tolerance_pass": true,
+      "per_tensor": {
+        "static_W": 0.0,
+        "static_b": 0.0,
+        "input_W": 0.0,
+        "input_b": 0.0,
+        "fuse0_W": 0.0,
+        "fuse0_b": 0.0,
+        "fuse2_W": 0.0,
+        "fuse2_b": 0.0,
+        "b0_c1w": 0.0,
+        "b0_c1b": 0.0,
+        "b0_c2w": 0.0,
+        "b0_c2b": 0.0,
+        "b1_c1w": 0.0,
+        "b1_c1b": 0.0,
+        "b1_c2w": 0.0,
+        "b1_c2b": 0.0
+      },
+      "file_sha_equal": true
+    },
+    "tabm_design.json": {
+      "kind": "json",
+      "equal": true
+    },
+    "tcn_design.json": {
+      "kind": "json",
+      "equal": true
+    },
+    "tcn_channel_stats.json": {
+      "kind": "json",
+      "equal": false
+    }
+  },
+  "catboost_all_bitequal": true,
+  "nn_all_within_tolerance": true
+}

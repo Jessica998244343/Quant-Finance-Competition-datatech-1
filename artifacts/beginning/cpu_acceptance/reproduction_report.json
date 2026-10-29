@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "stdout_tail": "  panel 200/1584 days\n  panel 400/1584 days\n  panel 600/1584 days\n  panel 800/1584 days\n  panel 1000/1584 days\n  panel 1200/1584 days\n  panel 1400/1584 days\ntraining lgbm_p5 ...\ntraining catboost_d8_l2_15 ...\ndone strong_baseline_v1\n",
+  "stderr_tail": "",
+  "max_abs_prediction_diff": {
+    "20160630": 0.0,
+    "20190603": 0.0,
+    "20210315": 0.0
+  },
+  "files": [
+    "catboost_d8_l2_15.cbm",
+    "lgbm_p5.txt",
+    "meta.json"
+  ]
+}

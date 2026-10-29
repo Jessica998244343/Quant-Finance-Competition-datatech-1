@@ -1,0 +1,622 @@
+{
+  "created": "2026-10-07 (Asia/Shanghai)",
+  "graph": "flat: u = sum_g w_g q_g ; output = rank_t(u); q_g = mean_seed rank_t(s_g)",
+  "families": {
+    "c1": {
+      "seeds": [
+        20261005,
+        20261017,
+        20261029
+      ],
+      "weight_pattern": "catboost_c1_seed{seed}.cbm",
+      "preprocessing": "none (tree model, nan_mode=Min)"
+    },
+    "tabm": {
+      "seeds": [
+        20261005,
+        20261017,
+        20261029
+      ],
+      "weight_pattern": "tabm_seed{seed}.safetensors",
+      "preprocessing_pattern": "design_seed{seed}.json"
+    },
+    "tcn": {
+      "seeds": [
+        20261005,
+        20261017,
+        20261029
+      ],
+      "weight_pattern": "tcn_rev1_tcn_s{seed}_RES22/model.safetensors",
+      "preprocessing_pattern": "tcn_rev1_tcn_s{seed}_RES22/preprocessing.json"
+    }
+  },
+  "weight_vectors": {
+    "V1_FIXED_ANCHOR": {
+      "c1": 0.5,
+      "tabm": 0.5
+    },
+    "TCN_W20_a0.25": {
+      "c1": 0.375,
+      "tabm": 0.375,
+      "tcn": 0.25
+    }
+  },
+  "features": {
+    "F0": [
+      "turn",
+      "change_ratio",
+      "daily_return",
+      "momentum_5",
+      "reversal_5",
+      "volatility_5",
+      "sma_20",
+      "ema_20",
+      "macd_diff_12_26_9",
+      "macd_dea_12_26_9",
+      "macd_hist_12_26_9",
+      "rsi_12",
+      "kdj_k_9_3_3",
+      "kdj_d_9_3_3",
+      "bias_20",
+      "cci_14",
+      "atr_14",
+      "total_market_cap",
+      "float_market_cap",
+      "pe_ttm",
+      "pb",
+      "ps_ttm",
+      "roe_avg_ttm",
+      "roa_avg_ttm",
+      "gross_profit_rate_ttm",
+      "net_profit_rate_ttm",
+      "debt_to_asset_lf",
+      "current_ratio_lf",
+      "beta_000300SH_22",
+      "list_days",
+      "is_suspend",
+      "is_new",
+      "barra_size",
+      "barra_beta",
+      "barra_momentum",
+      "barra_residvol",
+      "barra_nonlinear_size",
+      "barra_bp",
+      "barra_liquidity",
+      "barra_earnings",
+      "barra_growth",
+      "barra_leverage"
+    ],
+    "G1": [
+      "ret_1",
+      "ret_2",
+      "ret_5",
+      "ret_10",
+      "ret_20",
+      "ret_60",
+      "ret_119",
+      "rv_5",
+      "rv_20",
+      "rv_60",
+      "relma_5",
+      "relma_20",
+      "relma_60",
+      "hl_range",
+      "close_pos",
+      "overnight",
+      "intraday",
+      "overnight_mean_5",
+      "intraday_mean_5"
+    ],
+    "ordered_61": [
+      "turn",
+      "change_ratio",
+      "daily_return",
+      "momentum_5",
+      "reversal_5",
+      "volatility_5",
+      "sma_20",
+      "ema_20",
+      "macd_diff_12_26_9",
+      "macd_dea_12_26_9",
+      "macd_hist_12_26_9",
+      "rsi_12",
+      "kdj_k_9_3_3",
+      "kdj_d_9_3_3",
+      "bias_20",
+      "cci_14",
+      "atr_14",
+      "total_market_cap",
+      "float_market_cap",
+      "pe_ttm",
+      "pb",
+      "ps_ttm",
+      "roe_avg_ttm",
+      "roa_avg_ttm",
+      "gross_profit_rate_ttm",
+      "net_profit_rate_ttm",
+      "debt_to_asset_lf",
+      "current_ratio_lf",
+      "beta_000300SH_22",
+      "list_days",
+      "is_suspend",
+      "is_new",
+      "barra_size",
+      "barra_beta",
+      "barra_momentum",
+      "barra_residvol",
+      "barra_nonlinear_size",
+      "barra_bp",
+      "barra_liquidity",
+      "barra_earnings",
+      "barra_growth",
+      "barra_leverage",
+      "ret_1",
+      "ret_2",
+      "ret_5",
+      "ret_10",
+      "ret_20",
+      "ret_60",
+      "ret_119",
+      "rv_5",
+      "rv_20",
+      "rv_60",
+      "relma_5",
+      "relma_20",
+      "relma_60",
+      "hl_range",
+      "close_pos",
+      "overnight",
+      "intraday",
+      "overnight_mean_5",
+      "intraday_mean_5"
+    ],
+    "ordered_61_sha256": "6bb611014907dbaa4c75164a1a7d9fb87765d816416b3eb5b05e890d76133fce",
+    "design_order": "2 x 61 blocks of (scaled value, missing mask) then 19 G1 daily ranks",
+    "design_141_sha256": "fe4e39897dbd2d3cf401e18253e93b146d00fd4a74889e0ddd3fa1dee5f77bbe"
+  },
+  "tcn_channels": {
+    "order": [
+      "close-close log return",
+      "open-close log return",
+      "high/low amplitude",
+      "close position",
+      "log1p volume",
+      "log1p amount",
+      "suspension flag",
+      "presence mask"
+    ],
+    "steps": 20,
+    "price_points": 21,
+    "channels": 8,
+    "channel_order_sha256": "a34b3b5355ccd1eebc99312bfccdabe6634bddc40cdcf4120d6ea4715298ceaf"
+  },
+  "training_config": {
+    "catboost": "depth8/l2=15 RMSE lr0.03 3000-cap 25-tree inner IC selection",
+    "tabm": "k8/width128/2 blocks/dropout0.1 AdamW lr1e-3 wd1e-3 clip1 batch8days max100/patience12",
+    "tcn": "8ch/20 steps/32ch/2 residual blocks/dilation 1,2 AdamW lr1e-3 wd1e-3 clip1 batch4days max80/patience10",
+    "selection": "inner daily-Spearman selection (tree: 25-tree checkpoints, near-opt 0.0005 earliest; NN: best validation epoch with patience)",
+    "train_label_cutoff": 20211231,
+    "windows": {
+      "DEV19": {
+        "train_end": "2018-12-31",
+        "predict_year": 2019
+      },
+      "DEV20": {
+        "train_end": "2019-12-31",
+        "predict_year": 2020
+      },
+      "CONF21": {
+        "train_end": "2020-12-31",
+        "predict_year": 2021
+      },
+      "RES22": {
+        "train_end": "2021-12-31",
+        "predict_year": 2022
+      }
+    }
+  },
+  "adoption_rule": {
+    "order": [
+      "TCN_W20_a0.25",
+      "V1_FIXED_ANCHOR"
+    ],
+    "primary_comparison": {
+      "candidate": "TCN_W20_a0.25",
+      "reference": "V1_FIXED_ANCHOR"
+    },
+    "support": "candidate - V1 year dIC > 0 AND both halves >= -0.001 AND the same vs TREE",
+    "fallback_check": "if the candidate fails, check V1 - TREE with the same condition",
+    "controls": {
+      "C1_fixed": "catboost x3",
+      "TREE_structure": "0.5 x L5 x3 + 0.5 x C1 x3"
+    },
+    "if_all_fail": "keep the existing successfully submitted version; no re-tuning",
+    "intervals": {
+      "blocks": [
+        10,
+        20,
+        40
+      ],
+      "draws": 2000,
+      "seed": 20261005,
+      "rule": "per-year resampling preserving each year's day count"
+    },
+    "ir_role": "report only",
+    "no_recall": "no feature/seed/alpha/architecture change after opening 2022",
+    "two_member_ablation": "not promoted"
+  },
+  "files": [
+    {
+      "role": "c1_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005.cbm",
+      "bytes": 3800968,
+      "sha256": "e00f7d39c95bcc031ff52c3daafc1f8dbd9421b5f17b9254955e2b223045b2f4"
+    },
+    {
+      "role": "tabm_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261005.safetensors",
+      "bytes": 167704,
+      "sha256": "3549c0ab4d443630919f492d000d7ffa05d69722ec5e4527e99e40e82d77cd42"
+    },
+    {
+      "role": "tabm_design",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "role": "l5_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261005.txt",
+      "bytes": 4566634,
+      "sha256": "38f5c84532142065ce2294bef12628e1e723212c6f0b942535a9119e1d81e18f"
+    },
+    {
+      "role": "tcn_weight",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "d908880fb9a61d3750b6e9ed8580eb01266428f1b4b91e4702803ed921f83671"
+    },
+    {
+      "role": "tcn_preprocessing",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "role": "c1_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261017.cbm",
+      "bytes": 3275168,
+      "sha256": "bdc248fe45f3e9bd47c3530aee6cb27c5d14c61304bfe73091bdfad67e5160ad"
+    },
+    {
+      "role": "tabm_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261017.safetensors",
+      "bytes": 167704,
+      "sha256": "97dba211dffa09cea7afbd53d605ec4d5261720929a70a996944c5d2eedab32d"
+    },
+    {
+      "role": "tabm_design",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261017.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "role": "l5_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261017.txt",
+      "bytes": 4566272,
+      "sha256": "2d38320e6ed3903677ea569c6b5dc3c6239c5924bf26ad098db750f39bc896ad"
+    },
+    {
+      "role": "tcn_weight",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "8ca3a9bec8b0e962b4cf86dfc5bef759c04dfae64cd242b194930b3aa542eabb"
+    },
+    {
+      "role": "tcn_preprocessing",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "role": "c1_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261029.cbm",
+      "bytes": 2117840,
+      "sha256": "aab6590cce019784ee29a32526755449a28be87feb5e299ba5cde4cd30c68cd5"
+    },
+    {
+      "role": "tabm_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261029.safetensors",
+      "bytes": 167704,
+      "sha256": "a48eda74a2dfdd8b2a55f46596078b3eab75389a8339ba03ffd2c8c918f2e918"
+    },
+    {
+      "role": "tabm_design",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261029.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "role": "l5_weight",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261029.txt",
+      "bytes": 4567027,
+      "sha256": "0e5f6f7a8e32e79898a67e851ff361c8b8cc59e9f75f3a46bb27d5b7b317aefb"
+    },
+    {
+      "role": "tcn_weight",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "2f4155ec7edd2804f26ad12a7ea5b4a08b67d54c806029a63e1f76a3afa46d12"
+    },
+    {
+      "role": "tcn_preprocessing",
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "role": "c1_curve",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005__curve.parquet",
+      "bytes": 3506,
+      "sha256": "ec701286dc1f7ee1412a19af03d82bd064546a3255dfe68cc669036641358b5f"
+    },
+    {
+      "role": "tabm_curve",
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/inner_curve_seed20261005.parquet",
+      "bytes": 2008,
+      "sha256": "3681562fbd5c00e253c7f60bd2504c97e1dc80603d0acdf83aef7a070828c285"
+    },
+    {
+      "role": "fusion_source",
+      "path": "src/qf3/s6_fusion.py",
+      "bytes": 8746,
+      "sha256": "618246947ded8fb97fcb2f873d70bb01ae2c46eac0a2fc2130a3d5079b46e8a5"
+    },
+    {
+      "role": "tcn_source",
+      "path": "src/qf3/s6_v2_tcn.py",
+      "bytes": 21409,
+      "sha256": "67b9f3035f20edde5df8295f5d43ddadb14cf5295405b0c0669c79bdf5145a18"
+    },
+    {
+      "role": "tabm_trainer",
+      "path": "src/qf3/s6_v2_tabm_variants.py",
+      "bytes": 14088,
+      "sha256": "22ce4dc642c789151fa4be08536d3dbcb391a797c29c38646d200b5e0b4d5ac1"
+    },
+    {
+      "role": "tabm_architecture",
+      "path": "src/qf3/s4_tabm_wrapper_src.py",
+      "bytes": 4628,
+      "sha256": "f84fa389351ae75f4987976ed7c876078e446a73ea3498ef7b8d4d46c4ecb148"
+    },
+    {
+      "role": "deploy_trainer",
+      "path": "src/qf3/s6_v2_deploy_models.py",
+      "bytes": 16739,
+      "sha256": "f1b48a536e90a4aae537449f0a4de064e8db1be5ab485b1713aac0c4fc4fb35e"
+    },
+    {
+      "role": "feature_definition",
+      "path": "src/qf3/s6_v2_features.py",
+      "bytes": 6415,
+      "sha256": "0b035724fe6b29f953abb85abdcaf2c6e7f4f1fc95147be8ed5b3a089a6a0833"
+    },
+    {
+      "role": "static_feature_code",
+      "path": "src/qf3/featurelib.py",
+      "bytes": 13856,
+      "sha256": "cb767dd82a1fea72c96ef81bf0b14748b0b8ded20b24145088afa804971f82b8"
+    },
+    {
+      "role": "constants_and_windows",
+      "path": "src/qf3/constants.py",
+      "bytes": 3958,
+      "sha256": "3b679023cf4f422febd4bd9974113318ace57b10c332b3a24bc7430eabd7c302"
+    },
+    {
+      "role": "fold_definitions",
+      "path": "src/qf3/cv.py",
+      "bytes": 3079,
+      "sha256": "56b8f324d7f2c6eef658b4704e180ec9b40866b42c2cb1b449846ddaf5ab04fd"
+    },
+    {
+      "role": "completion_report_entry",
+      "path": "src/qf3/s6_v2_completion.py",
+      "bytes": 15247,
+      "sha256": "aaa495e4e81ad288b9d0a191ccd164429400043bbf1f2cc2eefb3668bac6e276"
+    },
+    {
+      "role": "freeze_verifier",
+      "path": "src/qf3/s6_v2_freeze.py",
+      "bytes": 12247,
+      "sha256": "a0f0e62d68d24683b4434e5861ffee36febe2894009a0bb66c535ce397c86569"
+    },
+    {
+      "role": "dependency_lock",
+      "path": "requirements.lock",
+      "bytes": 567,
+      "sha256": "be0878cee3c4e74c86c61640b72abd44653b7c251812377e1428f60cba41f226"
+    },
+    {
+      "role": "train_requirements",
+      "path": "artifacts/stage4_verified_ic/deps/V1_train_requirements.txt",
+      "bytes": 920,
+      "sha256": "28ef30a4f3329b69bc37a09b783a64e3d3c26b6e0b856aac0fc23bcb83971731"
+    },
+    {
+      "role": "online_input_validation",
+      "path": "src/qf3/s6_v2_input_acceptance.py",
+      "bytes": 15690,
+      "sha256": "5c6887034799c975e99b8babc8620d69370ef6911e09f6f60e891f84accfd270"
+    },
+    {
+      "role": "target_and_weights",
+      "path": "src/qf3/s2r_train.py",
+      "bytes": 7360,
+      "sha256": "bde2d17fed3dd0bbc12953a26ce13271cb7e219749ec49e4d9373a722ef50a88"
+    },
+    {
+      "role": "data_reading",
+      "path": "src/qf3/dataio.py",
+      "bytes": 1439,
+      "sha256": "3fbb87edf0a09cd10e3fcc18c7a6222f2b835a71d765a773b770731e48450b34"
+    },
+    {
+      "role": "run_dir_policy",
+      "path": "src/qf3/s6_io.py",
+      "bytes": 645,
+      "sha256": "ea4d076da717fc9c1a697deefbb400b935c41c6eb90313321216e36f6dba0fef"
+    },
+    {
+      "role": "confirmation_loader",
+      "path": "src/qf3/s6_v3_models.py",
+      "bytes": 6193,
+      "sha256": "0ae7ad5d0818bc2c19a6753adcac26e6ff1568ef5844ddb957bcff6d21656b32"
+    },
+    {
+      "role": "preflight_gate",
+      "path": "src/qf3/s6_v3_preflight.py",
+      "bytes": 10089,
+      "sha256": "13bedc27b452365ceb81354519894e0b51a4062f8571141a148cc2f7c12b5fbd"
+    },
+    {
+      "role": "confirmation_entry",
+      "path": "src/qf3/s6_v3_confirm.py",
+      "bytes": 8675,
+      "sha256": "423a3eb591bae8e3a7437e64a0ae07ee1e529d4c6387a4a6d32aa554a83edc36"
+    },
+    {
+      "role": "manifest_builder",
+      "path": "src/qf3/s6_v3_manifest.py",
+      "bytes": 4846,
+      "sha256": "54de3d8094cc33b94658e5886c14c78ed0051bfae62abc2b7abff87af095a56d"
+    },
+    {
+      "role": "l5_training_program",
+      "path": "src/qf3/s4_tree_train_src.py",
+      "bytes": 3394,
+      "sha256": "8ef22bdda2ffefc6ae8c5cb48b09699f4083391e033cc64ec0d793dbf1e728bd"
+    },
+    {
+      "role": "annual_fixture_evidence",
+      "path": "artifacts/stage4_verified_ic/v1_anchor__CONF21.parquet",
+      "bytes": 108996,
+      "sha256": "baba98c7eb9f59fb7436912259f887da262ea88865393548229e6fa979f5e2cd"
+    },
+    {
+      "role": "annual_fixture_evidence",
+      "path": "artifacts/stage4_verified_ic/v1_anchor__DEV19.parquet",
+      "bytes": 109072,
+      "sha256": "7f4d5e61c4f1f0b1a2dde23df276a9118cec5ff960b90a8636b6073fadb67a3e"
+    },
+    {
+      "role": "annual_fixture_evidence",
+      "path": "artifacts/stage4_verified_ic/v1_anchor__DEV20.parquet",
+      "bytes": 109046,
+      "sha256": "ef5a558fb386f4070a322ea5985796b57d548743f88e3043b854d4fa9fc51d6e"
+    },
+    {
+      "role": "deploy_summary",
+      "path": "artifacts/stage4_verified_ic/v2/v2_rev1_deploy_models_deploy.json",
+      "bytes": 2212,
+      "sha256": "949cfab9034e310b16ea140d1ceda765bff0c549e76909dbd84bfbfa23be5690"
+    },
+    {
+      "role": "tcn_deploy_summary",
+      "path": "artifacts/stage4_verified_ic/v2/v2_rev1_tcn_deploy2021.json",
+      "bytes": 1925,
+      "sha256": "66461ad4dc5cfbf0d4659bb6e264fb2ed59f29768ee0362dcdfdbe4600ba13ca"
+    },
+    {
+      "role": "l5_deploy_summary",
+      "path": "artifacts/stage4_verified_ic/v2/v2_rev1_l5_cutoff2021.json",
+      "bytes": 880,
+      "sha256": "41900f1ee29d534cee495163e02aeee672435ccda8185b050d627346b52fb0ee"
+    }
+  ],
+  "supersedes": {
+    "path": "artifacts/stage4_verified_ic/v2/v2_completion_frozen_manifest_v2.json",
+    "manifest_hash": "cb3010ee90d1579af10869ccf9229e0cbe334f510995c60ddfe6a7481ba376a0",
+    "file_sha256": "2686577f0b738e94351ce8c87138180f0ca890dc4477c4a3046a55c70e8962af"
+  },
+  "candidates": {
+    "primary": {
+      "id": "TCN_W20_a0.25",
+      "weights": {
+        "c1": 0.375,
+        "tabm": 0.375,
+        "tcn": 0.25
+      },
+      "note": "keeps the half-year starting-point sensitivity warning"
+    },
+    "fallback": {
+      "id": "V1_FIXED_ANCHOR",
+      "weights": {
+        "c1": 0.5,
+        "tabm": 0.5
+      }
+    }
+  },
+  "controls": {
+    "C1_fixed": {
+      "members": "catboost_c1_seed*.cbm x3"
+    },
+    "TREE_structure": {
+      "rule": "0.5 x L5 family + 0.5 x C1 family",
+      "l5": "l5_seed*.txt x3",
+      "c1": "catboost_c1_seed*.cbm x3"
+    }
+  },
+  "required_paths": [
+    "artifacts/stage4_verified_ic/deps/V1_train_requirements.txt",
+    "artifacts/stage4_verified_ic/v1_anchor__CONF21.parquet",
+    "artifacts/stage4_verified_ic/v1_anchor__DEV19.parquet",
+    "artifacts/stage4_verified_ic/v1_anchor__DEV20.parquet",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005__curve.parquet",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261017.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261029.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261017.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261029.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/inner_curve_seed20261005.parquet",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261005.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261017.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261029.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261005.safetensors",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261017.safetensors",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261029.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/preprocessing.json",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/preprocessing.json",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/preprocessing.json",
+    "artifacts/stage4_verified_ic/v2/v2_rev1_deploy_models_deploy.json",
+    "artifacts/stage4_verified_ic/v2/v2_rev1_l5_cutoff2021.json",
+    "artifacts/stage4_verified_ic/v2/v2_rev1_tcn_deploy2021.json",
+    "requirements.lock",
+    "src/qf3/constants.py",
+    "src/qf3/cv.py",
+    "src/qf3/dataio.py",
+    "src/qf3/featurelib.py",
+    "src/qf3/s2r_train.py",
+    "src/qf3/s4_tabm_wrapper_src.py",
+    "src/qf3/s4_tree_train_src.py",
+    "src/qf3/s6_fusion.py",
+    "src/qf3/s6_io.py",
+    "src/qf3/s6_v2_completion.py",
+    "src/qf3/s6_v2_deploy_models.py",
+    "src/qf3/s6_v2_features.py",
+    "src/qf3/s6_v2_freeze.py",
+    "src/qf3/s6_v2_input_acceptance.py",
+    "src/qf3/s6_v2_tabm_variants.py",
+    "src/qf3/s6_v2_tcn.py",
+    "src/qf3/s6_v3_confirm.py",
+    "src/qf3/s6_v3_manifest.py",
+    "src/qf3/s6_v3_models.py",
+    "src/qf3/s6_v3_preflight.py"
+  ],
+  "manifest_hash": "211c953c025ef57bd41a2ac1abfa7707b0042bdc28a60e94a4c4bde3817acdc9"
+}

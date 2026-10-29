@@ -1,0 +1,40 @@
+{
+  "year_model": "tabm_pc_20261005__DEV19",
+  "source_safetensors": "aa2a2c6cc715b0ef785d8f69544485699c9066c74d526b3c73223ec67937f3b8",
+  "exported_npz": "24fe40df39ade4ab3982e5f3c0e757078fab729554b921716216921016b44c5a",
+  "cases": [
+    {
+      "day": 20190603,
+      "max_abs": {
+        "block0": 5.960464477539062e-07,
+        "block1": 2.5331974029541016e-07,
+        "head": 5.960464477539063e-08,
+        "mean": 2.2351741790771484e-08
+      },
+      "rank_identical": true
+    },
+    {
+      "day": 20190604,
+      "max_abs": {
+        "block0": 5.960464477539062e-07,
+        "block1": 2.384185791015625e-07,
+        "head": 5.21540641784668e-08,
+        "mean": 1.4901161193847656e-08
+      },
+      "rank_identical": true
+    },
+    {
+      "day": 20191202,
+      "max_abs": {
+        "block0": 8.344650268554688e-07,
+        "block1": 2.682209014892578e-07,
+        "head": 4.470348358154297e-08,
+        "mean": 1.4901161193847656e-08
+      },
+      "rank_identical": true
+    }
+  ],
+  "max_abs_all": 8.344650268554688e-07,
+  "all_rank_identical": true,
+  "passed": true
+}

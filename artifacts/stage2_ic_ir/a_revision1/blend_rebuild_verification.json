@@ -1,0 +1,89 @@
+{
+  "windows": {
+    "DEV19": {
+      "perturbation": {
+        "other_days_rescaled": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        },
+        "probe_day_alone": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        }
+      }
+    },
+    "DEV20": {
+      "perturbation": {
+        "other_days_rescaled": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        },
+        "probe_day_alone": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        }
+      }
+    },
+    "CONF21": {
+      "perturbation": {
+        "other_days_rescaled": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        },
+        "probe_day_alone": {
+          "max_abs_diff": 0.0,
+          "identical": true
+        }
+      }
+    }
+  },
+  "legacy_blend_verification": {
+    "DEV19": {
+      "max_abs_diff": 0.0,
+      "identical": true,
+      "note": "stage-1 legacy blend (SSTAR) is per-day; the fix reproduces it exactly"
+    },
+    "DEV20": {
+      "max_abs_diff": 0.0,
+      "identical": true,
+      "note": "stage-1 legacy blend (SSTAR) is per-day; the fix reproduces it exactly"
+    },
+    "CONF21": {
+      "max_abs_diff": 0.0,
+      "identical": true,
+      "note": "stage-1 legacy blend (SSTAR) is per-day; the fix reproduces it exactly"
+    }
+  },
+  "bug_effect": {
+    "origmodel_realinput__DEV19": {
+      "rows": 73200,
+      "share_rank_changed": 0.8034153005464479,
+      "max_abs_diff": 0.39794398907103823
+    },
+    "aligned_retrain__DEV19": {
+      "rows": 73200,
+      "share_rank_changed": 0.7701366120218579,
+      "max_abs_diff": 0.42092554644808744
+    },
+    "origmodel_realinput__DEV20": {
+      "rows": 72900,
+      "share_rank_changed": 0.7924279835390946,
+      "max_abs_diff": 0.5480246913580247
+    },
+    "aligned_retrain__DEV20": {
+      "rows": 72900,
+      "share_rank_changed": 0.8013443072702332,
+      "max_abs_diff": 0.5469855967078189
+    },
+    "origmodel_realinput__CONF21": {
+      "rows": 72900,
+      "share_rank_changed": 0.7396844993141289,
+      "max_abs_diff": 0.24981481481481482
+    },
+    "aligned_retrain__CONF21": {
+      "rows": 72900,
+      "share_rank_changed": 0.7498079561042523,
+      "max_abs_diff": 0.26098422496570645
+    }
+  }
+}

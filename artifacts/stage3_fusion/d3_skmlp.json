@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "recipe": "SKMLP",
+      "seed": 20261005,
+      "window": "DEV19",
+      "best_epoch": 10,
+      "best_valid_ic": 0.059087570546571114,
+      "seconds": 16.7,
+      "hidden": [
+        128,
+        128
+      ],
+      "epochs_run": 20,
+      "mean_rankic": 0.04472477597838165,
+      "n_days": 244
+    }
+  ]
+}

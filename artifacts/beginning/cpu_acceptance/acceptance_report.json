@@ -1,0 +1,150 @@
+{
+  "baseline_v1": {
+    "package": "releases/baseline_v1.zip",
+    "submission_dir": "artifacts/beginning/cpu_acceptance/extract_baseline_v1/submission",
+    "cases": {
+      "2016-06-30": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      },
+      "2019-06-03": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      },
+      "2021-03-15": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      }
+    },
+    "identifier_invariance_max_abs_diff": 0.0,
+    "identifier_invariance_ok": true,
+    "future_truncation_ok": true,
+    "history_outside_window_ok": true,
+    "repeat_call_ok": true,
+    "rebuilt_instance_ok": true,
+    "short_history_20160105": {
+      "columns_ok": true,
+      "date_ok": true,
+      "universe_exact": true,
+      "unique_codes": true,
+      "finite_scores": true
+    },
+    "short_history_20160115": {
+      "columns_ok": true,
+      "date_ok": true,
+      "universe_exact": true,
+      "unique_codes": true,
+      "finite_scores": true
+    },
+    "suspended_stock_scored": true,
+    "feature_deficient_stock": {
+      "code": "SH600487",
+      "nan_features": 21,
+      "scored": true,
+      "score_finite": true
+    }
+  },
+  "baseline_v1_timing": {
+    "package": "releases/baseline_v1.zip",
+    "n_days": 40,
+    "first_day_seconds": 0.10158899500311236,
+    "steady_median_seconds": 0.0959024709991354,
+    "total_seconds": 3.8580533679996734,
+    "peak_rss_mb": 1324.80078125
+  },
+  "strong_baseline_v1": {
+    "package": "releases/strong_baseline_v1.zip",
+    "submission_dir": "artifacts/beginning/cpu_acceptance/extract_strong_baseline_v1/submission",
+    "cases": {
+      "2016-06-30": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      },
+      "2019-06-03": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      },
+      "2021-03-15": {
+        "columns_ok": true,
+        "date_ok": true,
+        "universe_exact": true,
+        "unique_codes": true,
+        "finite_scores": true,
+        "feature_parity_max_abs_diff": 0.0,
+        "feature_parity_nan_mask_identical": true,
+        "offline_row_count_matches": true,
+        "n_rows": 300
+      }
+    },
+    "identifier_invariance_max_abs_diff": 0.0,
+    "identifier_invariance_ok": true,
+    "future_truncation_ok": true,
+    "history_outside_window_ok": true,
+    "repeat_call_ok": true,
+    "rebuilt_instance_ok": true,
+    "short_history_20160105": {
+      "columns_ok": true,
+      "date_ok": true,
+      "universe_exact": true,
+      "unique_codes": true,
+      "finite_scores": true
+    },
+    "short_history_20160115": {
+      "columns_ok": true,
+      "date_ok": true,
+      "universe_exact": true,
+      "unique_codes": true,
+      "finite_scores": true
+    },
+    "suspended_stock_scored": true,
+    "feature_deficient_stock": {
+      "code": "SH600487",
+      "nan_features": 21,
+      "scored": true,
+      "score_finite": true
+    }
+  },
+  "strong_baseline_v1_timing": {
+    "package": "releases/strong_baseline_v1.zip",
+    "n_days": 40,
+    "first_day_seconds": 0.10648425500039593,
+    "steady_median_seconds": 0.09582276199944317,
+    "total_seconds": 3.885015182004281,
+    "peak_rss_mb": 1647.1953125
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "format": "npz",
+  "allow_pickle": false,
+  "dtype": "float32",
+  "architecture": "TabM BatchEnsemble: 2 x (LinearBatchEnsemble, ReLU, Dropout off at eval) + LinearEnsemble head, member mean",
+  "source_safetensors": "releases/stage3_fusion/build/FINAL_v1/model/tabm.safetensors",
+  "source_safetensors_sha256": "0a81bcae00cc210162b4b69d768a42fa6bdcaf894d4c29a05c059e6dfce3814a",
+  "npz_sha256": "e580b2fce4ee78b0f4554215befa3069560214d01839f3d771b446c11641e796",
+  "exporter_source": "/home/jessica998244343/DATA/Quant-Finance3/src/qf3/s5_tabm_export.py",
+  "exporter_source_sha256": "24cd2c3846cea1d04a8b0ae6b87912fd2543c21632d8028e5624bd0b4147089c",
+  "source_note": "frozen FINAL_v1 full-data TabM weights (Yandex TabM, Apache-2.0)",
+  "params": {
+    "W0": {
+      "shape": [
+        128,
+        141
+      ],
+      "dtype": "float32"
+    },
+    "r0": {
+      "shape": [
+        8,
+        141
+      ],
+      "dtype": "float32"
+    },
+    "s0": {
+      "shape": [
+        8,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "b0": {
+      "shape": [
+        8,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "W1": {
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "r1": {
+      "shape": [
+        8,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "s1": {
+      "shape": [
+        8,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "b1": {
+      "shape": [
+        8,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "Wh": {
+      "shape": [
+        8,
+        128,
+        1
+      ],
+      "dtype": "float32"
+    },
+    "bh": {
+      "shape": [
+        8,
+        1
+      ],
+      "dtype": "float32"
+    },
+    "k": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    }
+  },
+  "forward_ops": {
+    "linear_batch_ensemble": "h = ((x * r) @ W.T) * s + b",
+    "activation": "ReLU",
+    "head": "einsum('nki,kio->nko', h, Wh) + bh",
+    "aggregation": "mean over k members"
+  },
+  "no_dynamic_dispatch": true
+}

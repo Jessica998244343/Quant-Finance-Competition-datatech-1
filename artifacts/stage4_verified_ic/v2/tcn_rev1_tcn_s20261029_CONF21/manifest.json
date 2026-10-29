@@ -1,0 +1,21 @@
+{
+  "tag": "tcn_rev1_tcn_s20261029_CONF21",
+  "window": "CONF21",
+  "seed": 20261029,
+  "use_time": true,
+  "shuffle_time": false,
+  "steps": 20,
+  "price_points": 21,
+  "channels": 8,
+  "best_epoch": 16,
+  "best_inner_ic": 0.09407563333038195,
+  "inner_epochs_run": 26,
+  "train_cutoff": 20201231,
+  "train_threads": 2,
+  "seconds": 449.0,
+  "seed_set_before_construction": true,
+  "hashes": {
+    "model": "384e0956a175843e8907b5b41d979c804739654fdc764b244adde8a24eb0c92d",
+    "predictions": "cb7de908a3af33cd153ed661831dcfe334a4e4f12dc9747ca6ca95b2dee59454"
+  }
+}

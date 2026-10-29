@@ -1,0 +1,10 @@
+{
+  "files": [
+    "origmodel_realinput__DEV19.parquet",
+    "origmodel_realinput__DEV20.parquet"
+  ],
+  "start": "2019-01-02",
+  "end": "2020-12-31",
+  "data_view": "Source/Data",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

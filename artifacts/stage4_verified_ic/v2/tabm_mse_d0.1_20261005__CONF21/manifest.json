@@ -1,0 +1,14 @@
+{
+  "tag": "tabm_mse_d0.1_20261005__CONF21",
+  "window": "CONF21",
+  "seed": 20261005,
+  "dropout": 0.1,
+  "loss_mode": "mse",
+  "best_epoch": 12,
+  "best_inner_ic": 0.09963247134458499,
+  "inner_epochs_run": 24,
+  "train_cutoff": 20201231,
+  "train_threads": 2,
+  "seconds": 318.4,
+  "protocol": "inner select -> fresh model/optimiser/RNG -> outer refit preprocessing"
+}

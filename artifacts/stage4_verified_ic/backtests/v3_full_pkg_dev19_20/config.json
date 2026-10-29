@@ -1,0 +1,8 @@
+{
+  "submission_dir": "releases/stage4_verified_ic/build/V3_full_pkg",
+  "start": "2019-01-02",
+  "end": "2020-12-31",
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json",
+  "label": "in-training smoke backtest (model trained through 2022)"
+}

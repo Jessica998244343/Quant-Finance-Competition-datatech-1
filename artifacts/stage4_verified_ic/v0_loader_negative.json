@@ -1,0 +1,7 @@
+{
+  "missing_key": "ValueError",
+  "k_zero": "ValueError",
+  "wrong_dtype": "ValueError",
+  "non_finite": "ValueError",
+  "wrong_shape": "ValueError"
+}

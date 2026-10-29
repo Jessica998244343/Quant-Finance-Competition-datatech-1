@@ -1,0 +1,120 @@
+{
+  "invariants": {
+    "DEV19": {
+      "rows": 73200,
+      "batch_vs_daily_max_abs_diff": 1.6653345369377348e-16,
+      "perturbation_max_abs_diff": 1.1102230246251565e-16,
+      "permutation_max_abs_diff": 1.6653345369377348e-16,
+      "pool_matches_universe": true
+    },
+    "DEV20": {
+      "rows": 72900,
+      "batch_vs_daily_max_abs_diff": 1.6653345369377348e-16,
+      "perturbation_max_abs_diff": 5.551115123125783e-17,
+      "permutation_max_abs_diff": 1.6653345369377348e-16,
+      "pool_matches_universe": true
+    },
+    "CONF21": {
+      "rows": 72900,
+      "batch_vs_daily_max_abs_diff": 1.6653345369377348e-16,
+      "perturbation_max_abs_diff": 1.1102230246251565e-16,
+      "permutation_max_abs_diff": 1.6653345369377348e-16,
+      "pool_matches_universe": true
+    }
+  },
+  "provider_cache": {
+    "records": [
+      {
+        "day": 20190603,
+        "label": "normal",
+        "provider_window_days": 120,
+        "n_common": 300,
+        "max_abs_finite_diff": 0.0,
+        "cells_gt_1e-9": 0,
+        "nan_mask_diff_cells": 0,
+        "tables": {
+          "Factor33_winsor": 36000,
+          "Barra_factor": 36000,
+          "MarketData": 36000
+        }
+      },
+      {
+        "day": 20190617,
+        "label": "constituent-change",
+        "provider_window_days": 120,
+        "n_common": 300,
+        "max_abs_finite_diff": 0.0,
+        "cells_gt_1e-9": 0,
+        "nan_mask_diff_cells": 0,
+        "tables": {
+          "Factor33_winsor": 36000,
+          "Barra_factor": 36000,
+          "MarketData": 36000
+        }
+      },
+      {
+        "day": 20160630,
+        "label": "first full window",
+        "provider_window_days": 120,
+        "n_common": 300,
+        "max_abs_finite_diff": 0.0,
+        "cells_gt_1e-9": 0,
+        "nan_mask_diff_cells": 0,
+        "tables": {
+          "Factor33_winsor": 36000,
+          "Barra_factor": 36000,
+          "MarketData": 36000
+        }
+      },
+      {
+        "day": 20160105,
+        "label": "short history",
+        "provider_window_days": 2,
+        "n_common": 0,
+        "max_abs_finite_diff": 0.0,
+        "cells_gt_1e-9": 0,
+        "nan_mask_diff_cells": 0,
+        "tables": {
+          "Factor33_winsor": 600,
+          "Barra_factor": 600,
+          "MarketData": 600
+        }
+      }
+    ]
+  },
+  "weight_boundaries": {
+    "DEV19": {
+      "window": "DEV19",
+      "internal_weight_mean": 1.0,
+      "outer_weight_mean": 1.0,
+      "max_internal_label_end": 20180625,
+      "es_start": 20180626,
+      "internal_strictly_before_es": true,
+      "max_es_label_end": 20181228,
+      "train_end": 20181231,
+      "es_at_or_before_train_end": true
+    },
+    "DEV20": {
+      "window": "DEV20",
+      "internal_weight_mean": 1.0,
+      "outer_weight_mean": 1.0,
+      "max_internal_label_end": 20190626,
+      "es_start": 20190627,
+      "internal_strictly_before_es": true,
+      "max_es_label_end": 20191231,
+      "train_end": 20191231,
+      "es_at_or_before_train_end": true
+    },
+    "CONF21": {
+      "window": "CONF21",
+      "internal_weight_mean": 1.0,
+      "outer_weight_mean": 1.0,
+      "max_internal_label_end": 20200624,
+      "es_start": 20200629,
+      "internal_strictly_before_es": true,
+      "max_es_label_end": 20201231,
+      "train_end": 20201231,
+      "es_at_or_before_train_end": true
+    }
+  }
+}

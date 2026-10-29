@@ -1,0 +1,27 @@
+{
+  "version": "B0",
+  "model": "LightGBM 4.7.0 gbdt/regression",
+  "features": "F0 (42 columns)",
+  "params": {
+    "boosting": "gbdt",
+    "objective": "regression",
+    "learning_rate": 0.03,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l1": 0.0,
+    "lambda_l2": 5.0,
+    "max_bin": 127,
+    "seed": 20261005,
+    "num_threads": 8
+  },
+  "target": "daily cross-sectional average-tied rank",
+  "weight": "1/n_t normalized to mean 1",
+  "seed": 20261005,
+  "threads": 8,
+  "frozen": true,
+  "freeze_record": "artifacts/beginning/B0_FREEZE.md"
+}

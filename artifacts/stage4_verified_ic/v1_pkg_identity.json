@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "train_label_cutoff": 20201231,
+    "validation_year": 2021,
+    "preprocessing_fit_cutoff": 20201231,
+    "note": "the V1 package is a 2021-validation fixture: atoms are fitted with label_end_date <= 2020-12-31 and predict 2021. It is NOT the label_end<=2021-12-31 deployment model and NOT the full-data submission model."
+  },
+  "archives": {
+    "V1_pkg_REV0": {
+      "path": "releases/stage4_verified_ic/V1_pkg_REV0.zip",
+      "bytes": 8787672,
+      "uncompressed_bytes": 12249089,
+      "files": 27,
+      "sha256": "8f30e8ce0e5a99c2575096fb2880686018fb928a435634c4c1472f1e48920ee1"
+    },
+    "V1_pkg_2021fixture": {
+      "path": "releases/stage4_verified_ic/V1_pkg_2021fixture.zip",
+      "bytes": 8788983,
+      "uncompressed_bytes": 12252895,
+      "files": 27,
+      "sha256": "fac8f67c8591dc1d746fd15db99525cf189a481136248b3340aac7a70027b15a"
+    },
+    "V1_pkg_current": {
+      "path": "releases/stage4_verified_ic/V1_pkg.zip",
+      "bytes": 8780250,
+      "uncompressed_bytes": 12202953,
+      "files": 27,
+      "sha256": "ea82d56222bbe34a3d3ef25e4f43e26fb00ae26348bc557543f152f6c05e3dca"
+    }
+  },
+  "weight_files_identical": {
+    "REV0_vs_fixture": true,
+    "fixture_vs_current": true
+  },
+  "file_diff_REV0_to_fixture": [
+    "submission/train.py"
+  ],
+  "file_diff_fixture_to_current": [
+    "submission/TABM_SOURCE.md",
+    "submission/__init__.py",
+    "submission/alpha_models.py",
+    "submission/alpha_tabm_static.py",
+    "submission/alpha_train_model.py",
+    "submission/inference.py",
+    "submission/model/meta.json",
+    "submission/tabm_official.py"
+  ],
+  "current_weight_hashes": {
+    "submission/model/catboost_c1_seed20261005.cbm": "d2d49603ea822d3bd6d91d344a551d8437ce703c1e31d9e3a0c8f2e7384f5b03",
+    "submission/model/catboost_c1_seed20261017.cbm": "7b837f57f024e805a711a1de8705dc6cdfde0ed872fa0fb262373f196868b1f0",
+    "submission/model/catboost_c1_seed20261029.cbm": "5cb02b562b7d581ddd4b67919a69b1154fbc4b34b66628cfb15078950e2ac027",
+    "submission/model/tabm_seed20261005.npz": "4ef2b8181cd3b45aa8c7b6601df6ec8e2c567ef889b7ca76c9986c1d04dada01",
+    "submission/model/tabm_seed20261017.npz": "890e3aab5a988f547eecb71a37e1d92d9092232f8a7988bea95c263ad31539c7",
+    "submission/model/tabm_seed20261029.npz": "46a99e38ea49f6a1858b7f3b77222406b04b2f21ed367f56c53406232e60ae13"
+  }
+}

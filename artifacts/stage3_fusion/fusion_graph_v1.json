@@ -1,0 +1,24 @@
+{
+  "graph_id": "TREEFUSION_v1",
+  "layers": {
+    "atom": "member raw score s_j on each signal day's legal pool",
+    "layer1_rank": "r_t(s_j)=(average_rank-(n_t+1)/2)/n_t, computed inside each day",
+    "layer2_expert": "q_g = mean over seeds of r_t(s_j) (no re-rank inside the expert)",
+    "layer3_fusion": "u = sum_g w_g * q_g, w_g>=0, sum w_g = 1",
+    "output": "r_t(u)"
+  },
+  "candidates": {
+    "TREEFUSION_v1": "trunk=MAIN_SEED_ENSEMBLE_v1 (L3 x3 seeds), expert=L5 seed-mean, alpha=0.5",
+    "CATFUSION_v1": "trunk=MAIN_SEED_ENSEMBLE_v1, expert=CatBoost C1 (IC-selected trees) x3 seeds, alpha=0.5"
+  },
+  "prior_graphs_not_mixed": [
+    "stage-2 flat seed+Cat blend (SEED_MEANRANK_CAT_flat_v1)",
+    "R_WORK / R_DEPLOY original frozen graphs"
+  ],
+  "note": "IR must be reported from the final actual output graph; earlier rank-preserving graphs are separate identities",
+  "random_seeds": [
+    20261005,
+    20261017,
+    20261029
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "seed": 20261029,
+  "steps": 20,
+  "price_points": 21,
+  "channels": 8,
+  "init_controlled": true,
+  "windows": {
+    "CONF21": {
+      "tcn": {
+        "standalone_rankic": 0.058115356258021715,
+        "best_epoch": 16,
+        "seconds": 449.0,
+        "ic_by_alpha": {
+          "0.0": 0.06441037075738926,
+          "0.05": 0.0647976281283571,
+          "0.1": 0.06507405391168417,
+          "0.25": 0.06582901380252451,
+          "0.5": 0.06578790465495499
+        },
+        "delta_vs_parent": {
+          "0.0": 0.0,
+          "0.05": 0.00038725737096784174,
+          "0.1": 0.0006636831542949084,
+          "0.25": 0.0014186430451352539,
+          "0.5": 0.0013775338975657303
+        },
+        "manifest": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_CONF21/manifest.json"
+      },
+      "static": {
+        "standalone_rankic": 0.0564026492813995,
+        "best_epoch": 16,
+        "seconds": 30.9,
+        "ic_by_alpha": {
+          "0.0": 0.06441037075738926,
+          "0.05": 0.06468655398622579,
+          "0.1": 0.06486911714252878,
+          "0.25": 0.06489073533505044,
+          "0.5": 0.0632675481479034
+        },
+        "delta_vs_parent": {
+          "0.0": 0.0,
+          "0.05": 0.00027618322883653235,
+          "0.1": 0.00045874638513952737,
+          "0.25": 0.0004803645776611798,
+          "0.5": -0.0011428226094858523
+        },
+        "manifest": "artifacts/stage4_verified_ic/v2/tcn_rev1_static_s20261029_CONF21/manifest.json"
+      }
+    }
+  },
+  "dev_merged_delta_vs_parent": {},
+  "note": "W20 gate: extend seeds/2021 only if the flat-graph DEV-merged delta reaches 0.0005 with no strong two-year conflict"
+}

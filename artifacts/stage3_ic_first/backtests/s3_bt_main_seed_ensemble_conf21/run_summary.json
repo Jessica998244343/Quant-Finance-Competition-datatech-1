@@ -1,0 +1,20 @@
+{
+  "run": "s3_bt_main_seed_ensemble_conf21",
+  "metrics": {
+    "mean_rankic": 0.06357397490014047,
+    "rankic_std": 0.1377838314411383,
+    "rankic_ir": 0.4614037382702591,
+    "positive_rankic_ratio": 0.6776859504132231,
+    "total_return": -0.1768597137130511,
+    "annualized_return": -0.18277195939673907,
+    "annualized_excess_return": -0.12891318441056088,
+    "annualized_volatility": 0.19679012124943254,
+    "maximum_drawdown": 0.25947430990126014,
+    "tracking_error": 0.04079242381087541,
+    "information_ratio": -3.1602236976218157,
+    "sharpe_ratio": -0.9269232680196363,
+    "turnover": 230.1825516005768,
+    "transaction_cost": 243576.63782961093,
+    "failed_orders": 94
+  }
+}

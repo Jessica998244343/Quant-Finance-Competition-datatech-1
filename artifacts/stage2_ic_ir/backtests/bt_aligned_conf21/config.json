@@ -1,0 +1,9 @@
+{
+  "files": [
+    "aligned_retrain__CONF21.parquet"
+  ],
+  "start": "2021-01-04",
+  "end": "2021-12-31",
+  "data_view": "Source/Data",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

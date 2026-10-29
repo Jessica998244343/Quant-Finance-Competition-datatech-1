@@ -1,0 +1,21 @@
+{
+  "tag": "tcn_rev1_tcn_s20261017_FULL22",
+  "window": "FULL22",
+  "seed": 20261017,
+  "use_time": true,
+  "shuffle_time": false,
+  "steps": 20,
+  "price_points": 21,
+  "channels": 8,
+  "best_epoch": 10,
+  "best_inner_ic": 0.06331820168708742,
+  "inner_epochs_run": 20,
+  "train_cutoff": 20221230,
+  "train_threads": 2,
+  "seconds": 521.2,
+  "seed_set_before_construction": true,
+  "outer_metrics_computed": false,
+  "hashes": {
+    "model": "59f917a86ec1c0db34754fa10b30bf00fcfb631114a9b8e2d45d0bc2e45008e0"
+  }
+}

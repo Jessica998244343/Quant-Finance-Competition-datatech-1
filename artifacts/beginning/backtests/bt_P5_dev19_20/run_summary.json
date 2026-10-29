@@ -1,0 +1,38 @@
+{
+  "run": "bt_P5_dev19_20",
+  "seconds": 43.2,
+  "metrics": {
+    "mean_rankic": 0.07774408978706894,
+    "rankic_std": 0.13378933788579309,
+    "rankic_ir": 0.5810933144271467,
+    "positive_rankic_ratio": 0.7263374485596708,
+    "total_return": 0.46929682220549074,
+    "annualized_return": 0.2203136408954367,
+    "annualized_excess_return": -0.10800156148615492,
+    "annualized_volatility": 0.21641165772968268,
+    "maximum_drawdown": 0.24166013276118184,
+    "tracking_error": 0.0343401087768775,
+    "information_ratio": -3.1450558933254302,
+    "sharpe_ratio": 1.0288549788039343,
+    "turnover": 449.76493234866643,
+    "transaction_cost": 575721.2267860877,
+    "failed_orders": 492
+  },
+  "rankic": {
+    "mean_rankic": 0.07774408978706894,
+    "rankic_std": 0.13378933788579309,
+    "rankic_ir": 0.5810933144271467,
+    "positive_ratio": 0.7263374485596708,
+    "n_days": 486,
+    "n_pairs": 145415
+  },
+  "config": {
+    "windows": [
+      "DEV19",
+      "DEV20"
+    ],
+    "start": "2019-01-02",
+    "end": "2020-12-31",
+    "view": "artifacts/beginning/data_zero_st"
+  }
+}

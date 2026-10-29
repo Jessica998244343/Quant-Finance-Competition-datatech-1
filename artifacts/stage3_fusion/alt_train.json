@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "member": "l3",
+      "seed": 20261005,
+      "rounds": 448,
+      "seconds": 8.0,
+      "path": "artifacts/stage3_fusion/alt_models/l3_seed20261005.txt"
+    },
+    {
+      "member": "c1",
+      "seed": 20261005,
+      "trees": 875,
+      "actual_tree_count": 875,
+      "seconds": 21.7,
+      "path": "artifacts/stage3_fusion/alt_models/c1_seed20261005.cbm"
+    },
+    {
+      "member": "l3",
+      "seed": 20261017,
+      "rounds": 448,
+      "seconds": 8.2,
+      "path": "artifacts/stage3_fusion/alt_models/l3_seed20261017.txt"
+    },
+    {
+      "member": "c1",
+      "seed": 20261017,
+      "trees": 875,
+      "actual_tree_count": 875,
+      "seconds": 21.5,
+      "path": "artifacts/stage3_fusion/alt_models/c1_seed20261017.cbm"
+    },
+    {
+      "member": "l3",
+      "seed": 20261029,
+      "rounds": 448,
+      "seconds": 8.1,
+      "path": "artifacts/stage3_fusion/alt_models/l3_seed20261029.txt"
+    },
+    {
+      "member": "c1",
+      "seed": 20261029,
+      "trees": 875,
+      "actual_tree_count": 875,
+      "seconds": 21.3,
+      "path": "artifacts/stage3_fusion/alt_models/c1_seed20261029.cbm"
+    },
+    {
+      "member": "l5",
+      "seed": 20261005,
+      "rounds": 311,
+      "seconds": 8.9,
+      "path": "artifacts/stage3_fusion/alt_models/l5_seed20261005.txt"
+    },
+    {
+      "member": "l5",
+      "seed": 20261017,
+      "rounds": 311,
+      "seconds": 8.9,
+      "path": "artifacts/stage3_fusion/alt_models/l5_seed20261017.txt"
+    },
+    {
+      "member": "l5",
+      "seed": 20261029,
+      "rounds": 311,
+      "seconds": 9.3,
+      "path": "artifacts/stage3_fusion/alt_models/l5_seed20261029.txt"
+    }
+  ],
+  "round_rules": {
+    "l3_rounds": 448,
+    "c1_trees": 875
+  }
+}

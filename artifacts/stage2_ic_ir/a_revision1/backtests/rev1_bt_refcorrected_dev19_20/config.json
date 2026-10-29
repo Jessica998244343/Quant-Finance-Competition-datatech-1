@@ -1,0 +1,11 @@
+{
+  "files": [
+    "artifacts/stage2_ic_ir/a_revision1/predictions/ref_corrected__DEV19.parquet",
+    "artifacts/stage2_ic_ir/a_revision1/predictions/ref_corrected__DEV20.parquet"
+  ],
+  "score_column": "score",
+  "start": "2019-01-02",
+  "end": "2020-12-31",
+  "data_view": "artifacts/beginning/data_zero_st",
+  "contract": "configs/beginning/evaluation_contract.json"
+}

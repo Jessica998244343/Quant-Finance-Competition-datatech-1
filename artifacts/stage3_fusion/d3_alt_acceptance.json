@@ -1,0 +1,30 @@
+{
+  "normal": {
+    "rows": 300,
+    "pool_exact": true,
+    "finite": true,
+    "unique": true,
+    "date_ok": true
+  },
+  "const_change": {
+    "rows": 300,
+    "pool_exact": true,
+    "finite": true,
+    "unique": true,
+    "date_ok": true
+  },
+  "short2d": {
+    "rows": 300,
+    "pool_exact": true,
+    "finite": true,
+    "unique": true,
+    "date_ok": true
+  },
+  "full_window": {
+    "rows": 300,
+    "pool_exact": true,
+    "finite": true,
+    "unique": true,
+    "date_ok": true
+  }
+}

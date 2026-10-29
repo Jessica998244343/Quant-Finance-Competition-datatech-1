@@ -1,0 +1,325 @@
+{
+  "created": "2026-10-07 (Asia/Shanghai)",
+  "graph": "flat: u = sum_g w_g q_g ; output = rank_t(u); q_g = mean_seed rank_t(s_g)",
+  "candidates": [
+    "TCN_W20_a0.25 (research only; half-year check failed)",
+    "V1_FIXED_ANCHOR (default after the B4 verdict)"
+  ],
+  "adoption_rule": "see DS_stage4_V2_COMPLETION_REPORT.md \u00a7C2",
+  "features": {
+    "F0": [
+      "turn",
+      "change_ratio",
+      "daily_return",
+      "momentum_5",
+      "reversal_5",
+      "volatility_5",
+      "sma_20",
+      "ema_20",
+      "macd_diff_12_26_9",
+      "macd_dea_12_26_9",
+      "macd_hist_12_26_9",
+      "rsi_12",
+      "kdj_k_9_3_3",
+      "kdj_d_9_3_3",
+      "bias_20",
+      "cci_14",
+      "atr_14",
+      "total_market_cap",
+      "float_market_cap",
+      "pe_ttm",
+      "pb",
+      "ps_ttm",
+      "roe_avg_ttm",
+      "roa_avg_ttm",
+      "gross_profit_rate_ttm",
+      "net_profit_rate_ttm",
+      "debt_to_asset_lf",
+      "current_ratio_lf",
+      "beta_000300SH_22",
+      "list_days",
+      "is_suspend",
+      "is_new",
+      "barra_size",
+      "barra_beta",
+      "barra_momentum",
+      "barra_residvol",
+      "barra_nonlinear_size",
+      "barra_bp",
+      "barra_liquidity",
+      "barra_earnings",
+      "barra_growth",
+      "barra_leverage"
+    ],
+    "G1": [
+      "ret_1",
+      "ret_2",
+      "ret_5",
+      "ret_10",
+      "ret_20",
+      "ret_60",
+      "ret_119",
+      "rv_5",
+      "rv_20",
+      "rv_60",
+      "relma_5",
+      "relma_20",
+      "relma_60",
+      "hl_range",
+      "close_pos",
+      "overnight",
+      "intraday",
+      "overnight_mean_5",
+      "intraday_mean_5"
+    ],
+    "ordered_61": [
+      "turn",
+      "change_ratio",
+      "daily_return",
+      "momentum_5",
+      "reversal_5",
+      "volatility_5",
+      "sma_20",
+      "ema_20",
+      "macd_diff_12_26_9",
+      "macd_dea_12_26_9",
+      "macd_hist_12_26_9",
+      "rsi_12",
+      "kdj_k_9_3_3",
+      "kdj_d_9_3_3",
+      "bias_20",
+      "cci_14",
+      "atr_14",
+      "total_market_cap",
+      "float_market_cap",
+      "pe_ttm",
+      "pb",
+      "ps_ttm",
+      "roe_avg_ttm",
+      "roa_avg_ttm",
+      "gross_profit_rate_ttm",
+      "net_profit_rate_ttm",
+      "debt_to_asset_lf",
+      "current_ratio_lf",
+      "beta_000300SH_22",
+      "list_days",
+      "is_suspend",
+      "is_new",
+      "barra_size",
+      "barra_beta",
+      "barra_momentum",
+      "barra_residvol",
+      "barra_nonlinear_size",
+      "barra_bp",
+      "barra_liquidity",
+      "barra_earnings",
+      "barra_growth",
+      "barra_leverage",
+      "ret_1",
+      "ret_2",
+      "ret_5",
+      "ret_10",
+      "ret_20",
+      "ret_60",
+      "ret_119",
+      "rv_5",
+      "rv_20",
+      "rv_60",
+      "relma_5",
+      "relma_20",
+      "relma_60",
+      "hl_range",
+      "close_pos",
+      "overnight",
+      "intraday",
+      "overnight_mean_5",
+      "intraday_mean_5"
+    ],
+    "design_141": "2 x 61 scaled+mask blocks + 19 G1 daily ranks",
+    "ordered_61_sha256": "6bb611014907dbaa4c75164a1a7d9fb87765d816416b3eb5b05e890d76133fce",
+    "design_141_sha256": "fe4e39897dbd2d3cf401e18253e93b146d00fd4a74889e0ddd3fa1dee5f77bbe"
+  },
+  "tcn": {
+    "steps": 20,
+    "price_points": 21,
+    "channels": 8,
+    "channel_order": [
+      "close-close log return",
+      "open-close log return",
+      "high/low amplitude",
+      "close position",
+      "log1p volume",
+      "log1p amount",
+      "suspension flag",
+      "presence mask"
+    ]
+  },
+  "training_config": {
+    "catboost": "depth8/l2=15 RMSE lr0.03 3000-cap 25-tree inner IC",
+    "tabm": "k8/width128/2 blocks/dropout0.1 AdamW lr1e-3 wd1e-3 clip1",
+    "tcn": "8ch/20 steps/32ch/2 residual blocks/dilation 1,2/AdamW lr1e-3 wd1e-3 clip1",
+    "train_label_cutoff": 20211231,
+    "selection": "inner daily-Spearman epoch/tree selection, near-opt 0.0005 earliest"
+  },
+  "files": [
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005.cbm",
+      "bytes": 3800968,
+      "sha256": "e00f7d39c95bcc031ff52c3daafc1f8dbd9421b5f17b9254955e2b223045b2f4"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261005.safetensors",
+      "bytes": 167704,
+      "sha256": "3549c0ab4d443630919f492d000d7ffa05d69722ec5e4527e99e40e82d77cd42"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "d908880fb9a61d3750b6e9ed8580eb01266428f1b4b91e4702803ed921f83671"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261005.txt",
+      "bytes": 4566634,
+      "sha256": "38f5c84532142065ce2294bef12628e1e723212c6f0b942535a9119e1d81e18f"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261017.cbm",
+      "bytes": 3275168,
+      "sha256": "bdc248fe45f3e9bd47c3530aee6cb27c5d14c61304bfe73091bdfad67e5160ad"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261017.safetensors",
+      "bytes": 167704,
+      "sha256": "97dba211dffa09cea7afbd53d605ec4d5261720929a70a996944c5d2eedab32d"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261017.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "8ca3a9bec8b0e962b4cf86dfc5bef759c04dfae64cd242b194930b3aa542eabb"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261017.txt",
+      "bytes": 4566272,
+      "sha256": "2d38320e6ed3903677ea569c6b5dc3c6239c5924bf26ad098db750f39bc896ad"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261029.cbm",
+      "bytes": 2117840,
+      "sha256": "aab6590cce019784ee29a32526755449a28be87feb5e299ba5cde4cd30c68cd5"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261029.safetensors",
+      "bytes": 167704,
+      "sha256": "a48eda74a2dfdd8b2a55f46596078b3eab75389a8339ba03ffd2c8c918f2e918"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261029.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/model.safetensors",
+      "bytes": 87164,
+      "sha256": "2f4155ec7edd2804f26ad12a7ea5b4a08b67d54c806029a63e1f76a3afa46d12"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/preprocessing.json",
+      "bytes": 5243,
+      "sha256": "a91866a04be967087d01cde4c4ef4fa17e96bab2b9395046a75402c11a114e70"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261029.txt",
+      "bytes": 4567027,
+      "sha256": "0e5f6f7a8e32e79898a67e851ff361c8b8cc59e9f75f3a46bb27d5b7b317aefb"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+      "bytes": 5939,
+      "sha256": "50567ea4b51859d55f961a96c16a8863063c5c53dd96594d29ea254cb1d3a2f4"
+    },
+    {
+      "path": "artifacts/stage4_verified_ic/v1_c1_seedmean__DEV19.parquet",
+      "bytes": 139163,
+      "sha256": "89a6a243fc491b13dd429b1409ae5d4dceba374df8802820f9b42df8fdf6258a"
+    },
+    {
+      "path": "src/qf3/s6_fusion.py",
+      "bytes": 8296,
+      "sha256": "e8ff02e657a293ed1c04e3461cad3b00ac94cdb62a88fdca4e15a447cb70947a"
+    },
+    {
+      "path": "src/qf3/s6_v2_tcn.py",
+      "bytes": 21246,
+      "sha256": "5e3ec3dd747e988711653af16091bd2495002db8de66afcbf500500921ab252a"
+    },
+    {
+      "path": "src/qf3/s6_v2_tabm_variants.py",
+      "bytes": 14088,
+      "sha256": "22ce4dc642c789151fa4be08536d3dbcb391a797c29c38646d200b5e0b4d5ac1"
+    },
+    {
+      "path": "src/qf3/s4_tabm_wrapper_src.py",
+      "bytes": 4628,
+      "sha256": "f84fa389351ae75f4987976ed7c876078e446a73ea3498ef7b8d4d46c4ecb148"
+    },
+    {
+      "path": "src/qf3/s6_v2_completion.py",
+      "bytes": 14100,
+      "sha256": "60935a773842d21db88267a181bebd3454d907890d68d3529584eeef1c4fa1fe"
+    },
+    {
+      "path": "src/qf3/s6_v2_freeze.py",
+      "bytes": 9251,
+      "sha256": "4b71f24ddd6d86199939c3eab07b4414b2682e71ba9a67448d28bdf95bce5180"
+    }
+  ],
+  "required_paths": [
+    "artifacts/stage4_verified_ic/v1_c1_seedmean__DEV19.parquet",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261005.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261017.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/catboost_c1_seed20261029.cbm",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261005.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261017.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/design_seed20261029.json",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261005.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261017.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/l5_seed20261029.txt",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261005.safetensors",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261017.safetensors",
+    "artifacts/stage4_verified_ic/v2/deploy_2021cutoff/tabm_seed20261029.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261005_RES22/preprocessing.json",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261017_RES22/preprocessing.json",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/model.safetensors",
+    "artifacts/stage4_verified_ic/v2/tcn_rev1_tcn_s20261029_RES22/preprocessing.json",
+    "src/qf3/s4_tabm_wrapper_src.py",
+    "src/qf3/s6_fusion.py",
+    "src/qf3/s6_v2_completion.py",
+    "src/qf3/s6_v2_freeze.py",
+    "src/qf3/s6_v2_tabm_variants.py",
+    "src/qf3/s6_v2_tcn.py"
+  ],
+  "manifest_hash": "acf75905a50b1daaa0c6f8e85b5b4421606811ccabcb3e1518de6fccc3756073"
+}

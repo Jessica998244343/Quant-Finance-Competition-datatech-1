@@ -1,0 +1,206 @@
+{
+  "segments": [
+    {
+      "window": "DEV19",
+      "segment": "1.1",
+      "validation_start": 20180626,
+      "validation_end": 20180920,
+      "n_fit": 137649,
+      "n_valid": 18260,
+      "max_fit_label_end": 20180625,
+      "max_valid_label_end": 20180925,
+      "fit_strictly_before_validation": true,
+      "valid_labels_mature_by_train_end": true,
+      "violations": 0,
+      "seconds": 65.2,
+      "threads": 6
+    },
+    {
+      "window": "DEV19",
+      "segment": "1.2",
+      "validation_start": 20180921,
+      "validation_end": 20181226,
+      "n_fit": 155902,
+      "n_valid": 18495,
+      "max_fit_label_end": 20180920,
+      "max_valid_label_end": 20181228,
+      "fit_strictly_before_validation": true,
+      "valid_labels_mature_by_train_end": true,
+      "violations": 0,
+      "seconds": 66.6,
+      "threads": 6
+    },
+    {
+      "window": "DEV20",
+      "segment": "1.1",
+      "validation_start": 20190627,
+      "validation_end": 20190924,
+      "n_fit": 209636,
+      "n_valid": 18856,
+      "max_fit_label_end": 20190626,
+      "max_valid_label_end": 20190926,
+      "fit_strictly_before_validation": true,
+      "valid_labels_mature_by_train_end": true,
+      "violations": 0,
+      "seconds": 69.1,
+      "threads": 6
+    },
+    {
+      "window": "DEV20",
+      "segment": "1.2",
+      "validation_start": 20190925,
+      "validation_end": 20191227,
+      "n_fit": 228491,
+      "n_valid": 18847,
+      "max_fit_label_end": 20190924,
+      "max_valid_label_end": 20191231,
+      "fit_strictly_before_validation": true,
+      "valid_labels_mature_by_train_end": true,
+      "violations": 0,
+      "seconds": 70.0,
+      "threads": 6
+    }
+  ],
+  "protocols": {
+    "DEV19": {
+      "T0": {
+        "rounds": 334,
+        "mean_rankic": 0.07777542652217012
+      },
+      "T1": {
+        "segment_rounds": [
+          216,
+          432
+        ],
+        "selected_rounds": 324,
+        "rounds": 324,
+        "mean_rankic": 0.07794505285526333,
+        "n_days": 244
+      },
+      "T2": {
+        "segment_curves": {
+          "grid": [
+            50,
+            75,
+            100,
+            150,
+            200,
+            300,
+            450,
+            650,
+            900,
+            1200,
+            1600,
+            2200,
+            3000
+          ],
+          "averaged": [
+            0.08567621871123278,
+            0.08775952212956274,
+            0.0887389138613791,
+            0.09086153971845179,
+            0.09269171609509418,
+            0.09240372580907422,
+            0.09247167068859678,
+            0.0883826908510712,
+            0.08674717201142937,
+            0.08562041154514347,
+            0.08356180363294641,
+            0.08035902078330898,
+            0.07597899719183021
+          ],
+          "smoothed": [
+            0.08671787042039776,
+            0.08739155156739153,
+            0.0891199919031312,
+            0.09076405655830837,
+            0.09198566054087338,
+            0.09252237086425506,
+            0.0910860291162474,
+            0.08920051118369914,
+            0.08691675813588134,
+            0.08530979572983975,
+            0.08318041198713295,
+            0.0799666072026952,
+            0.0781690089875696
+          ],
+          "selected_rounds": 200,
+          "best_smoothed": 0.09252237086425506
+        },
+        "rounds": 200,
+        "mean_rankic": 0.07759698357705579,
+        "n_days": 244
+      }
+    },
+    "DEV20": {
+      "T0": {
+        "rounds": 816,
+        "mean_rankic": 0.07512600277035089
+      },
+      "T1": {
+        "segment_rounds": [
+          816,
+          339
+        ],
+        "selected_rounds": 577,
+        "rounds": 577,
+        "mean_rankic": 0.07463675739518931,
+        "n_days": 243
+      },
+      "T2": {
+        "segment_curves": {
+          "grid": [
+            50,
+            75,
+            100,
+            150,
+            200,
+            300,
+            450,
+            650,
+            900,
+            1200,
+            1600,
+            2200,
+            3000
+          ],
+          "averaged": [
+            0.055903665968583975,
+            0.05823174558465248,
+            0.05864129590991064,
+            0.060932503315269365,
+            0.06334163824206265,
+            0.06511943425188738,
+            0.06650201680040353,
+            0.06507774573057688,
+            0.06415804180433551,
+            0.06302295841487432,
+            0.06386491635331887,
+            0.06221476611472215,
+            0.05836733972320128
+          ],
+          "smoothed": [
+            0.057067705776618224,
+            0.05759223582104903,
+            0.05926851493661083,
+            0.06097181248908088,
+            0.06313119193640647,
+            0.06498769643145119,
+            0.0655663989276226,
+            0.06524593477843864,
+            0.0640862486499289,
+            0.0636819721908429,
+            0.06303421362763845,
+            0.06148234073041411,
+            0.06029105291896172
+          ],
+          "selected_rounds": 300,
+          "best_smoothed": 0.0655663989276226
+        },
+        "rounds": 300,
+        "mean_rankic": 0.07486089213383679,
+        "n_days": 243
+      }
+    }
+  }
+}

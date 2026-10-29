@@ -1,0 +1,7 @@
+{
+  "trees_reference": 700,
+  "trees_repro": 700,
+  "leaf_values_exact": true,
+  "borders_exact": true,
+  "feature_order_exact": true
+}

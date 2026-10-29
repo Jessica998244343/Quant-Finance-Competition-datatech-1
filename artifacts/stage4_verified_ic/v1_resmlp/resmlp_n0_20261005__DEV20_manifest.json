@@ -1,0 +1,18 @@
+{
+  "recipe_id": "resmlp_n0_20261005__DEV20",
+  "window": "DEV20",
+  "seed": 20261005,
+  "outer_protocol": {
+    "reinit_model": true,
+    "reinit_optimizer": true,
+    "reinit_rng": true,
+    "refit_preprocessing_on_outer_fit_set": true,
+    "selected_epochs_from_inner_only": 13
+  },
+  "train_cutoff": 20191231,
+  "best_epoch": 13,
+  "best_inner_ic": 0.05585984892995344,
+  "inner_epochs_run": 25,
+  "train_threads": 2,
+  "seconds": 73.9
+}

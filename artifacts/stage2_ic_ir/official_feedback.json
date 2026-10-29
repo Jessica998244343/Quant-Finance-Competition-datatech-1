@@ -1,0 +1,17 @@
+{
+  "source": "user-reported in this session; execution agent did not access the leaderboard",
+  "version": "strong_baseline_v1",
+  "metrics": {
+    "RankIC": 0.0657,
+    "portfolio_information_ratio": 0.5524,
+    "standardised_RankIC": 0.7747,
+    "standardised_IR": 0.2339,
+    "total_score": 0.6125
+  },
+  "consistency": "0.7*0.7747+0.3*0.2339=0.61246, matches reported total to 4 dp",
+  "explicit_non_claims": [
+    "normalisation formula unknown (not assumed min-max)",
+    "no rank, timestamp or raw bounds are inferred",
+    "single submission cannot prove turnover is the only cause of weak IR"
+  ]
+}

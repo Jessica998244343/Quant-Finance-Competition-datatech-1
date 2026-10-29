@@ -1,0 +1,11 @@
+{
+  "previous_binding": "ac75687bde6a93811c230f19c45500d5fd7a1d096a6b74ff2ae37fa7018e0747",
+  "new_binding": "c8d344757c9308f5350ac8bd6f36275db00167647aa9a8bcf77c8c6ea04e2ced",
+  "changed_functions": [
+    "run"
+  ],
+  "reason": "Only normalise persisted channel-stat JSON keys during final metadata assembly; cache construction and training functions unchanged. No real training checkpoints existed.",
+  "cache_files": {
+    "raw_rebuilt_panel.parquet": "6aa860174884a59eb0049bc9617f7954adf997ae343f69dc43a8492727ad4250"
+  }
+}
